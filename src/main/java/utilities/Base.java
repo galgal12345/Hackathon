@@ -1,7 +1,7 @@
 package utilities;
 
 import org.openqa.selenium.WebDriver;
-import pageobjects.WebPage;
+import pageobjects.grafanapages.GrafanaPage;
 
 public class Base {
 
@@ -13,7 +13,7 @@ public class Base {
     protected static String url = "http://localhost:3000/?orgId=1";
 
     //PAGES
-    protected static WebPage webPage;
+    protected static GrafanaPage grafanaPage;
 
     //XML
     protected static String userName = "admin";

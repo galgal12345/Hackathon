@@ -6,18 +6,18 @@ import utilities.CommonOps;
 
 import java.util.concurrent.TimeUnit;
 
-public class WorkFlowWeb extends CommonOps {
+public class GrafanaWebWorkFlow extends CommonOps {
 
     @Step
     public void loginWithAdmin() {
-        webPage.getUsername_txt().sendKeys(userName);
-        webPage.getPassword_txt().sendKeys(password);
-        webPage.getLogin_btn().click();
+        grafanaPage.getUsername_txt().sendKeys(userName);
+        grafanaPage.getPassword_txt().sendKeys(password);
+        grafanaPage.getLogin_btn().click();
         Uninterruptibles.sleepUninterruptibly(3, TimeUnit.SECONDS);
     }
     @Step
     public void skipPage(){
-        webPage.getSkip_btn().click();
+        grafanaPage.getSkip_btn().click();
     }
 
 }

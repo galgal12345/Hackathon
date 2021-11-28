@@ -1,10 +1,10 @@
-package pageobjects;
+package pageobjects.grafanapages;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 
-public class WebPage {
+public class GrafanaPage {
 
     @FindBy(how = How.XPATH, using = "//div[2]/div/div/input")
     private WebElement username_txt;

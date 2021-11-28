@@ -8,7 +8,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
-import pageobjects.WebPage;
+import pageobjects.grafanapages.GrafanaPage;
 
 public class CommonOps extends Base{
 
@@ -18,7 +18,7 @@ public class CommonOps extends Base{
         driver = new ChromeDriver();
         driver.get(url);
 
-        webPage = PageFactory.initElements(driver, WebPage.class);
+        grafanaPage = PageFactory.initElements(driver, GrafanaPage.class);
     }
 
 
