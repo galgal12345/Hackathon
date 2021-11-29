@@ -17,6 +17,7 @@ public class CommonOps extends Base{
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
         driver.get(url);
+        driver.manage().window().maximize();
 
         grafanaPage = PageFactory.initElements(driver, GrafanaPage.class);
     }

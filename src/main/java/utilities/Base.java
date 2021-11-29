@@ -8,7 +8,6 @@ public class Base {
 
     //WEB
     protected static WebDriver driver;
-
     //URL
     protected static String url = "http://localhost:3000/?orgId=1";
 
@@ -18,4 +17,6 @@ public class Base {
     //XML
     protected static String userName = "admin";
     protected static String password = "admin";
+
+    protected static String expectedHomePageTitle="Welcome to Grafana";
 }
