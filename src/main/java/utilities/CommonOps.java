@@ -5,19 +5,19 @@ import io.appium.java_client.remote.AndroidMobileCapabilityType;
 import io.appium.java_client.remote.MobileCapabilityType;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import io.qameta.allure.Attachment;
+import io.restassured.RestAssured;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Parameters;
 import pageobjects.grafanapages.GrafanaPage;
-import pageobjects.mortgagecalcpages.MortgageCalcPage;
+import pageobjects.mortgagecalcpages.CalculateFragmentPage;
+import pageobjects.mortgagecalcpages.SavedFragmentPage;
 
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.util.logging.Level;
 
 public class CommonOps extends Base {
 
@@ -32,12 +32,14 @@ public class CommonOps extends Base {
                 break;
             case "restAssured": myApiStarter();
                 break;
-            default:
-                // code block
         }
 
+        //WEB_PAGE_FACTORY
         grafanaPage = PageFactory.initElements(webDriver, GrafanaPage.class);
-        mortgageCalcPage = PageFactory.initElements(androidDriver, MortgageCalcPage.class);
+
+        //APPIUM_PAGE_FACTORY
+        calculateFragmentPage = PageFactory.initElements(androidDriver, CalculateFragmentPage.class);
+        savedFragmentPage = PageFactory.initElements(androidDriver, SavedFragmentPage.class);
     }
 
     public void myWebStarter(){
@@ -63,6 +65,10 @@ public class CommonOps extends Base {
 
     }
     private void myApiStarter() {
+
+        RestAssured.baseURI = restAssuredURL;
+        httpRequest = RestAssured.given();
+        httpRequest.header("Content-Type", "application/json");
     }
 
     @AfterClass
