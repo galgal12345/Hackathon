@@ -1,13 +1,20 @@
 package testcases;
 
+import com.google.common.util.concurrent.Uninterruptibles;
+import org.openqa.selenium.By;
 import org.testng.annotations.Test;
+import utilities.CommonOps;
 import workflow.GrafanaWebWorkFlow;
 
-public class GrafanaWebTestCases extends GrafanaWebWorkFlow {
+import java.util.concurrent.TimeUnit;
+
+public class GrafanaWebTestCases extends CommonOps {
 
     @Test
     public void login(){
-        loginWithAdmin();
-        skipPage();
+        GrafanaWebWorkFlow.loginWithAdmin();
+        GrafanaWebWorkFlow.skipPage();
+
+
     }
 }

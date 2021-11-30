@@ -20,7 +20,7 @@ public class GrafanaPage {
     @FindBy(how = How.XPATH, using = "//div[2]/div/form/div[3]/div[2]/button/span")
     private WebElement skip_btn;
 
-    public WebElement getUsername_txt() {
+    public  WebElement getUsername_txt() {
         return username_txt;
     }
 
