@@ -70,7 +70,6 @@
             <groupId>io.rest-assured</groupId>
             <artifactId>rest-assured</artifactId>
             <version>3.3.0</version>
-            <scope>test</scope>
         </dependency>
 
         <dependency>
@@ -97,11 +96,17 @@
             <version>1.11.3</version>
         </dependency>
 
-        <!--        -->
+
         <dependency>
             <groupId>io.appium</groupId>
             <artifactId>java-client</artifactId>
             <version>7.4.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.16</version>
         </dependency>
 
     </dependencies>
