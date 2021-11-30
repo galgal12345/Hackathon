@@ -2,11 +2,9 @@ package workflow;
 
 import com.google.common.util.concurrent.Uninterruptibles;
 import extensions.AllUiActions;
+import extensions.WebUiActions;
 import io.qameta.allure.Step;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.Select;
 import utilities.CommonOps;
-import utilities.Utilities;
 
 import java.util.concurrent.TimeUnit;
 
@@ -14,34 +12,46 @@ public class GrafanaWebWorkFlow extends CommonOps {
 
     @Step
     public static void loginWithAdmin() {
-        grafanaPage.getUsername_txt().sendKeys(userName);
-        grafanaPage.getPassword_txt().sendKeys(password);
-        grafanaPage.getLogin_btn().click();
+        WebUiActions.sendUserName();
+         WebUiActions.sendPassword();
+        AllUiActions.clickOn(grafanaPage.getLogin_btn());
         Uninterruptibles.sleepUninterruptibly(3, TimeUnit.SECONDS);
     }
     @Step
     public static void skipPage(){
-        grafanaPage.getSkip_btn().click();
+        AllUiActions.clickOn(grafanaPage.getSkip_btn());
     }
 
 
     @Step
-    public static void createNewDashboard(){
-//        Uninterruptibles.sleepUninterruptibly(3, TimeUnit.SECONDS);
-//        grafanaPage.getNewBtn().click();
-//        Uninterruptibles.sleepUninterruptibly(3, TimeUnit.SECONDS);
-//        grafanaPage.getCreateDashboardLink().click();
-        Uninterruptibles.sleepUninterruptibly(3, TimeUnit.SECONDS);
-        grafanaPage.getAddPanel().click();
-        Uninterruptibles.sleepUninterruptibly(3, TimeUnit.SECONDS);
-        grafanaPage.getAddEmptyPanelLink().click();
-        Uninterruptibles.sleepUninterruptibly(3, TimeUnit.SECONDS);
-        grafanaPage.getSaveBtn().click();
-        Uninterruptibles.sleepUninterruptibly(3, TimeUnit.SECONDS);
+    public static void createNewDashboard(String dashboardName){
+        AllUiActions.wait(3);
+        AllUiActions.clickOn(grafanaPage.getAddDashboard());
+        AllUiActions.wait(3);
+        AllUiActions.clickOn(grafanaPage.getAddEmptyPanelLink());
+        AllUiActions.wait(3);
+        AllUiActions.clickOn(grafanaPage.getSaveBtn1());
+        AllUiActions.wait(3);
         AllUiActions.clearInput(grafanaPage.getDashboardNameInput());
-        Uninterruptibles.sleepUninterruptibly(3, TimeUnit.SECONDS);
-            }
+        AllUiActions.wait(3);
+        AllUiActions.SendKeys(grafanaPage.getDashboardNameInput(),dashboardName);
+        AllUiActions.wait(2);
+        AllUiActions.clickOn(grafanaPage.getSaveBtn2());
+        AllUiActions.wait(3);
 
+           }
+
+    @Step
+    public static void manageDashboards(){
+        WebUiActions.mouseHover(grafanaPage.getDashboardsTitle(),grafanaPage.getManageBtn());
+
+    }
+
+    @Step
+    public static void researchDashboardByName(String dashboardName){
+        AllUiActions.clickOn(grafanaPage.getSearch());
+        AllUiActions.SendKeys(grafanaPage.getSearchInput(),dashboardName);
+    }
 
 
 }

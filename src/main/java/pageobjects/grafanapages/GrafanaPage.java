@@ -4,13 +4,15 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 
+import java.util.List;
+
 public class GrafanaPage {
 
     @FindBy(how = How.XPATH, using = "//div[2]/div/div/input")
-    private WebElement username_txt;
+    private static WebElement username_txt;
 
     @FindBy(how = How.XPATH, using = "//div[2]/div[2]/div/div/input")
-    private WebElement password_txt;
+    private static WebElement password_txt;
 
     @FindBy(how = How.XPATH, using = "//div[2]/div/div/form/button/span")
     private WebElement login_btn;
@@ -21,38 +23,45 @@ public class GrafanaPage {
     @FindBy(how = How.XPATH, using = "//section/div[2]/div/h1")
     private WebElement homePageTitle;
 
+    @FindBy(how = How.XPATH,using = "/html/body/div/div/nav/div[2]/div[2]/a")
+    private WebElement addDashboard;
 
-    @FindBy(how = How.XPATH,using = "/html/body/div/div/main/div[3]/div/div/div[1]/div/div/div[1]/div/div/div[2]/section/div[2]/div/div[2]/div/div[2]/div[2]/div/a")
-    private WebElement createDashboardLink;
-//
-//    @FindBy(how = How.XPATH,using = "//*[name()='svg']//*[name()='path'][@d='M19,11H13V5a1,1,0,0,0-2,0v6H5a1,1,0,0,0,0,2h6v6a1,1,0,0,0,2,0V13h6a1,1,0,0,0,0-2Z']")
-//    private WebElement newBtn;
-
-    @FindBy(how = How.XPATH,using = "//*[name()='svg']/*[name()='path'][@fill='url(#a)']")
-    private WebElement addPanel;
-
-
-    @FindBy(how = How.XPATH,using = "/html/body/div/div/main/div[3]/div/div/div[1]/div/div/div[1]/div/div/div/div/div/div[2]/div[1]/div[1]")
+    @FindBy(how = How.XPATH,using = "//div[2]/div[1]/div[1]")
     private WebElement addEmptyPanelLink;
 
     @FindBy(how = How.XPATH,using = "//div[2]/div[1]/div[5]/button/div")
-    private WebElement saveBtn;
-
+    private WebElement saveBtn1;
     @FindBy(how = How.XPATH,using = "//form/div[1]/div[2]/div/div/input")
     private WebElement dashboardNameInput;
 
-//    @FindBy(how = How.XPATH,using = "//div[2]/div/div/div[2]/div/div[1]/div/div[1]/div/div[1]/div/div")
-//    public WebElement dataSourceSelect;
+    @FindBy(how = How.CLASS_NAME,using = "css-aja5tg-button")
+    private WebElement saveBtn2;
+
+    @FindBy(how = How.XPATH,using = "//section/div[2]/div/div[1]/div[2]/ul")
+    private WebElement dashboardsItems;
+
+    @FindBy(how = How.XPATH,using = "/html/body/div/div/nav/div[2]/div[3]/a")
+    private WebElement dashboardsTitle;
+
+    @FindBy(how = How.XPATH,using = "/html/body/div/div/nav/div[2]/div[1]/button")
+    private WebElement search;
+
+    @FindBy(how = How.XPATH,using = "/html/body/div/div/main/div[3]/div/div[1]/div[1]/input")
+    private WebElement searchInput;
+
+    @FindBy(how = How.XPATH,using = "/html/body/div/div/main/div[3]/div/div[2]/div[2]/div[1]/div")
+    private WebElement noFoundMessage;
+
+    @FindBy(how = How.XPATH,using = "/html/body/div/div/nav/div[2]/div[3]/ul/li[4]")
+    private WebElement manageBtn;
 
 
 
-
-
-    public WebElement getUsername_txt() {
+    public static WebElement getUsername_txt() {
         return username_txt;
     }
 
-    public WebElement getPassword_txt() {
+    public static WebElement getPassword_txt() {
         return password_txt;
     }
 
@@ -67,28 +76,47 @@ public class GrafanaPage {
         return homePageTitle;
     }
 
-//    public WebElement getNewBtn() {
-//        return newBtn;
-//    }
-
-//    public WebElement getCreateDashboardLink() {
-//        return createDashboardLink;
-//    }
-
-
-    public WebElement getAddPanel() {
-        return addPanel;
+    public WebElement getAddDashboard() {
+        return addDashboard;
     }
 
     public WebElement getAddEmptyPanelLink() {
         return addEmptyPanelLink;
     }
 
-    public WebElement getSaveBtn() {
-        return saveBtn;
+    public WebElement getSaveBtn1() {
+        return saveBtn1;
     }
 
     public WebElement getDashboardNameInput() {
         return dashboardNameInput;
+    }
+
+    public WebElement getSaveBtn2() {
+        return saveBtn2;
+    }
+
+    public WebElement getDashboardsItems() {
+        return dashboardsItems;
+    }
+
+    public WebElement getDashboardsTitle() {
+        return dashboardsTitle;
+    }
+
+    public WebElement getManageBtn() {
+        return manageBtn;
+    }
+
+    public WebElement getSearch() {
+        return search;
+    }
+
+    public WebElement getSearchInput() {
+        return searchInput;
+    }
+
+    public WebElement getNoFoundMessage() {
+        return noFoundMessage;
     }
 }
