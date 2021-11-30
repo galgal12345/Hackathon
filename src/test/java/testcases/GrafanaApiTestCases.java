@@ -24,7 +24,7 @@ public class GrafanaApiTestCases extends CommonOps {
     @Test
     public void test03_delete(){
         int before=  GrafanaApiWorkFlow.setNumUsers("/stats");
-        GrafanaApiWorkFlow.DeleteRequest("/users",3);
+        GrafanaApiWorkFlow.DeleteRequest("/users",2);
         response.prettyPrint();
         int after=GrafanaApiWorkFlow.setNumUsers("/stats");
         assertTrue(after-before==-1);
@@ -32,7 +32,7 @@ public class GrafanaApiTestCases extends CommonOps {
     }
     @Test
     public void test04_update(){
-        GrafanaApiWorkFlow.UpdateRequest("/users",3,"123456");
+        GrafanaApiWorkFlow.UpdateRequest("/users",2,"123456");
         response.prettyPrint();
         Assert.assertTrue(response.statusCode()==200);
 
