@@ -9,5 +9,8 @@
         <module name="Hackathon" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Hackathon" target="8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
