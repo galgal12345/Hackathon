@@ -14,7 +14,7 @@ public class GrafanaApiTestCases extends CommonOps {
     int before = 0;
     int after = 0;
 
-    @Test( description = "Create")
+    @Test( description = "Create User")
     @Description("create user and add to grafana")
     @Parameters({"name", "email", "login", "password", "OrgId"})
     public void test01_post(String name, String email, String login, String password, String OrgId) {
