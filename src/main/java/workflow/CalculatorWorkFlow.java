@@ -9,7 +9,7 @@ import utilities.CommonOps;
 import static org.testng.AssertJUnit.assertTrue;
 
 public class CalculatorWorkFlow extends CommonOps {
-    @Step
+    @Step("operations on a calculator")
     public static void Calculation() {
         AllUiActions.clickOn(calcPage.getBtn_C());
         AllUiActions.clickOn(calcPage.getBtn_1());
@@ -22,8 +22,6 @@ public class CalculatorWorkFlow extends CommonOps {
         AllUiActions.clickOn(calcPage.getBtn_6());
         AllUiActions.clickOn(calcPage.getBtn_equal());
         System.out.println(calcPage.resultNum());
-
-
     }
 
 

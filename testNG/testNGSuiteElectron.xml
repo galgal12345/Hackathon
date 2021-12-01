@@ -6,6 +6,10 @@
     </listeners>
     <test name="ToDoLIstTest">
         <parameter name="platform" value="electron"/>
+        <parameter name="taskName" value="new task"/>
+        <parameter name="taskNameComplete" value="new task"/>
+        <parameter name="taskNameDelete" value="new task"/>
+
         <classes>
             <class name="testcases.ToDoLIstTestCases"></class>
         </classes>

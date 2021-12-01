@@ -34,35 +34,35 @@ public class Base {
 
     protected static Screen screen;
     //URL
-    protected static String url = "http://localhost:3000/?orgId=1";
+    protected static String url;
 
     //PAGES
     protected static GrafanaPage grafanaPage;
 
-    //XML
+    //DB
     protected static String userName ;
     protected static String password ;
-    protected static String dashboardName1="Dashboard1";
-    protected static String dashboardNameAyala="AyalaDashboard";
-    protected static String dashboardNameRami="RamiDashboard";
-    protected static String dashboardNameGil="GilDashboard";
-    protected static String dashboardNotExist="stam";
-    protected static String imagesPath="C:\\Automation\\Hackathon\\Sikuli\\Images";
-    protected static String logoFileName="logo.png";
-    protected static String menuFileName="menu.png";
-    protected static String manageFileName="manage.png";
-    protected static String dashboardsFileName="dashboards.png";
-
+    //XML
+    protected static String dashboardName1=Utilities.getDataXML("dashboardName1");
+    protected static String dashboardNameAyala=Utilities.getDataXML("dashboardNameAyala");
+    protected static String dashboardNameRami=Utilities.getDataXML("dashboardNameRami");
+    protected static String dashboardNameGil=Utilities.getDataXML("dashboardNameGil");
+    protected static String dashboardNotExist=Utilities.getDataXML("dashboardNotExist");
+    protected static String imagesPath=Utilities.getDataXML("imagesPath");
+    protected static String logoFileName=Utilities.getDataXML("logoFileName");
+    protected static String menuFileName=Utilities.getDataXML("menuFileName");
+    protected static String manageFileName=Utilities.getDataXML("manageFileName");
+    protected static String dashboardsFileName=Utilities.getDataXML("dashboardsFileName");
     //EXPECTED
-    protected static String expectedHomePageTitle="Welcome to Grafana";
+    protected static String expectedHomePageTitle=Utilities.getDataXML("expectedHomePageTitle");
 
 
     //--------------------------------------------------------------------
 
     //APPIUM_STARTER
-    protected static String reportDirectory = "reports";
-    protected static String reportFormat = "xml";
-    protected static String testName = "Untitled";
+    protected static String reportDirectory = Utilities.getDataXML("reportDirectory");
+    protected static String reportFormat = Utilities.getDataXML("reportFormat");
+    protected static String testName =Utilities.getDataXML("testName");
     protected static AndroidDriver<AndroidElement> androidDriver = null;
     protected static DesiredCapabilities dc = new DesiredCapabilities();
 
@@ -80,7 +80,7 @@ public class Base {
     //-------------------------------------------------------------------------
 
     //API
-    protected static String restUrl = "http://admin:admin@localhost:3000/api/admin";
+    protected static String restUrl;
     protected static RequestSpecification request;
     protected static Response response;
     protected static JsonPath jp;
@@ -90,7 +90,7 @@ public class Base {
     //DESKTOP_STARTER
 
     //Desktop
-    protected WindowsDriver deskDriver;
+    protected static WindowsDriver deskDriver;
     protected DesiredCapabilities capabilities;
     protected final String calcApp = "Microsoft.WindowsCalculator_8wekyb3d8bbwe!App";
 
@@ -104,9 +104,9 @@ public class Base {
     protected static int sizeList=0;
 
     //--------------------------------------------------------------------------
-
-    protected static String dbUrl = "jdbc:mysql://sql4.freemysqlhosting.net:3306/sql4455326";//Connect URL
-    protected static String user = "sql4455326", pass = "KqUKNu5jPZ";//Database Username & Password
+//SQL
+    protected static String dbUrl =Utilities.getDataXML("dbUrl");//Connect URL
+    protected static String user =Utilities.getDataXML("user"), pass = Utilities.getDataXML("pass");//Database Username & Password
     protected static String query = "select * from login";//Query to Execute
 
 

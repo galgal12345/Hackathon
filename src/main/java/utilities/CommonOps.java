@@ -17,7 +17,6 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.sikuli.script.Screen;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
@@ -29,6 +28,7 @@ import pageobjects.mortgagecalcpages.CalculateFragmentPage;
 import pageobjects.mortgagecalcpages.SavedFragmentPage;
 import pageobjects.todopages.ToDoPage;
 
+import javax.swing.*;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.sql.SQLException;
@@ -61,23 +61,25 @@ public class CommonOps extends Base {
     }
 
     @AfterMethod
-    public void wait_seconds(){
+    public void wait_seconds() {
         AllUiActions.wait(3);
     }
 
 
     @Step("init WEB")
     public void myWebStarter() throws SQLException, ClassNotFoundException {
+        url = Utilities.getDataXML("Url");
         WebDriverManager.chromedriver().setup();
         webDriver = new ChromeDriver();
         webDriver.get(url);
         webDriver.manage().window().maximize();
         action = new Actions(webDriver);
-        screen =new Screen();
+        screen = new Screen();
         //WEB_PAGE_FACTORY
         grafanaPage = PageFactory.initElements(webDriver, GrafanaPage.class);
         ManageDb.myDB();
     }
+
     @Step("init APPIUM")
     public void myAppiumStarter() {
 
@@ -100,18 +102,21 @@ public class CommonOps extends Base {
 
 
     }
+
     @Step("init API")
-    public void myApiStarter(){
+    public void myApiStarter() {
+        restUrl=Utilities.getDataXML("restUrl");
         RestAssured.baseURI = restUrl;
         request = RestAssured.given();
         request.header("Content-Type", "application/json");
     }
+
     @Step("init DESKTOP")
     public void myDesktopStarter() {
-        capabilities=new DesiredCapabilities();
-        capabilities.setCapability("app",calcApp);
+        capabilities = new DesiredCapabilities();
+        capabilities.setCapability("app", calcApp);
         try {
-            deskDriver=new WindowsDriver(new URL("http://127.0.0.1:4723"),capabilities);
+            deskDriver = new WindowsDriver(new URL("http://127.0.0.1:4723"), capabilities);
         } catch (MalformedURLException e) {
             System.out.println("Windows driver issue");
             e.printStackTrace();
@@ -119,20 +124,21 @@ public class CommonOps extends Base {
         deskDriver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         calcPage = PageFactory.initElements(deskDriver, CalcPage.class);
     }
-    @Step("init ELECTRON")
-    public void myElectronStarter(){
 
-        System.setProperty("webdriver.chrome.driver",".\\electrondriver-v3.1.2-win32-x64\\electrondriver.exe");
-        opt=new ChromeOptions();
-        opt.setBinary("C:\\Users\\LENOVO\\AppData\\Local\\Programs\\todolist\\Todolist.exe");
+    @Step("init ELECTRON")
+    public void myElectronStarter() {
+
+        System.setProperty("webdriver.chrome.driver", ".\\electrondriver-v3.1.2-win32-x64\\electrondriver.exe");
+        opt = new ChromeOptions();
+        opt.setBinary("C:\\Users\\User\\AppData\\Local\\Programs\\todolist\\Todolist.exe");
         capabilities = new DesiredCapabilities();
         capabilities.setCapability("chromeOptions", opt);
         capabilities.setBrowserName("chrome");
         webDriver = new ChromeDriver(capabilities);
-       // opt.merge(capabilities);
+        // opt.merge(capabilities);
         action = new Actions(webDriver);
         webDriver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        toDoPage=PageFactory.initElements(webDriver, ToDoPage.class);
+        toDoPage = PageFactory.initElements(webDriver, ToDoPage.class);
     }
 
 
@@ -141,12 +147,15 @@ public class CommonOps extends Base {
 
         if (webDriver != null) webDriver.quit();
         else if (androidDriver != null) androidDriver.quit();
-        else if(deskDriver!=null)deskDriver.quit();   }
+        else if (deskDriver != null) deskDriver.quit();;
+    }
 
 
     @Attachment(value = "Page Screen-Shot", type = "image/png")
     public static byte[] saveScreenshot() {
-        return ((TakesScreenshot) webDriver).getScreenshotAs(OutputType.BYTES);
+        if (Base.webDriver != null || Base.androidDriver != null || Base.deskDriver != null)
+            return ((TakesScreenshot) webDriver).getScreenshotAs(OutputType.BYTES);
+        return null;
     }
 
 
