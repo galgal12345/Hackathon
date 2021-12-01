@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [SuiteElectron]">
+  <listeners>
+    <listener class-name="utilities.Listeners"/>
+  </listeners>
+  <test thread-count="5" verbose="0" name="ToDoLIstTest(failed)">
+    <parameter name="taskNameDelete" value="task1"/>
+    <parameter name="taskNameComplete" value="new task"/>
+    <parameter name="taskName" value="new task"/>
+    <parameter name="platform" value="electron"/>
+    <classes>
+      <class name="testcases.ToDoLIstTestCases">
+        <methods>
+          <include name="startSession"/>
+          <include name="test03_delete" invocation-numbers="0"/>
+          <include name="endSession"/>
+          <include name="wait_seconds"/>
+        </methods>
+      </class> <!-- testcases.ToDoLIstTestCases -->
+    </classes>
+  </test> <!-- ToDoLIstTest(failed) -->
+</suite> <!-- Failed suite [SuiteElectron] -->
