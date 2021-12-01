@@ -55,6 +55,12 @@ public class GrafanaPage {
     @FindBy(how = How.XPATH,using = "/html/body/div/div/nav/div[2]/div[3]/ul/li[4]")
     private WebElement manageBtn;
 
+    @FindBy(how = How.XPATH,using = "//*/div/a/div[2]/div/div[1]/h2")
+    private List<WebElement> dashboardItems;
+
+    @FindBy(how = How.XPATH,using = "//header/div/nav/h1/a")
+    private WebElement dashboardHeader;
+
 
 
     public static WebElement getUsername_txt() {
@@ -118,5 +124,13 @@ public class GrafanaPage {
 
     public WebElement getNoFoundMessage() {
         return noFoundMessage;
+    }
+
+    public List<WebElement> getDashboardItems() {
+        return dashboardItems;
+    }
+
+    public WebElement getDashboardHeader() {
+        return dashboardHeader;
     }
 }

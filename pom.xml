@@ -36,6 +36,11 @@
             <version>1.9.2</version>
         </dependency>
         <dependency>
+            <groupId>sikulix</groupId>
+            <artifactId>sikulix-api</artifactId>
+            <version>2.0.5</version>
+        </dependency>
+        <dependency>
             <groupId>com.opencsv</groupId>
             <artifactId>opencsv</artifactId>
             <version>5.5</version>
@@ -97,7 +102,7 @@
     <dependency>
         <groupId>io.appium</groupId>
         <artifactId>java-client</artifactId>
-        <version>7.2.0</version>
+        <version>7.4.1</version>
     </dependency>
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
@@ -134,4 +139,99 @@
             </plugin>
         </plugins>
     </build>
+    <repositories>
+        <repository>
+            <id>sikulix-atid-college</id>
+            <name>Sikulix Repo ATID</name>
+            <url>https://atidcollege.co.il/downloads/libs</url>
+        </repository>
+    </repositories>
+
+    <profiles>
+        <profile>
+            <id>Web</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-surefire-plugin</artifactId>
+                        <version>2.22.1</version>
+                        <configuration>
+                            <suiteXmlFiles>
+                                <suiteXmlFile>testNG\testNGSuiteWeb.xml</suiteXmlFile>
+                            </suiteXmlFiles>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+        <profile>
+            <id>API</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-surefire-plugin</artifactId>
+                        <version>2.22.1</version>
+                        <configuration>
+                            <suiteXmlFiles>
+                                <suiteXmlFile>testNG\testNGSuiteAPI.xml</suiteXmlFile>
+                            </suiteXmlFiles>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+        <profile>
+            <id>Appium</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-surefire-plugin</artifactId>
+                        <version>2.22.1</version>
+                        <configuration>
+                            <suiteXmlFiles>
+                                <suiteXmlFile>testNG\testNGSuiteAppium.xml</suiteXmlFile>
+                            </suiteXmlFiles>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+        <profile>
+            <id>Desktop</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-surefire-plugin</artifactId>
+                        <version>2.22.1</version>
+                        <configuration>
+                            <suiteXmlFiles>
+                                <suiteXmlFile>testNG\testNGSuiteDesktop.xml</suiteXmlFile>
+                            </suiteXmlFiles>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+        <profile>
+            <id>Electron</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-surefire-plugin</artifactId>
+                        <version>2.22.1</version>
+                        <configuration>
+                            <suiteXmlFiles>
+                                <suiteXmlFile>testNG\testNGSuiteElectron.xml</suiteXmlFile>
+                            </suiteXmlFiles>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
 </project>

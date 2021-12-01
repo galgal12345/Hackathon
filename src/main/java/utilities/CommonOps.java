@@ -1,5 +1,7 @@
 package utilities;
 
+
+import extensions.AllUiActions;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.remote.AndroidMobileCapabilityType;
 import io.appium.java_client.remote.MobileCapabilityType;
@@ -15,8 +17,12 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.PageFactory;
+import org.python.util.Generic;
+import org.sikuli.script.Screen;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Parameters;
 import pageobjects.calcpages.CalcPage;
 import pageobjects.grafanapages.GrafanaPage;
 import pageobjects.mortgagecalcpages.CalculateFragmentPage;
@@ -25,15 +31,16 @@ import pageobjects.mortgagecalcpages.SavedFragmentPage;
 import javax.swing.*;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.sql.SQLException;
 import java.util.concurrent.TimeUnit;
 
 public class CommonOps extends Base {
 
-
+    @Parameters({"platform"})
     @BeforeClass
-    public void startSession() throws MalformedURLException {
+    public void startSession(String value) throws MalformedURLException, SQLException, ClassNotFoundException {
 
-        switch ("restAssured") {
+        switch (value) {
             case "webDriver":
                 myWebStarter();
                 break;
@@ -53,16 +60,23 @@ public class CommonOps extends Base {
 
     }
 
+    @AfterMethod
+    public void wait_seconds(){
+        AllUiActions.wait(3);
+    }
+
 
     @Step("init WEB")
-    public void myWebStarter() {
+    public void myWebStarter() throws SQLException, ClassNotFoundException {
         WebDriverManager.chromedriver().setup();
         webDriver = new ChromeDriver();
         webDriver.get(url);
         webDriver.manage().window().maximize();
         action = new Actions(webDriver);
+        screen =new Screen();
         //WEB_PAGE_FACTORY
         grafanaPage = PageFactory.initElements(webDriver, GrafanaPage.class);
+        ManageDb.myDB();
     }
     @Step("init APPIUM")
     public void myAppiumStarter() {

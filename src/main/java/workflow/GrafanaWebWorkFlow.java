@@ -4,8 +4,12 @@ import com.google.common.util.concurrent.Uninterruptibles;
 import extensions.AllUiActions;
 import extensions.WebUiActions;
 import io.qameta.allure.Step;
+import org.openqa.selenium.WebElement;
+import org.sikuli.script.FindFailed;
 import utilities.CommonOps;
 
+import java.util.List;
+import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
 public class GrafanaWebWorkFlow extends CommonOps {
@@ -51,6 +55,25 @@ public class GrafanaWebWorkFlow extends CommonOps {
     public static void researchDashboardByName(String dashboardName){
         AllUiActions.clickOn(grafanaPage.getSearch());
         AllUiActions.SendKeys(grafanaPage.getSearchInput(),dashboardName);
+    }
+
+    @Step
+    public static void clickOnImage(String path,String imageName) throws FindFailed {
+        screen.click(path+"/"+imageName);
+    }
+
+
+    @Step
+    public static void hoverOnImage(String path,String imageName) throws FindFailed {
+        screen.hover(path+"/"+imageName);
+    }
+
+    @Step
+    public static WebElement getRandomDashboard(List<WebElement> list){
+        Random rnd=new Random();
+        int i=rnd.nextInt(list.size());
+
+        return list.get(i);
     }
 
 

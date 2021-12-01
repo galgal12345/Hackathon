@@ -1,16 +1,19 @@
 package utilities;
 
+
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.windows.WindowsDriver;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
+
 import org.json.simple.JSONObject;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.sikuli.script.Screen;
 import pageobjects.calcpages.CalcPage;
 import pageobjects.grafanapages.GrafanaPage;
 import pageobjects.mortgagecalcpages.CalculateFragmentPage;
@@ -27,6 +30,8 @@ public class Base {
 
     //
     protected static Actions action;
+
+    protected static Screen screen;
     //URL
     protected static String url = "http://localhost:3000/?orgId=1";
 
@@ -34,13 +39,18 @@ public class Base {
     protected static GrafanaPage grafanaPage;
 
     //XML
-    protected static String userName = "admin";
-    protected static String password = "admin";
+    protected static String userName ;
+    protected static String password ;
     protected static String dashboardName1="Dashboard1";
     protected static String dashboardNameAyala="AyalaDashboard";
     protected static String dashboardNameRami="RamiDashboard";
     protected static String dashboardNameGil="GilDashboard";
     protected static String dashboardNotExist="stam";
+    protected static String imagesPath="C:\\Automation\\Hackathon\\Sikuli\\Images";
+    protected static String logoFileName="logo.png";
+    protected static String menuFileName="menu.png";
+    protected static String manageFileName="manage.png";
+    protected static String dashboardsFileName="dashboards.png";
 
     //EXPECTED
     protected static String expectedHomePageTitle="Welcome to Grafana";
@@ -87,6 +97,12 @@ public class Base {
 
     //ELECTRON
     public ChromeOptions opt;
+
+
+    protected static String dbUrl = "jdbc:mysql://sql4.freemysqlhosting.net:3306/sql4455326";//Connect URL
+    protected static String user = "sql4455326", pass = "KqUKNu5jPZ";//Database Username & Password
+    protected static String query = "select * from login";//Query to Execute
+    protected static String myUsername, myPassword;
 
 
 }

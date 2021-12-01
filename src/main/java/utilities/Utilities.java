@@ -5,7 +5,11 @@ import io.qameta.allure.Step;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.DataProvider;
+import org.w3c.dom.Document;
 
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import java.io.File;
 import java.io.FileReader;
 import java.util.Iterator;
 import java.util.List;
@@ -45,6 +49,7 @@ public class Utilities{
             fileNotFoundException.printStackTrace();
         }
     }
+
 
 
 }
