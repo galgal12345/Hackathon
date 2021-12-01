@@ -13,6 +13,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.sikuli.script.Screen;
 import pageobjects.calcpages.CalcPage;
 import pageobjects.grafanapages.GrafanaPage;
@@ -107,7 +108,7 @@ public class Base {
     protected static String dbUrl = "jdbc:mysql://sql4.freemysqlhosting.net:3306/sql4455326";//Connect URL
     protected static String user = "sql4455326", pass = "KqUKNu5jPZ";//Database Username & Password
     protected static String query = "select * from login";//Query to Execute
-    protected static String myUsername, myPassword;
+
 
 
 

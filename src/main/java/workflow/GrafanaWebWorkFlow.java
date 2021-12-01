@@ -14,20 +14,21 @@ import java.util.concurrent.TimeUnit;
 
 public class GrafanaWebWorkFlow extends CommonOps {
 
-    @Step
-    public static void loginWithAdmin() {
+    @Step("login with admin")
+        public static void loginWithAdmin() {
         WebUiActions.sendUserName();
          WebUiActions.sendPassword();
         AllUiActions.clickOn(grafanaPage.getLogin_btn());
         Uninterruptibles.sleepUninterruptibly(3, TimeUnit.SECONDS);
     }
-    @Step
+
+    @Step("Skip reset password")
     public static void skipPage(){
         AllUiActions.clickOn(grafanaPage.getSkip_btn());
     }
 
 
-    @Step
+    @Step("Create new dashboard")
     public static void createNewDashboard(String dashboardName){
         AllUiActions.wait(3);
         AllUiActions.clickOn(grafanaPage.getAddDashboard());
@@ -45,30 +46,30 @@ public class GrafanaWebWorkFlow extends CommonOps {
 
            }
 
-    @Step
+    @Step("Navigate to manage page")
     public static void manageDashboards(){
         WebUiActions.mouseHover(grafanaPage.getDashboardsTitle(),grafanaPage.getManageBtn());
 
     }
 
-    @Step
+    @Step("Research dashboard by name")
     public static void researchDashboardByName(String dashboardName){
         AllUiActions.clickOn(grafanaPage.getSearch());
         AllUiActions.SendKeys(grafanaPage.getSearchInput(),dashboardName);
     }
 
-    @Step
+    @Step("Click on image, by getting the image path")
     public static void clickOnImage(String path,String imageName) throws FindFailed {
         screen.click(path+"/"+imageName);
     }
 
 
-    @Step
+    @Step("Hover on image, by getting the image path")
     public static void hoverOnImage(String path,String imageName) throws FindFailed {
         screen.hover(path+"/"+imageName);
     }
 
-    @Step
+    @Step("return a random dashboard element from list of dashboards")
     public static WebElement getRandomDashboard(List<WebElement> list){
         Random rnd=new Random();
         int i=rnd.nextInt(list.size());

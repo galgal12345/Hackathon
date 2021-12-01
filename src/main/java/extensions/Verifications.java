@@ -28,6 +28,10 @@ public class Verifications<T> {
     public static void verifyTrueMsg(String message,boolean condition){
         assertTrue(message,condition);
     }
+    @Step("verify true softAssert")
+    public static void softAssertTrue(boolean condition){
+        softAssert.assertTrue(condition);
+    }
     @Step("verify string  softAssert")
     public static void softAssert(String actual,String expected){
         softAssert.assertEquals(actual,expected);
@@ -40,7 +44,6 @@ public class Verifications<T> {
     public static void softAssert(boolean actual,boolean expected){
         softAssert.assertEquals(actual,expected);
     }
-
     @Step("verify assertAll")
     public static void assertAll(){
         softAssert.assertAll();

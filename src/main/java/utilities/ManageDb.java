@@ -1,10 +1,8 @@
 package utilities;
 
-import org.testng.annotations.Test;
-
 import java.sql.*;
 
-public class ManageDb extends Base{
+public class ManageDb extends Base {
 
 
     public static void myDB() throws ClassNotFoundException, SQLException {
@@ -20,11 +18,6 @@ public class ManageDb extends Base{
         }
         con.close();
 
-    }
-    @Test
-    public void test() throws SQLException, ClassNotFoundException {
-        myDB();
-        System.out.println(userName+password);
     }
 
 

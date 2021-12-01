@@ -29,7 +29,7 @@ public class GrafanaApiTestCases extends CommonOps {
     public void test02_update(){
         numOfUsers=GrafanaApiWorkFlow.setNumUsers("/stats");
         System.out.println(numOfUsers);
-        GrafanaApiWorkFlow.UpdateRequest("/users",11,"123456");
+        GrafanaApiWorkFlow.UpdateRequest("/users",0,"123456");
         Verifications.verifyTrue(response.statusCode()==200);
         System.out.println(numOfUsers);
 
@@ -39,7 +39,7 @@ public class GrafanaApiTestCases extends CommonOps {
         numOfUsers=GrafanaApiWorkFlow.setNumUsers("/stats");
         before= numOfUsers;
         System.out.println(before);
-        GrafanaApiWorkFlow.DeleteRequest("/users",numOfUsers);
+        GrafanaApiWorkFlow.DeleteRequest("/users",1);
         after=GrafanaApiWorkFlow.setNumUsers("/stats");
         System.out.println(after);
         Verifications.verifyTrue(after-before== -1);

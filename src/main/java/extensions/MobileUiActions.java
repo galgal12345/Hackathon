@@ -7,7 +7,6 @@ import io.appium.java_client.touch.WaitOptions;
 import io.appium.java_client.touch.offset.ElementOption;
 import io.appium.java_client.touch.offset.PointOption;
 import org.openqa.selenium.Dimension;
-import utilities.Base;
 import utilities.CommonOps;
 
 import java.time.Duration;

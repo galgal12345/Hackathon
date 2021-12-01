@@ -11,34 +11,34 @@ import java.util.concurrent.TimeUnit;
 public abstract class AllUiActions {
 
 
-    @Step
+    @Step("get an element text")
     public static String getText(WebElement element){
         return element.getText();
     }
 
-    @Step
+    @Step("clear input text ")
     public static void clearInput(WebElement element){
 
         element.clear();
     }
 
-    @Step
+    @Step("send value to an input element")
     public static void SendKeys(WebElement element,String value){
 
         element.sendKeys(value);
     }
 
-    @Step
+    @Step("clicking on an element")
     public static void clickOn(WebElement element){
         element.click();
     }
 
-    @Step
+    @Step("waiting n seconds")
     public static void wait(int seconds){
         Uninterruptibles.sleepUninterruptibly(seconds, TimeUnit.SECONDS);
 
     }
-    @Step
+    @Step("checking if a value exist in a WebElement list ")
     public static boolean ifExist(List<WebElement> list,String value){
         for (int i = 0; i <list.size() ; i++) {
             if (getText(list.get(0)).equals(value))

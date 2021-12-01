@@ -24,7 +24,7 @@ public class MortgageCalcTestCases extends CommonOps {
     public void savedFragment(){
 
         MortgageCalcWorkFlow.checkDataOnSavedFragment();
-        //MortgageCalcWorkFlow.deleteOnSavedFragment();
+        MortgageCalcWorkFlow.deleteOnSavedFragment();
     }
 
 

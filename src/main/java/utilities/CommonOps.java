@@ -17,6 +17,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.sikuli.script.Screen;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
@@ -28,7 +29,6 @@ import pageobjects.mortgagecalcpages.CalculateFragmentPage;
 import pageobjects.mortgagecalcpages.SavedFragmentPage;
 import pageobjects.todopages.ToDoPage;
 
-import javax.swing.*;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.sql.SQLException;
@@ -124,7 +124,7 @@ public class CommonOps extends Base {
 
         System.setProperty("webdriver.chrome.driver",".\\electrondriver-v3.1.2-win32-x64\\electrondriver.exe");
         opt=new ChromeOptions();
-        opt.setBinary("C:\\Users\\User\\AppData\\Local\\Programs\\todolist\\Todolist.exe");
+        opt.setBinary("C:\\Users\\LENOVO\\AppData\\Local\\Programs\\todolist\\Todolist.exe");
         capabilities = new DesiredCapabilities();
         capabilities.setCapability("chromeOptions", opt);
         capabilities.setBrowserName("chrome");

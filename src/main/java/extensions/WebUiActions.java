@@ -7,17 +7,17 @@ import utilities.Base;
 
 public class WebUiActions extends Base {
 
-    @Step
+    @Step("send username value")
     public static void sendUserName() {
        AllUiActions.SendKeys(GrafanaPage.getUsername_txt(),userName);
     }
 
-    @Step
+    @Step("send password value")
     public static void sendPassword(){
 
         AllUiActions.SendKeys(GrafanaPage.getPassword_txt(),password);
     }
-    @Step
+    @Step("Mouse hover on element")
     public static void mouseHover(WebElement element1,WebElement element2){
 
 
