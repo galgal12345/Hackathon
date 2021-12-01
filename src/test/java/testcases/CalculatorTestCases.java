@@ -1,5 +1,6 @@
 package testcases;
 
+import extensions.Verifications;
 import org.testng.annotations.Test;
 import utilities.CommonOps;
 import workflow.CalculatorWorkFlow;
@@ -10,8 +11,7 @@ public class CalculatorTestCases extends CommonOps {
     @Test
     public void test01() {
         CalculatorWorkFlow.Calculation();
-
-        assertTrue("worng cala",calcPage.resultNum() == 120);
+        Verifications.verifyTrueMsg("worng in calac",calcPage.resultNum()==120);
     }
 
 }

@@ -26,6 +26,7 @@ import pageobjects.calcpages.CalcPage;
 import pageobjects.grafanapages.GrafanaPage;
 import pageobjects.mortgagecalcpages.CalculateFragmentPage;
 import pageobjects.mortgagecalcpages.SavedFragmentPage;
+import pageobjects.todopages.ToDoPage;
 
 import javax.swing.*;
 import java.net.MalformedURLException;
@@ -106,25 +107,32 @@ public class CommonOps extends Base {
         request.header("Content-Type", "application/json");
     }
     @Step("init DESKTOP")
-    public void myDesktopStarter() throws MalformedURLException {
+    public void myDesktopStarter() {
         capabilities=new DesiredCapabilities();
         capabilities.setCapability("app",calcApp);
-        deskDriver=new WindowsDriver(new URL("http://127.0.0.1:4723"),capabilities);
+        try {
+            deskDriver=new WindowsDriver(new URL("http://127.0.0.1:4723"),capabilities);
+        } catch (MalformedURLException e) {
+            System.out.println("Windows driver issue");
+            e.printStackTrace();
+        }
         deskDriver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         calcPage = PageFactory.initElements(deskDriver, CalcPage.class);
     }
     @Step("init ELECTRON")
     public void myElectronStarter(){
-        System.setProperty("webdriver.chrome.driver","C:\\Automation\\electrondriver-v3.1.2-win32-x64\\electrondriver.exe");
-        opt=new ChromeOptions();
-        opt.setBinary("C:\\Automation\\TodoList-Setup.exe");
 
+        System.setProperty("webdriver.chrome.driver",".\\electrondriver-v3.1.2-win32-x64\\electrondriver.exe");
+        opt=new ChromeOptions();
+        opt.setBinary("C:\\Users\\User\\AppData\\Local\\Programs\\todolist\\Todolist.exe");
         capabilities = new DesiredCapabilities();
         capabilities.setCapability("chromeOptions", opt);
         capabilities.setBrowserName("chrome");
-        webDriver = new ChromeDriver(opt);
-        opt.merge(capabilities);
-        webDriver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        webDriver = new ChromeDriver(capabilities);
+       // opt.merge(capabilities);
+        action = new Actions(webDriver);
+        webDriver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        toDoPage=PageFactory.initElements(webDriver, ToDoPage.class);
     }
 
 
@@ -133,8 +141,7 @@ public class CommonOps extends Base {
 
         if (webDriver != null) webDriver.quit();
         else if (androidDriver != null) androidDriver.quit();
-
-    }
+        else if(deskDriver!=null)deskDriver.quit();   }
 
 
     @Attachment(value = "Page Screen-Shot", type = "image/png")

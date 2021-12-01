@@ -38,7 +38,6 @@ public abstract class AllUiActions {
         Uninterruptibles.sleepUninterruptibly(seconds, TimeUnit.SECONDS);
 
     }
-
     @Step
     public static boolean ifExist(List<WebElement> list,String value){
         for (int i = 0; i <list.size() ; i++) {
@@ -48,7 +47,4 @@ public abstract class AllUiActions {
         return false;
 
     }
-
-
-
 }

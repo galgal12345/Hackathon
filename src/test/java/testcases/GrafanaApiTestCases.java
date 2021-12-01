@@ -1,5 +1,6 @@
 package testcases;
 
+import extensions.Verifications;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import utilities.CommonOps;
@@ -8,33 +9,40 @@ import workflow.GrafanaApiWorkFlow;
 import static org.testng.AssertJUnit.assertTrue;
 
 public class GrafanaApiTestCases extends CommonOps {
-   // @Test
-    //public void test01(){
-       // GrafanaApiWorkFlow.GetRequest("/stats");
-       // response.prettyPrint();
-   // }
+    int before=0;
+    int after=0;
     @Test
-    public void test02_post(){
-     int before=  GrafanaApiWorkFlow.setNumUsers("/stats");
-        GrafanaApiWorkFlow.PostRequest("/users","User6","user6@graf.com","user6","userpassword",1);
+    public void test01_get(){
+        GrafanaApiWorkFlow.GetRequest("/stats");
         response.prettyPrint();
-        int after=GrafanaApiWorkFlow.setNumUsers("/stats");
-        assertTrue(after-before==1);
+   }
+    @Test
+    public void test01_post(){
+      before= GrafanaApiWorkFlow.setNumUsers("/stats");
+        GrafanaApiWorkFlow.PostRequest("/users","User10","useruser10@graf.com","useruser10","userpassword",1);
+         after=GrafanaApiWorkFlow.setNumUsers("/stats");
+        Verifications.verifyTrue(after-before==1);
+        System.out.println(numOfUsers);
+    }
+
+    @Test
+    public void test02_update(){
+        numOfUsers=GrafanaApiWorkFlow.setNumUsers("/stats");
+        System.out.println(numOfUsers);
+        GrafanaApiWorkFlow.UpdateRequest("/users",11,"123456");
+        Verifications.verifyTrue(response.statusCode()==200);
+        System.out.println(numOfUsers);
+
     }
     @Test
     public void test03_delete(){
-        int before=  GrafanaApiWorkFlow.setNumUsers("/stats");
-        GrafanaApiWorkFlow.DeleteRequest("/users",2);
-        response.prettyPrint();
-        int after=GrafanaApiWorkFlow.setNumUsers("/stats");
-        assertTrue(after-before==-1);
-
+        numOfUsers=GrafanaApiWorkFlow.setNumUsers("/stats");
+        before= numOfUsers;
+        System.out.println(before);
+        GrafanaApiWorkFlow.DeleteRequest("/users",numOfUsers);
+        after=GrafanaApiWorkFlow.setNumUsers("/stats");
+        System.out.println(after);
+        Verifications.verifyTrue(after-before== -1);
     }
-    @Test
-    public void test04_update(){
-        GrafanaApiWorkFlow.UpdateRequest("/users",2,"123456");
-        response.prettyPrint();
-        Assert.assertTrue(response.statusCode()==200);
 
-    }
 }

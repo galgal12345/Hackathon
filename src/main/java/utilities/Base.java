@@ -96,7 +96,8 @@ public class Base {
     //-------------------------------------------------------------------------
 
     //ELECTRON
-    public ChromeOptions opt;
+    protected static ChromeOptions opt;
+    protected static int sizeList=0;
 
 
     protected static String dbUrl = "jdbc:mysql://sql4.freemysqlhosting.net:3306/sql4455326";//Connect URL
