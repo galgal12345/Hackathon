@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="SuiteElectron" parallel="false">
+    <listeners>
+        <listener class-name="utilities.Listeners"/>
+    </listeners>
     <test name="ToDoLIstTest">
         <parameter name="platform" value="electron"/>
+        <parameter name="taskName" value="new task"/>
+        <parameter name="taskNameComplete" value="new task"/>
+        <parameter name="taskNameDelete" value="new task"/>
+
         <classes>
             <class name="testcases.ToDoLIstTestCases"></class>
         </classes>

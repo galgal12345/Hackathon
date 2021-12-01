@@ -94,7 +94,7 @@ public class GrafanaWebTestCases extends CommonOps {
     }
 
     @Test(priority = 5)
-    public void filterByStars(){
+    public void verifyDashboardName(){
 
         AllUiActions.clickOn(grafanaPage.getDashboardsTitle());
         AllUiActions.clickOn(grafanaPage.getManageBtn());
@@ -102,8 +102,6 @@ public class GrafanaWebTestCases extends CommonOps {
         WebElement randomElement=GrafanaWebWorkFlow.getRandomDashboard(grafanaPage.getDashboardItems());
         String expected=AllUiActions.getText(randomElement) ;////we need it for the assertion, so we have to save it cause later will disappear
         AllUiActions.clickOn(randomElement);
-
-
         //Verification
         Assert.assertEquals(AllUiActions.getText(grafanaPage.getDashboardHeader()),expected);
 

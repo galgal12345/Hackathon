@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<env>
+<!--    WEB-->
+    <Url>http://localhost:3000/?orgId=1</Url>
+
+<!--    APPIUM-->
+    <dashboardName1>Dashboard1</dashboardName1>
+    <dashboardNameAyala>AyalaDashboard</dashboardNameAyala>
+    <dashboardNameRami>RamiDashboard</dashboardNameRami>
+    <dashboardName1>GilDashboard</dashboardName1>
+    <dashboardNameGil>GilDashboard</dashboardNameGil>
+    <dashboardNotExist>stam</dashboardNotExist>
+    <imagesPath>C:\\Automation\\Hackathon\\Sikuli\\Images</imagesPath>
+    <logoFileName>logo.png</logoFileName>
+    <menuFileName>menu.png</menuFileName>
+    <manageFileName>manage.png</manageFileName>
+    <dashboardsFileName>dashboards.png</dashboardsFileName>
+<!--EXPECTED-->
+    <expectedHomePageTitle>Welcome to Grafana</expectedHomePageTitle>
+    <!--    API-->
+    <restUrl>http://admin:admin@localhost:3000/api/admin</restUrl>
+
+<!--    APPIUM_STARTER-->
+    <reportDirectory>reports</reportDirectory>
+    <reportFormat>xml</reportFormat>
+    <testName>Untitled</testName>
+<!--electron-->
+    <expectedCompleteList>label_5i8SP completed_bHv-Q</expectedCompleteList>
+<!--    SQL-->
+    <dbUrl>jdbc:mysql://sql4.freemysqlhosting.net:3306/sql4455326</dbUrl>
+    <user>sql4455326</user>
+    <pass>KqUKNu5jPZ</pass>
+</env>

@@ -7,23 +7,23 @@ import utilities.CommonOps;
 public class GrafanaApiWorkFlow extends CommonOps {
 
 
-    @Step
+    @Step("get properties on admit")
     public static void GetRequest(String url) {
         ApiUiActions.Get(url);
     }
 
-    @Step
-    public static void PostRequest(String url, String name, String email,String login, String password,int OrgId) {
+    @Step("add user to grafana")
+    public static void PostRequest( String name, String email,String login, String password,int OrgId,String url) {
         ApiUiActions.Post(url,name,email,login,password,OrgId);
         response.prettyPrint();
     }
 
-    @Step
+    @Step("delete user from grafana")
     public static void DeleteRequest(String url,int Id) {
         ApiUiActions.Delete(url,Id);
         response.prettyPrint();
     }
-    @Step
+    @Step("update password")
     public static void UpdateRequest(String url,int Id,String pasword) {
         ApiUiActions.Update(url,Id,pasword);
         response.prettyPrint();

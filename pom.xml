@@ -108,7 +108,7 @@
         <dependency>
             <groupId>io.appium</groupId>
             <artifactId>java-client</artifactId>
-            <version>7.4.1</version>
+            <version>7.6.0</version>
         </dependency>
 
 
@@ -126,8 +126,8 @@
         </dependency>
 
         <dependency>
-            <groupId>sikulix</groupId>
-            <artifactId>sikulix-api</artifactId>
+            <groupId>com.sikulix</groupId>
+            <artifactId>sikulixapi</artifactId>
             <version>2.0.5</version>
         </dependency>
     </dependencies>

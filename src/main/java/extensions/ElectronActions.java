@@ -6,7 +6,7 @@ import org.openqa.selenium.WebElement ;
 import utilities.Base;
 
 public class ElectronActions extends Base {
-    @Step
+    @Step()
     public static void mouseHover(WebElement element){
         action.moveToElement(element);
         action.build().perform();

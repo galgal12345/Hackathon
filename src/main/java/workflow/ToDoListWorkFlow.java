@@ -10,19 +10,19 @@ import pageobjects.todopages.ToDoPage;
 import utilities.CommonOps;
 
 public class ToDoListWorkFlow extends CommonOps {
-    @Step
+    @Step("creat task and add to list")
     public static void createTask(String task) {
         AllUiActions.SendKeys(toDoPage.getCreate_txt(),task);
         ElectronActions.SendKeysReturn();
         sizeList = getSizeList();
     }
 
-    @Step
+    @Step("get num of list")
     public static int getSizeList() {
         return toDoPage.getList_task().size();
     }
 
-    @Step
+    @Step("Search for a task by name")
     public static WebElement findTask(String task) {
         WebElement getTask;
         String text;
@@ -42,7 +42,7 @@ public class ToDoListWorkFlow extends CommonOps {
         if (findTask != null) {
             ElectronActions.mouseHover(findTask);
             AllUiActions.clickOn(findTask.findElement(By.xpath("div/div//*[@class='destroy_19w1q']//*[name()='path']")));
-            AllUiActions.wait(7);
+            AllUiActions.wait(3);
             sizeList = getSizeList();
             return findTask;
         }
@@ -56,7 +56,7 @@ public class ToDoListWorkFlow extends CommonOps {
         WebElement findTask = findTask(task);
         if (findTask != null) {
             AllUiActions.clickOn(findTask.findElement(By.xpath("div/div/label")));
-            AllUiActions.wait(7);
+            AllUiActions.wait(3);
             return findTask.findElement(By.xpath("div/div/div/label")).getAttribute("class");
         }
         System.out.println("There is no such task on the list");
