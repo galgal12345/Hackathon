@@ -1,0 +1,94 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "testcases.GrafanaWebTestCases",
+    "children" : [ {
+      "name" : "login",
+      "uid" : "c12d04c0b6b82d25",
+      "parentUid" : "73c222f9850bddb19aa372207d5508d5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638383693877,
+        "stop" : 1638383697872,
+        "duration" : 3995
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ "webDriver" ]
+    }, {
+      "name" : "createNewDashboard",
+      "uid" : "cc421e3d869c0c14",
+      "parentUid" : "73c222f9850bddb19aa372207d5508d5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638383700993,
+        "stop" : 1638383800946,
+        "duration" : 99953
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ "webDriver" ]
+    }, {
+      "name" : "searchDashboardNotExist",
+      "uid" : "29843415e8ff5753",
+      "parentUid" : "73c222f9850bddb19aa372207d5508d5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638383803976,
+        "stop" : 1638383804287,
+        "duration" : 311
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ "webDriver" ]
+    }, {
+      "name" : "homePageLogo",
+      "uid" : "76c793d92ce3fcf",
+      "parentUid" : "73c222f9850bddb19aa372207d5508d5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638383807310,
+        "stop" : 1638383824195,
+        "duration" : 16885
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ "webDriver" ]
+    }, {
+      "name" : "verifyDashboardName",
+      "uid" : "53eed19705569a2a",
+      "parentUid" : "73c222f9850bddb19aa372207d5508d5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638383827211,
+        "stop" : 1638383830700,
+        "duration" : 3489
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ "webDriver" ]
+    } ],
+    "uid" : "testcases.GrafanaWebTestCases"
+  } ]
+}

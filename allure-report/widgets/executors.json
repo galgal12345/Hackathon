@@ -1,0 +1,10 @@
+[ {
+  "name" : "Jenkins",
+  "type" : "jenkins",
+  "url" : "http://localhost:8080/",
+  "buildOrder" : 1,
+  "buildName" : "Mortgage Calc Appium Test #1",
+  "buildUrl" : "http://localhost:8080/job/Mortgage%20Calc%20Test/1/",
+  "reportName" : "AllureReport",
+  "reportUrl" : "http://localhost:8080/job/Mortgage%20Calc%20Test/1/allure"
+} ]

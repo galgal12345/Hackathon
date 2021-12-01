@@ -1,0 +1,51 @@
+[ {
+  "uid" : "29843415e8ff5753",
+  "name" : "Checking the search management",
+  "time" : {
+    "start" : 1638383803976,
+    "stop" : 1638383804287,
+    "duration" : 311
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "53eed19705569a2a",
+  "name" : "Verify dashboard name",
+  "time" : {
+    "start" : 1638383827211,
+    "stop" : 1638383830700,
+    "duration" : 3489
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "76c793d92ce3fcf",
+  "name" : "Homepage logo",
+  "time" : {
+    "start" : 1638383807310,
+    "stop" : 1638383824195,
+    "duration" : 16885
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "cc421e3d869c0c14",
+  "name" : "Ensure dashboard was created",
+  "time" : {
+    "start" : 1638383700993,
+    "stop" : 1638383800946,
+    "duration" : 99953
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c12d04c0b6b82d25",
+  "name" : "Login",
+  "time" : {
+    "start" : 1638383693877,
+    "stop" : 1638383697872,
+    "duration" : 3995
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

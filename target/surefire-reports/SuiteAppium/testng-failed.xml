@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [SuiteAppium]">
+  <test thread-count="5" verbose="0" name="MortgageCalcTest(failed)">
+    <parameter name="platform" value="androidDriver"/>
+    <classes>
+      <class name="testcases.MortgageCalcTestCases">
+        <methods>
+          <include name="startSession"/>
+          <include name="calcFragment"/>
+          <include name="savedFragment"/>
+          <include name="endSession"/>
+          <include name="wait_seconds"/>
+        </methods>
+      </class> <!-- testcases.MortgageCalcTestCases -->
+    </classes>
+  </test> <!-- MortgageCalcTest(failed) -->
+</suite> <!-- Failed suite [SuiteAppium] -->

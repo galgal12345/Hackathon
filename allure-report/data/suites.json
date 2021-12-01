@@ -1,0 +1,102 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "SuiteWeb",
+    "children" : [ {
+      "name" : "GrafanaWebTest",
+      "children" : [ {
+        "name" : "testcases.GrafanaWebTestCases",
+        "children" : [ {
+          "name" : "Login",
+          "uid" : "c12d04c0b6b82d25",
+          "parentUid" : "923d4fc0ee7cb520425feed34608d33d",
+          "status" : "passed",
+          "time" : {
+            "start" : 1638383693877,
+            "stop" : 1638383697872,
+            "duration" : 3995
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ "webDriver" ]
+        }, {
+          "name" : "Ensure dashboard was created",
+          "uid" : "cc421e3d869c0c14",
+          "parentUid" : "923d4fc0ee7cb520425feed34608d33d",
+          "status" : "passed",
+          "time" : {
+            "start" : 1638383700993,
+            "stop" : 1638383800946,
+            "duration" : 99953
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ "webDriver" ]
+        }, {
+          "name" : "Checking the search management",
+          "uid" : "29843415e8ff5753",
+          "parentUid" : "923d4fc0ee7cb520425feed34608d33d",
+          "status" : "passed",
+          "time" : {
+            "start" : 1638383803976,
+            "stop" : 1638383804287,
+            "duration" : 311
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ "webDriver" ]
+        }, {
+          "name" : "Homepage logo",
+          "uid" : "76c793d92ce3fcf",
+          "parentUid" : "923d4fc0ee7cb520425feed34608d33d",
+          "status" : "passed",
+          "time" : {
+            "start" : 1638383807310,
+            "stop" : 1638383824195,
+            "duration" : 16885
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ "webDriver" ]
+        }, {
+          "name" : "Verify dashboard name",
+          "uid" : "53eed19705569a2a",
+          "parentUid" : "923d4fc0ee7cb520425feed34608d33d",
+          "status" : "passed",
+          "time" : {
+            "start" : 1638383827211,
+            "stop" : 1638383830700,
+            "duration" : 3489
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ "webDriver" ]
+        } ],
+        "uid" : "923d4fc0ee7cb520425feed34608d33d"
+      } ],
+      "uid" : "788ee013636e297f4901032c590b605b"
+    } ],
+    "uid" : "4c022a8fccfa17bc6f87e09e2de72686"
+  } ]
+}

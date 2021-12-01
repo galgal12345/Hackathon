@@ -1,0 +1,90 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "Login",
+    "uid" : "c12d04c0b6b82d25",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1638383693877,
+      "stop" : 1638383697872,
+      "duration" : 3995
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "newPassed" : false,
+    "newBroken" : false,
+    "retriesCount" : 0,
+    "retriesStatusChange" : false,
+    "parameters" : [ "webDriver" ]
+  }, {
+    "name" : "Ensure dashboard was created",
+    "uid" : "cc421e3d869c0c14",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1638383700993,
+      "stop" : 1638383800946,
+      "duration" : 99953
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "newPassed" : false,
+    "newBroken" : false,
+    "retriesCount" : 0,
+    "retriesStatusChange" : false,
+    "parameters" : [ "webDriver" ]
+  }, {
+    "name" : "Checking the search management",
+    "uid" : "29843415e8ff5753",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1638383803976,
+      "stop" : 1638383804287,
+      "duration" : 311
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "newPassed" : false,
+    "newBroken" : false,
+    "retriesCount" : 0,
+    "retriesStatusChange" : false,
+    "parameters" : [ "webDriver" ]
+  }, {
+    "name" : "Homepage logo",
+    "uid" : "76c793d92ce3fcf",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1638383807310,
+      "stop" : 1638383824195,
+      "duration" : 16885
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "newPassed" : false,
+    "newBroken" : false,
+    "retriesCount" : 0,
+    "retriesStatusChange" : false,
+    "parameters" : [ "webDriver" ]
+  }, {
+    "name" : "Verify dashboard name",
+    "uid" : "53eed19705569a2a",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1638383827211,
+      "stop" : 1638383830700,
+      "duration" : 3489
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "newPassed" : false,
+    "newBroken" : false,
+    "retriesCount" : 0,
+    "retriesStatusChange" : false,
+    "parameters" : [ "webDriver" ]
+  } ]
+}

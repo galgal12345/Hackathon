@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]">
+  <test thread-count="5" verbose="0" name="GrafanaApiTest(failed)">
+    <parameter name="platform" value="restAssured"/>
+    <classes>
+      <class name="testcases.GrafanaApiTestCases">
+        <methods>
+          <include name="startSession"/>
+          <include name="test04_update"/>
+          <include name="endSession"/>
+          <include name="test02_post"/>
+          <include name="wait_seconds"/>
+          <include name="test03_delete"/>
+        </methods>
+      </class> <!-- testcases.GrafanaApiTestCases -->
+    </classes>
+  </test> <!-- GrafanaApiTest(failed) -->
+  <test thread-count="5" verbose="0" name="GrafanaWebTest(failed)">
+    <parameter name="platform" value="webDriver"/>
+    <classes>
+      <class name="testcases.GrafanaWebTestCases">
+        <methods>
+          <include name="filterByStars"/>
+          <include name="startSession"/>
+          <include name="homePageLogo"/>
+          <include name="searchDashboardNotExist"/>
+          <include name="endSession"/>
+          <include name="login"/>
+          <include name="wait_seconds"/>
+          <include name="createNewDashboard"/>
+        </methods>
+      </class> <!-- testcases.GrafanaWebTestCases -->
+    </classes>
+  </test> <!-- GrafanaWebTest(failed) -->
+  <test thread-count="5" verbose="0" name="CalculatorTest(failed)">
+    <parameter name="platform" value="desktop"/>
+    <classes>
+      <class name="testcases.CalculatorTestCases">
+        <methods>
+          <include name="startSession"/>
+          <include name="endSession"/>
+          <include name="test01"/>
+          <include name="wait_seconds"/>
+        </methods>
+      </class> <!-- testcases.CalculatorTestCases -->
+    </classes>
+  </test> <!-- CalculatorTest(failed) -->
+  <test thread-count="5" verbose="0" name="MortgageCalcTest(failed)">
+    <parameter name="platform" value="androidDriver"/>
+    <classes>
+      <class name="testcases.MortgageCalcTestCases">
+        <methods>
+          <include name="startSession"/>
+          <include name="calcFragment"/>
+          <include name="savedFragment"/>
+          <include name="endSession"/>
+          <include name="wait_seconds"/>
+        </methods>
+      </class> <!-- testcases.MortgageCalcTestCases -->
+    </classes>
+  </test> <!-- MortgageCalcTest(failed) -->
+  <test thread-count="5" verbose="0" name="ToDoLIstTest(failed)">
+    <parameter name="platform" value="electron"/>
+    <classes>
+      <class name="testcases.ToDoLIstTestCases">
+        <methods>
+          <include name="test01"/>
+          <include name="startSession"/>
+          <include name="endSession"/>
+          <include name="wait_seconds"/>
+        </methods>
+      </class> <!-- testcases.ToDoLIstTestCases -->
+    </classes>
+  </test> <!-- ToDoLIstTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->

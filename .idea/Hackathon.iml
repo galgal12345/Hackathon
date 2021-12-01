@@ -101,6 +101,7 @@
     <orderEntry type="library" scope="RUNTIME" name="Maven: org.ow2.asm:asm:7.1" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: commons-validator:commons-validator:1.7" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: commons-digester:commons-digester:2.1" level="project" />
+    <orderEntry type="library" name="Maven: commons-io:commons-io:2.11.0" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: org.springframework:spring-context:5.3.10" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: org.springframework:spring-aop:5.3.10" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: org.springframework:spring-beans:5.3.10" level="project" />
@@ -109,7 +110,6 @@
     <orderEntry type="library" scope="RUNTIME" name="Maven: org.springframework:spring-expression:5.3.10" level="project" />
     <orderEntry type="library" name="Maven: mysql:mysql-connector-java:8.0.16" level="project" />
     <orderEntry type="library" name="Maven: com.google.protobuf:protobuf-java:3.6.1" level="project" />
-    <orderEntry type="library" name="Maven: commons-io:commons-io:2.11.0" level="project" />
     <orderEntry type="library" name="Maven: com.sikulix:sikulixapi:2.0.5" level="project" />
     <orderEntry type="library" name="Maven: org.python:jython-slim:2.7.2" level="project" />
     <orderEntry type="library" name="Maven: org.antlr:antlr:3.5.2" level="project" />
