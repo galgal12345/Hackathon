@@ -27,7 +27,7 @@ public class Utilities{
     private static void getFromCsvData(String fileName) {
 
         try {
-            data = new Object[5][3];
+            data = new Object[5][5];
             CSVReader reader = new CSVReader(new FileReader(fileName));
 
             // this will load content into list
@@ -53,5 +53,7 @@ public class Utilities{
 
 
 }
+
+
 
 

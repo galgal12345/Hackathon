@@ -72,6 +72,8 @@ public class Base {
     //APPIUM_XML
 
     //APPIUM_EXPECTED
+    protected static String [] myExpectedArray = {"£1300000.0", "30.0 yrs", "10.0%", "£11491.92", "£10833.33"};
+
     //TODO:expected result will come from  https://remotemysql.com
 
     //-------------------------------------------------------------------------
@@ -84,6 +86,7 @@ public class Base {
     protected static JSONObject params;
     protected static int numOfUsers;
     //-------------------------------------------------------------------------
+    //DESKTOP_STARTER
 
     //Desktop
     protected WindowsDriver deskDriver;
@@ -99,11 +102,15 @@ public class Base {
     protected static ChromeOptions opt;
     protected static int sizeList=0;
 
+    //--------------------------------------------------------------------------
 
     protected static String dbUrl = "jdbc:mysql://sql4.freemysqlhosting.net:3306/sql4455326";//Connect URL
     protected static String user = "sql4455326", pass = "KqUKNu5jPZ";//Database Username & Password
     protected static String query = "select * from login";//Query to Execute
     protected static String myUsername, myPassword;
+
+
+
 
 
 }
