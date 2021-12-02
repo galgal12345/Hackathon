@@ -1,0 +1,272 @@
+{
+  "uid" : "385435b663cca1a6",
+  "name" : "Create Task ",
+  "fullName" : "testcases.ToDoLIstTestCases.test01_create",
+  "historyId" : "cff2622b0812d307eb6d72307f5912b8",
+  "time" : {
+    "start" : 1638437424290,
+    "stop" : 1638437434828,
+    "duration" : 10538
+  },
+  "description" : "create task to list",
+  "descriptionHtml" : "<p>create task to list</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "startSession",
+    "time" : {
+      "start" : 1638437419359,
+      "stop" : 1638437424215,
+      "duration" : 4856
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "init ELECTRON",
+      "time" : {
+        "start" : 1638437419394,
+        "stop" : 1638437424214,
+        "duration" : 4820
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "create task to list",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "get num of list",
+      "time" : {
+        "start" : 1638437424490,
+        "stop" : 1638437434545,
+        "duration" : 10055
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "creat task and add to list",
+      "time" : {
+        "start" : 1638437434549,
+        "stop" : 1638437434783,
+        "duration" : 234
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "send value to an input element",
+        "time" : {
+          "start" : 1638437434584,
+          "stop" : 1638437434700,
+          "duration" : 116
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "element",
+          "value" : "[[ChromeDriver: chrome on XP (0c8831000f14dc1d3e5c320adc2efed1)] -> xpath: /html/body/div/div[1]/div[2]/input]"
+        }, {
+          "name" : "value",
+          "value" : "new task"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "SendKeysReturn",
+        "time" : {
+          "start" : 1638437434700,
+          "stop" : 1638437434767,
+          "duration" : 67
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "get num of list",
+        "time" : {
+          "start" : 1638437434767,
+          "stop" : 1638437434783,
+          "duration" : 16
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "task",
+        "value" : "new task"
+      } ],
+      "stepsCount" : 3,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "verify true",
+      "time" : {
+        "start" : 1638437434809,
+        "stop" : 1638437434814,
+        "duration" : 5
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "condition",
+        "value" : "true"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 6,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  },
+  "afterStages" : [ {
+    "name" : "wait_seconds",
+    "time" : {
+      "start" : 1638437435093,
+      "stop" : 1638437438102,
+      "duration" : 3009
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "waiting n seconds",
+      "time" : {
+        "start" : 1638437435094,
+        "stop" : 1638437438101,
+        "duration" : 3007
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "seconds",
+        "value" : "3"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "endSession",
+    "time" : {
+      "start" : 1638437460829,
+      "stop" : 1638437461459,
+      "duration" : 630
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "testcases.ToDoLIstTestCases"
+  }, {
+    "name" : "testClass",
+    "value" : "testcases.ToDoLIstTestCases"
+  }, {
+    "name" : "testMethod",
+    "value" : "test01_create"
+  }, {
+    "name" : "parentSuite",
+    "value" : "SuiteElectron"
+  }, {
+    "name" : "suite",
+    "value" : "ToDoLIstTest"
+  }, {
+    "name" : "subSuite",
+    "value" : "testcases.ToDoLIstTestCases"
+  }, {
+    "name" : "host",
+    "value" : "AYALA-R-5981"
+  }, {
+    "name" : "thread",
+    "value" : "4924@AYALA-R-5981.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "platform",
+    "value" : "electron"
+  }, {
+    "name" : "taskName",
+    "value" : "new task"
+  }, {
+    "name" : "taskNameComplete",
+    "value" : "new task"
+  }, {
+    "name" : "taskNameDelete",
+    "value" : "new task"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "385435b663cca1a6.json",
+  "parameterValues" : [ "electron", "new task", "new task", "new task" ]
+}

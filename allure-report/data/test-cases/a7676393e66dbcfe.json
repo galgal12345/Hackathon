@@ -1,0 +1,429 @@
+{
+  "uid" : "a7676393e66dbcfe",
+  "name" : "Create User",
+  "fullName" : "testcases.GrafanaApiTestCases.test01_post",
+  "historyId" : "7bcd09d6e34f0d700e58e31255aa6231",
+  "time" : {
+    "start" : 1638432475239,
+    "stop" : 1638432479078,
+    "duration" : 3839
+  },
+  "description" : "create user and add to grafana",
+  "descriptionHtml" : "<p>create user and add to grafana</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "startSession",
+    "time" : {
+      "start" : 1638432473780,
+      "stop" : 1638432475119,
+      "duration" : 1339
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "init API",
+      "time" : {
+        "start" : 1638432473813,
+        "stop" : 1638432475117,
+        "duration" : 1304
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "create user and add to grafana",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "setNumUsers",
+      "time" : {
+        "start" : 1638432475256,
+        "stop" : 1638432478688,
+        "duration" : 3432
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "get api",
+        "time" : {
+          "start" : 1638432475267,
+          "stop" : 1638432477721,
+          "duration" : 2454
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "/stats"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "extract Json",
+        "time" : {
+          "start" : 1638432477721,
+          "stop" : 1638432478688,
+          "duration" : 967
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "params",
+          "value" : "users"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "/stats"
+      } ],
+      "stepsCount" : 2,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "add user to grafana",
+      "time" : {
+        "start" : 1638432478691,
+        "stop" : 1638432478968,
+        "duration" : 277
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "post api",
+        "time" : {
+          "start" : 1638432478691,
+          "stop" : 1638432478855,
+          "duration" : 164
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "/users"
+        }, {
+          "name" : "name",
+          "value" : "ayala1"
+        }, {
+          "name" : "email",
+          "value" : "ayala11@gmail.com"
+        }, {
+          "name" : "login",
+          "value" : "ayala11"
+        }, {
+          "name" : "password",
+          "value" : "123456"
+        }, {
+          "name" : "OrgId",
+          "value" : "1"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "name",
+        "value" : "ayala1"
+      }, {
+        "name" : "email",
+        "value" : "ayala11@gmail.com"
+      }, {
+        "name" : "login",
+        "value" : "ayala11"
+      }, {
+        "name" : "password",
+        "value" : "123456"
+      }, {
+        "name" : "OrgId",
+        "value" : "1"
+      }, {
+        "name" : "url",
+        "value" : "/users"
+      } ],
+      "stepsCount" : 1,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "setNumUsers",
+      "time" : {
+        "start" : 1638432478968,
+        "stop" : 1638432479048,
+        "duration" : 80
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "get api",
+        "time" : {
+          "start" : 1638432478968,
+          "stop" : 1638432479017,
+          "duration" : 49
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "/stats"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "extract Json",
+        "time" : {
+          "start" : 1638432479017,
+          "stop" : 1638432479048,
+          "duration" : 31
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "params",
+          "value" : "users"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "url",
+        "value" : "/stats"
+      } ],
+      "stepsCount" : 2,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "verify true",
+      "time" : {
+        "start" : 1638432479073,
+        "stop" : 1638432479075,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "condition",
+        "value" : "true"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "verify true",
+      "time" : {
+        "start" : 1638432479075,
+        "stop" : 1638432479075,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "condition",
+        "value" : "true"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 10,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  },
+  "afterStages" : [ {
+    "name" : "wait_seconds",
+    "time" : {
+      "start" : 1638432479483,
+      "stop" : 1638432482522,
+      "duration" : 3039
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "waiting n seconds",
+      "time" : {
+        "start" : 1638432479508,
+        "stop" : 1638432482522,
+        "duration" : 3014
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "seconds",
+        "value" : "3"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "endSession",
+    "time" : {
+      "start" : 1638432488810,
+      "stop" : 1638432488811,
+      "duration" : 1
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "testcases.GrafanaApiTestCases"
+  }, {
+    "name" : "testClass",
+    "value" : "testcases.GrafanaApiTestCases"
+  }, {
+    "name" : "testMethod",
+    "value" : "test01_post"
+  }, {
+    "name" : "parentSuite",
+    "value" : "SuiteAPI"
+  }, {
+    "name" : "suite",
+    "value" : "GrafanaApiTest"
+  }, {
+    "name" : "subSuite",
+    "value" : "testcases.GrafanaApiTestCases"
+  }, {
+    "name" : "host",
+    "value" : "AYALA-R-5981"
+  }, {
+    "name" : "thread",
+    "value" : "28696@AYALA-R-5981.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "OrgId",
+    "value" : "1"
+  }, {
+    "name" : "email",
+    "value" : "ayala11@gmail.com"
+  }, {
+    "name" : "login",
+    "value" : "ayala11"
+  }, {
+    "name" : "name",
+    "value" : "ayala1"
+  }, {
+    "name" : "newPassword",
+    "value" : "11111"
+  }, {
+    "name" : "password",
+    "value" : "123456"
+  }, {
+    "name" : "platform",
+    "value" : "restAssured"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 4,
+        "unknown" : 0,
+        "total" : 4
+      },
+      "items" : [ {
+        "uid" : "c253570e3f36aac2",
+        "reportUrl" : "http://localhost:9090/job/Grafana%20Api%20Test/10/allure/#testresult/c253570e3f36aac2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1638432475239,
+          "stop" : 1638432479078,
+          "duration" : 3839
+        }
+      }, {
+        "uid" : "e8984dde534a86a4",
+        "reportUrl" : "http://localhost:9090/job/Grafana%20Api%20Test/9/allure/#testresult/e8984dde534a86a4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1638432475239,
+          "stop" : 1638432479078,
+          "duration" : 3839
+        }
+      }, {
+        "uid" : "df341a0272f0b73d",
+        "reportUrl" : "http://localhost:9090/job/Grafana%20Api%20Test/8/allure/#testresult/df341a0272f0b73d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1638432475239,
+          "stop" : 1638432479078,
+          "duration" : 3839
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "a7676393e66dbcfe.json",
+  "parameterValues" : [ "1", "ayala11@gmail.com", "ayala11", "ayala1", "11111", "123456", "restAssured" ]
+}

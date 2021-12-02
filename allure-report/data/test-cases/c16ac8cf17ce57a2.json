@@ -1,0 +1,308 @@
+{
+  "uid" : "c16ac8cf17ce57a2",
+  "name" : "Delete Task ",
+  "fullName" : "testcases.ToDoLIstTestCases.test03_delete",
+  "historyId" : "e67e20f0d1fb3bc34a779e514715ae53",
+  "time" : {
+    "start" : 1638437444430,
+    "stop" : 1638437457757,
+    "duration" : 13327
+  },
+  "description" : "delete task from a list",
+  "descriptionHtml" : "<p>delete task from a list</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "startSession",
+    "time" : {
+      "start" : 1638437419359,
+      "stop" : 1638437424215,
+      "duration" : 4856
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "init ELECTRON",
+      "time" : {
+        "start" : 1638437419394,
+        "stop" : 1638437424214,
+        "duration" : 4820
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "delete task from a list",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "get num of list",
+      "time" : {
+        "start" : 1638437444442,
+        "stop" : 1638437444463,
+        "duration" : 21
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "delete task",
+      "time" : {
+        "start" : 1638437444464,
+        "stop" : 1638437457757,
+        "duration" : 13293
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Search for a task by name",
+        "time" : {
+          "start" : 1638437444464,
+          "stop" : 1638437444522,
+          "duration" : 58
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "task",
+          "value" : "new task"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "mouseHover",
+        "time" : {
+          "start" : 1638437444528,
+          "stop" : 1638437444583,
+          "duration" : 55
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "element",
+          "value" : "[[ChromeDriver: chrome on XP (0c8831000f14dc1d3e5c320adc2efed1)] -> xpath: //*[@class=\"draggableList_DX-a1\"]/div]"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "clicking on an element",
+        "time" : {
+          "start" : 1638437444613,
+          "stop" : 1638437444703,
+          "duration" : 90
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "element",
+          "value" : "[[[[ChromeDriver: chrome on XP (0c8831000f14dc1d3e5c320adc2efed1)] -> xpath: //*[@class=\"draggableList_DX-a1\"]/div]] -> xpath: div/div//*[@class='destroy_19w1q']//*[name()='path']]"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "waiting n seconds",
+        "time" : {
+          "start" : 1638437444703,
+          "stop" : 1638437447711,
+          "duration" : 3008
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "seconds",
+          "value" : "3"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "get num of list",
+        "time" : {
+          "start" : 1638437447711,
+          "stop" : 1638437457757,
+          "duration" : 10046
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "task",
+        "value" : "new task"
+      } ],
+      "stepsCount" : 5,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "verify true",
+      "time" : {
+        "start" : 1638437457757,
+        "stop" : 1638437457757,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "condition",
+        "value" : "true"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 8,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  },
+  "afterStages" : [ {
+    "name" : "wait_seconds",
+    "time" : {
+      "start" : 1638437457819,
+      "stop" : 1638437460825,
+      "duration" : 3006
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "waiting n seconds",
+      "time" : {
+        "start" : 1638437457819,
+        "stop" : 1638437460825,
+        "duration" : 3006
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "seconds",
+        "value" : "3"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "endSession",
+    "time" : {
+      "start" : 1638437460829,
+      "stop" : 1638437461459,
+      "duration" : 630
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "testcases.ToDoLIstTestCases"
+  }, {
+    "name" : "testClass",
+    "value" : "testcases.ToDoLIstTestCases"
+  }, {
+    "name" : "testMethod",
+    "value" : "test03_delete"
+  }, {
+    "name" : "parentSuite",
+    "value" : "SuiteElectron"
+  }, {
+    "name" : "suite",
+    "value" : "ToDoLIstTest"
+  }, {
+    "name" : "subSuite",
+    "value" : "testcases.ToDoLIstTestCases"
+  }, {
+    "name" : "host",
+    "value" : "AYALA-R-5981"
+  }, {
+    "name" : "thread",
+    "value" : "4924@AYALA-R-5981.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "platform",
+    "value" : "electron"
+  }, {
+    "name" : "taskName",
+    "value" : "new task"
+  }, {
+    "name" : "taskNameComplete",
+    "value" : "new task"
+  }, {
+    "name" : "taskNameDelete",
+    "value" : "new task"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "c16ac8cf17ce57a2.json",
+  "parameterValues" : [ "electron", "new task", "new task", "new task" ]
+}

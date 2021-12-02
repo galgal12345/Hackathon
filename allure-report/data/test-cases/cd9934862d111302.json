@@ -1,0 +1,329 @@
+{
+  "uid" : "cd9934862d111302",
+  "name" : "Complete Task ",
+  "fullName" : "testcases.ToDoLIstTestCases.test02_complete",
+  "historyId" : "e2acccbdcc7c6ca91212f8dd9829ad05",
+  "time" : {
+    "start" : 1638444930646,
+    "stop" : 1638444933882,
+    "duration" : 3236
+  },
+  "description" : "mark a completed task",
+  "descriptionHtml" : "<p>mark a completed task</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 1,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "startSession",
+    "time" : {
+      "start" : 1638444910987,
+      "stop" : 1638444916005,
+      "duration" : 5018
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "init ELECTRON",
+      "time" : {
+        "start" : 1638444911040,
+        "stop" : 1638444916004,
+        "duration" : 4964
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "mark a completed task",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "completed task",
+      "time" : {
+        "start" : 1638444930655,
+        "stop" : 1638444933878,
+        "duration" : 3223
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Search for a task by name",
+        "time" : {
+          "start" : 1638444930655,
+          "stop" : 1638444930735,
+          "duration" : 80
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "task",
+          "value" : "new task"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "clicking on an element",
+        "time" : {
+          "start" : 1638444930760,
+          "stop" : 1638444930823,
+          "duration" : 63
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "element",
+          "value" : "[[[[ChromeDriver: chrome on XP (282d433cb8242bb6a0e8c5f6502eaef6)] -> xpath: //*[@class=\"draggableList_DX-a1\"]/div]] -> xpath: div/div/label]"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "waiting n seconds",
+        "time" : {
+          "start" : 1638444930823,
+          "stop" : 1638444933837,
+          "duration" : 3014
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "seconds",
+          "value" : "3"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "task",
+        "value" : "new task"
+      } ],
+      "stepsCount" : 3,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "verify string",
+      "time" : {
+        "start" : 1638444933882,
+        "stop" : 1638444933882,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "label_5i8SP completed_bHv-Q"
+      }, {
+        "name" : "expected",
+        "value" : "label_5i8SP completed_bHv-Q"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 5,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  },
+  "afterStages" : [ {
+    "name" : "wait_seconds",
+    "time" : {
+      "start" : 1638444933974,
+      "stop" : 1638444936985,
+      "duration" : 3011
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "waiting n seconds",
+      "time" : {
+        "start" : 1638444933974,
+        "stop" : 1638444936985,
+        "duration" : 3011
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "seconds",
+        "value" : "3"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "endSession",
+    "time" : {
+      "start" : 1638444953350,
+      "stop" : 1638444953998,
+      "duration" : 648
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "testcases.ToDoLIstTestCases"
+  }, {
+    "name" : "testClass",
+    "value" : "testcases.ToDoLIstTestCases"
+  }, {
+    "name" : "testMethod",
+    "value" : "test02_complete"
+  }, {
+    "name" : "parentSuite",
+    "value" : "SuiteElectron"
+  }, {
+    "name" : "suite",
+    "value" : "ToDoLIstTest"
+  }, {
+    "name" : "subSuite",
+    "value" : "testcases.ToDoLIstTestCases"
+  }, {
+    "name" : "host",
+    "value" : "AYALA-R-5981"
+  }, {
+    "name" : "thread",
+    "value" : "24736@AYALA-R-5981.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "platform",
+    "value" : "electron"
+  }, {
+    "name" : "taskName",
+    "value" : "new task"
+  }, {
+    "name" : "taskNameComplete",
+    "value" : "new task"
+  }, {
+    "name" : "taskNameDelete",
+    "value" : "new task"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "22475f58fc4f7e7d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638437438124,
+        "stop" : 1638437441356,
+        "duration" : 3232
+      }
+    } ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 6,
+        "unknown" : 0,
+        "total" : 6
+      },
+      "items" : [ {
+        "uid" : "7709ab58e9f0366d",
+        "reportUrl" : "http://localhost:9090/job/Grafana%20Api%20Test/10/allure/#testresult/7709ab58e9f0366d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1638437438124,
+          "stop" : 1638437441356,
+          "duration" : 3232
+        }
+      }, {
+        "uid" : "75ee8bf8b3131959",
+        "reportUrl" : "http://localhost:9090/job/Grafana%20Api%20Test/9/allure/#testresult/75ee8bf8b3131959",
+        "status" : "passed",
+        "time" : {
+          "start" : 1638437438124,
+          "stop" : 1638437441356,
+          "duration" : 3232
+        }
+      }, {
+        "uid" : "7d360b6260b25c09",
+        "reportUrl" : "http://localhost:9090/job/Grafana%20Api%20Test/7/allure/#testresult/7d360b6260b25c09",
+        "status" : "passed",
+        "time" : {
+          "start" : 1638431326558,
+          "stop" : 1638431329922,
+          "duration" : 3364
+        }
+      }, {
+        "uid" : "430f5eddeba93585",
+        "reportUrl" : "http://localhost:9090/job/Grafana%20Api%20Test/6/allure/#testresult/430f5eddeba93585",
+        "status" : "passed",
+        "time" : {
+          "start" : 1638409933508,
+          "stop" : 1638409936790,
+          "duration" : 3282
+        }
+      }, {
+        "uid" : "ecd35f5983c75c71",
+        "reportUrl" : "http://localhost:9090/job/Grafana%20Api%20Test/3/allure/#testresult/ecd35f5983c75c71",
+        "status" : "passed",
+        "time" : {
+          "start" : 1638368739566,
+          "stop" : 1638368742860,
+          "duration" : 3294
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "cd9934862d111302.json",
+  "parameterValues" : [ "electron", "new task", "new task", "new task" ]
+}
