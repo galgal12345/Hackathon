@@ -21,7 +21,6 @@ public class CalculatorWorkFlow extends CommonOps {
         AllUiActions.clickOn(calcPage.getBtn_less());
         AllUiActions.clickOn(calcPage.getBtn_6());
         AllUiActions.clickOn(calcPage.getBtn_equal());
-        System.out.println(calcPage.resultNum());
     }
 
 

@@ -2,93 +2,190 @@
   "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
   "name" : "packages",
   "children" : [ {
-    "name" : "testcases.GrafanaWebTestCases",
+    "name" : "testcases",
     "children" : [ {
-      "name" : "login",
-      "uid" : "c12d04c0b6b82d25",
-      "parentUid" : "73c222f9850bddb19aa372207d5508d5",
-      "status" : "passed",
-      "time" : {
-        "start" : 1638383693877,
-        "stop" : 1638383697872,
-        "duration" : 3995
-      },
-      "flaky" : false,
-      "newFailed" : false,
-      "newPassed" : false,
-      "newBroken" : false,
-      "retriesCount" : 0,
-      "retriesStatusChange" : false,
-      "parameters" : [ "webDriver" ]
+      "name" : "GrafanaApiTestCases",
+      "children" : [ {
+        "name" : "test01_post",
+        "uid" : "a7676393e66dbcfe",
+        "parentUid" : "670ed54f458fcef13566b8d3637a18f2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1638432475239,
+          "stop" : 1638432479078,
+          "duration" : 3839
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "1", "ayala11@gmail.com", "ayala11", "ayala1", "11111", "123456", "restAssured" ]
+      }, {
+        "name" : "test02_update",
+        "uid" : "2b3ab3f8fac265af",
+        "parentUid" : "670ed54f458fcef13566b8d3637a18f2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1638432482543,
+          "stop" : 1638432482613,
+          "duration" : 70
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "1", "ayala11@gmail.com", "ayala11", "ayala1", "11111", "123456", "restAssured" ]
+      }, {
+        "name" : "test03_delete",
+        "uid" : "7c202997c9514396",
+        "parentUid" : "670ed54f458fcef13566b8d3637a18f2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1638432485626,
+          "stop" : 1638432485794,
+          "duration" : 168
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "1", "ayala11@gmail.com", "ayala11", "ayala1", "11111", "123456", "restAssured" ]
+      }, {
+        "name" : "test01_post",
+        "uid" : "7e7ef960eb155a3c",
+        "parentUid" : "670ed54f458fcef13566b8d3637a18f2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1638445026359,
+          "stop" : 1638445030193,
+          "duration" : 3834
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 4,
+        "retriesStatusChange" : false,
+        "parameters" : [ "1", "useradmin@gmail.com", "useradmin", "useradmin", "11111", "123456", "restAssured" ]
+      }, {
+        "name" : "test02_update",
+        "uid" : "82f8f16adb590bac",
+        "parentUid" : "670ed54f458fcef13566b8d3637a18f2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1638445033863,
+          "stop" : 1638445033923,
+          "duration" : 60
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 4,
+        "retriesStatusChange" : true,
+        "parameters" : [ "1", "useradmin@gmail.com", "useradmin", "useradmin", "11111", "123456", "restAssured" ]
+      }, {
+        "name" : "test03_delete",
+        "uid" : "2ecf771e116427e1",
+        "parentUid" : "670ed54f458fcef13566b8d3637a18f2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1638445036947,
+          "stop" : 1638445037138,
+          "duration" : 191
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 4,
+        "retriesStatusChange" : true,
+        "parameters" : [ "1", "useradmin@gmail.com", "useradmin", "useradmin", "11111", "123456", "restAssured" ]
+      } ],
+      "uid" : "670ed54f458fcef13566b8d3637a18f2"
     }, {
-      "name" : "createNewDashboard",
-      "uid" : "cc421e3d869c0c14",
-      "parentUid" : "73c222f9850bddb19aa372207d5508d5",
-      "status" : "passed",
-      "time" : {
-        "start" : 1638383700993,
-        "stop" : 1638383800946,
-        "duration" : 99953
-      },
-      "flaky" : false,
-      "newFailed" : false,
-      "newPassed" : false,
-      "newBroken" : false,
-      "retriesCount" : 0,
-      "retriesStatusChange" : false,
-      "parameters" : [ "webDriver" ]
+      "name" : "ToDoLIstTestCases",
+      "children" : [ {
+        "name" : "test01_create",
+        "uid" : "589500ab41406e98",
+        "parentUid" : "a1cacb272bf5d3c2047836ff2cc60661",
+        "status" : "passed",
+        "time" : {
+          "start" : 1638444916094,
+          "stop" : 1638444927320,
+          "duration" : 11226
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 1,
+        "retriesStatusChange" : false,
+        "parameters" : [ "electron", "new task", "new task", "new task" ]
+      }, {
+        "name" : "test02_complete",
+        "uid" : "cd9934862d111302",
+        "parentUid" : "a1cacb272bf5d3c2047836ff2cc60661",
+        "status" : "passed",
+        "time" : {
+          "start" : 1638444930646,
+          "stop" : 1638444933882,
+          "duration" : 3236
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 1,
+        "retriesStatusChange" : false,
+        "parameters" : [ "electron", "new task", "new task", "new task" ]
+      }, {
+        "name" : "test03_delete",
+        "uid" : "ef6a2d7bde11258",
+        "parentUid" : "a1cacb272bf5d3c2047836ff2cc60661",
+        "status" : "passed",
+        "time" : {
+          "start" : 1638444936991,
+          "stop" : 1638444950257,
+          "duration" : 13266
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 1,
+        "retriesStatusChange" : false,
+        "parameters" : [ "electron", "new task", "new task", "new task" ]
+      } ],
+      "uid" : "a1cacb272bf5d3c2047836ff2cc60661"
     }, {
-      "name" : "searchDashboardNotExist",
-      "uid" : "29843415e8ff5753",
-      "parentUid" : "73c222f9850bddb19aa372207d5508d5",
-      "status" : "passed",
-      "time" : {
-        "start" : 1638383803976,
-        "stop" : 1638383804287,
-        "duration" : 311
-      },
-      "flaky" : false,
-      "newFailed" : false,
-      "newPassed" : false,
-      "newBroken" : false,
-      "retriesCount" : 0,
-      "retriesStatusChange" : false,
-      "parameters" : [ "webDriver" ]
-    }, {
-      "name" : "homePageLogo",
-      "uid" : "76c793d92ce3fcf",
-      "parentUid" : "73c222f9850bddb19aa372207d5508d5",
-      "status" : "passed",
-      "time" : {
-        "start" : 1638383807310,
-        "stop" : 1638383824195,
-        "duration" : 16885
-      },
-      "flaky" : false,
-      "newFailed" : false,
-      "newPassed" : false,
-      "newBroken" : false,
-      "retriesCount" : 0,
-      "retriesStatusChange" : false,
-      "parameters" : [ "webDriver" ]
-    }, {
-      "name" : "verifyDashboardName",
-      "uid" : "53eed19705569a2a",
-      "parentUid" : "73c222f9850bddb19aa372207d5508d5",
-      "status" : "passed",
-      "time" : {
-        "start" : 1638383827211,
-        "stop" : 1638383830700,
-        "duration" : 3489
-      },
-      "flaky" : false,
-      "newFailed" : false,
-      "newPassed" : false,
-      "newBroken" : false,
-      "retriesCount" : 0,
-      "retriesStatusChange" : false,
-      "parameters" : [ "webDriver" ]
+      "name" : "CalculatorTestCases",
+      "children" : [ {
+        "name" : "test01_calc",
+        "uid" : "ef9105725bfdd177",
+        "parentUid" : "091493abf78331a3d3f319aa1cffe672",
+        "status" : "passed",
+        "time" : {
+          "start" : 1638444981141,
+          "stop" : 1638444989698,
+          "duration" : 8557
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "desktop" ]
+      } ],
+      "uid" : "091493abf78331a3d3f319aa1cffe672"
     } ],
-    "uid" : "testcases.GrafanaWebTestCases"
+    "uid" : "141fa05f02bf329144b0086cf92149a8"
   } ]
 }

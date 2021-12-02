@@ -6,7 +6,7 @@ import org.testng.asserts.SoftAssert;
 import static org.testng.AssertJUnit.assertEquals;
 import static org.testng.AssertJUnit.assertTrue;
 
-public class Verifications<T> {
+public class Verifications {
     static SoftAssert softAssert = new SoftAssert();
     @Step("verify string" )
     public static void verifyEquals(String actual,String expected){

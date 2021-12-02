@@ -1,50 +1,100 @@
 [ {
-  "uid" : "cc421e3d869c0c14",
-  "name" : "Ensure dashboard was created",
+  "uid" : "82f8f16adb590bac",
+  "name" : "Update",
   "time" : {
-    "start" : 1638383700993,
-    "stop" : 1638383800946,
-    "duration" : 99953
+    "start" : 1638445033863,
+    "stop" : 1638445033923,
+    "duration" : 60
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "c12d04c0b6b82d25",
-  "name" : "Login",
+  "uid" : "ef9105725bfdd177",
+  "name" : "Calculation",
   "time" : {
-    "start" : 1638383693877,
-    "stop" : 1638383697872,
-    "duration" : 3995
+    "start" : 1638444981141,
+    "stop" : 1638444989698,
+    "duration" : 8557
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "76c793d92ce3fcf",
-  "name" : "Homepage logo",
+  "uid" : "2ecf771e116427e1",
+  "name" : "Delete",
   "time" : {
-    "start" : 1638383807310,
-    "stop" : 1638383824195,
-    "duration" : 16885
+    "start" : 1638445036947,
+    "stop" : 1638445037138,
+    "duration" : 191
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "29843415e8ff5753",
-  "name" : "Checking the search management",
+  "uid" : "7c202997c9514396",
+  "name" : "Delete",
   "time" : {
-    "start" : 1638383803976,
-    "stop" : 1638383804287,
-    "duration" : 311
+    "start" : 1638432485626,
+    "stop" : 1638432485794,
+    "duration" : 168
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "53eed19705569a2a",
-  "name" : "Verify dashboard name",
+  "uid" : "ef6a2d7bde11258",
+  "name" : "Delete Task ",
   "time" : {
-    "start" : 1638383827211,
-    "stop" : 1638383830700,
-    "duration" : 3489
+    "start" : 1638444936991,
+    "stop" : 1638444950257,
+    "duration" : 13266
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a7676393e66dbcfe",
+  "name" : "Create User",
+  "time" : {
+    "start" : 1638432475239,
+    "stop" : 1638432479078,
+    "duration" : 3839
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7e7ef960eb155a3c",
+  "name" : "Create User",
+  "time" : {
+    "start" : 1638445026359,
+    "stop" : 1638445030193,
+    "duration" : 3834
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2b3ab3f8fac265af",
+  "name" : "Update",
+  "time" : {
+    "start" : 1638432482543,
+    "stop" : 1638432482613,
+    "duration" : 70
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "589500ab41406e98",
+  "name" : "Create Task ",
+  "time" : {
+    "start" : 1638444916094,
+    "stop" : 1638444927320,
+    "duration" : 11226
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "cd9934862d111302",
+  "name" : "Complete Task ",
+  "time" : {
+    "start" : 1638444930646,
+    "stop" : 1638444933882,
+    "duration" : 3236
   },
   "status" : "passed",
   "severity" : "normal"

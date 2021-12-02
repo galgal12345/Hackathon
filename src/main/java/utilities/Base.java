@@ -86,6 +86,7 @@ public class Base {
     protected static JsonPath jp;
     protected static JSONObject params;
     protected static int numOfUsers;
+    protected static int  userId=0;
     //-------------------------------------------------------------------------
     //DESKTOP_STARTER
 
@@ -107,7 +108,7 @@ public class Base {
 //SQL
     protected static String dbUrl =Utilities.getDataXML("dbUrl");//Connect URL
     protected static String user =Utilities.getDataXML("user"), pass = Utilities.getDataXML("pass");//Database Username & Password
-    protected static String query = "select * from login";//Query to Execute
+    protected static String query =Utilities.getDataXML("query");//Query to Execute
 
 
 

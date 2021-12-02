@@ -22,8 +22,6 @@ public class GrafanaWebTestCases extends CommonOps {
     public void login() {
         GrafanaWebWorkFlow.loginWithAdmin();
         GrafanaWebWorkFlow.skipPage();
-
-
         Verifications.verifyEquals(AllUiActions.getText(grafanaPage.getHomePageTitle()), expectedHomePageTitle);
            }
 
@@ -64,10 +62,7 @@ public class GrafanaWebTestCases extends CommonOps {
     @Description("insert a name of dashboard does not exist, and verify there is message means that this dashboard not found")
     public void searchDashboardNotExist() {
         GrafanaWebWorkFlow.researchDashboardByName(dashboardNotExist);
-
-
         Verifications.verifyTrue(grafanaPage.getNoFoundMessage().isDisplayed());
-
 
     }
 

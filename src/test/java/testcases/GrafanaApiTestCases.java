@@ -5,6 +5,7 @@ import io.qameta.allure.Description;
 import org.testng.Assert;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
+import utilities.Base;
 import utilities.CommonOps;
 import workflow.GrafanaApiWorkFlow;
 
@@ -20,8 +21,8 @@ public class GrafanaApiTestCases extends CommonOps {
     public void test01_post(String name, String email, String login, String password, String OrgId) {
         before = GrafanaApiWorkFlow.setNumUsers("/stats");
         GrafanaApiWorkFlow.PostRequest(name, email, login, password, Integer.parseInt(OrgId), "/users");
+        Base.userId=GrafanaApiWorkFlow.getIdUser();
         after = GrafanaApiWorkFlow.setNumUsers("/stats");
-        Verifications.verifyTrue(response.statusCode()==200);
         Verifications.verifyTrue(after - before == 1);
     }
 
@@ -29,7 +30,7 @@ public class GrafanaApiTestCases extends CommonOps {
     @Description("update password for user")
     @Parameters({"newPassword"})
     public void test02_update(String password) {
-        GrafanaApiWorkFlow.UpdateRequest("/password", 24, password);
+        GrafanaApiWorkFlow.UpdateRequest("/users", Base.userId, password);
         Verifications.verifyTrue(response.statusCode() == 200);
     }
 
@@ -38,7 +39,7 @@ public class GrafanaApiTestCases extends CommonOps {
     public void test03_delete() {
         numOfUsers = GrafanaApiWorkFlow.setNumUsers("/stats");
         before = numOfUsers;
-        GrafanaApiWorkFlow.DeleteRequest("/users", 24);
+        GrafanaApiWorkFlow.DeleteRequest("/users", Base.userId);
         after = GrafanaApiWorkFlow.setNumUsers("/stats");
         Verifications.verifyTrue(after - before == -1);
     }

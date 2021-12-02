@@ -2,20 +2,20 @@
   "uid" : "98d3104e051c652961429bf95fa0b5d6",
   "name" : "suites",
   "children" : [ {
-    "name" : "SuiteWeb",
+    "name" : "SuiteAPI",
     "children" : [ {
-      "name" : "GrafanaWebTest",
+      "name" : "GrafanaApiTest",
       "children" : [ {
-        "name" : "testcases.GrafanaWebTestCases",
+        "name" : "testcases.GrafanaApiTestCases",
         "children" : [ {
-          "name" : "Login",
-          "uid" : "c12d04c0b6b82d25",
-          "parentUid" : "923d4fc0ee7cb520425feed34608d33d",
+          "name" : "Create User",
+          "uid" : "a7676393e66dbcfe",
+          "parentUid" : "8a060f21f2baad0e0db5822be023d7e2",
           "status" : "passed",
           "time" : {
-            "start" : 1638383693877,
-            "stop" : 1638383697872,
-            "duration" : 3995
+            "start" : 1638432475239,
+            "stop" : 1638432479078,
+            "duration" : 3839
           },
           "flaky" : false,
           "newFailed" : false,
@@ -23,16 +23,16 @@
           "newBroken" : false,
           "retriesCount" : 0,
           "retriesStatusChange" : false,
-          "parameters" : [ "webDriver" ]
+          "parameters" : [ "1", "ayala11@gmail.com", "ayala11", "ayala1", "11111", "123456", "restAssured" ]
         }, {
-          "name" : "Ensure dashboard was created",
-          "uid" : "cc421e3d869c0c14",
-          "parentUid" : "923d4fc0ee7cb520425feed34608d33d",
+          "name" : "Update",
+          "uid" : "2b3ab3f8fac265af",
+          "parentUid" : "8a060f21f2baad0e0db5822be023d7e2",
           "status" : "passed",
           "time" : {
-            "start" : 1638383700993,
-            "stop" : 1638383800946,
-            "duration" : 99953
+            "start" : 1638432482543,
+            "stop" : 1638432482613,
+            "duration" : 70
           },
           "flaky" : false,
           "newFailed" : false,
@@ -40,16 +40,16 @@
           "newBroken" : false,
           "retriesCount" : 0,
           "retriesStatusChange" : false,
-          "parameters" : [ "webDriver" ]
+          "parameters" : [ "1", "ayala11@gmail.com", "ayala11", "ayala1", "11111", "123456", "restAssured" ]
         }, {
-          "name" : "Checking the search management",
-          "uid" : "29843415e8ff5753",
-          "parentUid" : "923d4fc0ee7cb520425feed34608d33d",
+          "name" : "Delete",
+          "uid" : "7c202997c9514396",
+          "parentUid" : "8a060f21f2baad0e0db5822be023d7e2",
           "status" : "passed",
           "time" : {
-            "start" : 1638383803976,
-            "stop" : 1638383804287,
-            "duration" : 311
+            "start" : 1638432485626,
+            "stop" : 1638432485794,
+            "duration" : 168
           },
           "flaky" : false,
           "newFailed" : false,
@@ -57,46 +57,155 @@
           "newBroken" : false,
           "retriesCount" : 0,
           "retriesStatusChange" : false,
-          "parameters" : [ "webDriver" ]
+          "parameters" : [ "1", "ayala11@gmail.com", "ayala11", "ayala1", "11111", "123456", "restAssured" ]
         }, {
-          "name" : "Homepage logo",
-          "uid" : "76c793d92ce3fcf",
-          "parentUid" : "923d4fc0ee7cb520425feed34608d33d",
+          "name" : "Create User",
+          "uid" : "7e7ef960eb155a3c",
+          "parentUid" : "8a060f21f2baad0e0db5822be023d7e2",
           "status" : "passed",
           "time" : {
-            "start" : 1638383807310,
-            "stop" : 1638383824195,
-            "duration" : 16885
+            "start" : 1638445026359,
+            "stop" : 1638445030193,
+            "duration" : 3834
           },
           "flaky" : false,
           "newFailed" : false,
           "newPassed" : false,
           "newBroken" : false,
-          "retriesCount" : 0,
+          "retriesCount" : 4,
           "retriesStatusChange" : false,
-          "parameters" : [ "webDriver" ]
+          "parameters" : [ "1", "useradmin@gmail.com", "useradmin", "useradmin", "11111", "123456", "restAssured" ]
         }, {
-          "name" : "Verify dashboard name",
-          "uid" : "53eed19705569a2a",
-          "parentUid" : "923d4fc0ee7cb520425feed34608d33d",
+          "name" : "Update",
+          "uid" : "82f8f16adb590bac",
+          "parentUid" : "8a060f21f2baad0e0db5822be023d7e2",
           "status" : "passed",
           "time" : {
-            "start" : 1638383827211,
-            "stop" : 1638383830700,
-            "duration" : 3489
+            "start" : 1638445033863,
+            "stop" : 1638445033923,
+            "duration" : 60
           },
           "flaky" : false,
           "newFailed" : false,
           "newPassed" : false,
           "newBroken" : false,
-          "retriesCount" : 0,
-          "retriesStatusChange" : false,
-          "parameters" : [ "webDriver" ]
+          "retriesCount" : 4,
+          "retriesStatusChange" : true,
+          "parameters" : [ "1", "useradmin@gmail.com", "useradmin", "useradmin", "11111", "123456", "restAssured" ]
+        }, {
+          "name" : "Delete",
+          "uid" : "2ecf771e116427e1",
+          "parentUid" : "8a060f21f2baad0e0db5822be023d7e2",
+          "status" : "passed",
+          "time" : {
+            "start" : 1638445036947,
+            "stop" : 1638445037138,
+            "duration" : 191
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 4,
+          "retriesStatusChange" : true,
+          "parameters" : [ "1", "useradmin@gmail.com", "useradmin", "useradmin", "11111", "123456", "restAssured" ]
         } ],
-        "uid" : "923d4fc0ee7cb520425feed34608d33d"
+        "uid" : "8a060f21f2baad0e0db5822be023d7e2"
       } ],
-      "uid" : "788ee013636e297f4901032c590b605b"
+      "uid" : "e5db6309d3cffd168a5aee872845f087"
     } ],
-    "uid" : "4c022a8fccfa17bc6f87e09e2de72686"
+    "uid" : "ddd310267e45faaac31c950c02e424df"
+  }, {
+    "name" : "SuiteElectron",
+    "children" : [ {
+      "name" : "ToDoLIstTest",
+      "children" : [ {
+        "name" : "testcases.ToDoLIstTestCases",
+        "children" : [ {
+          "name" : "Create Task ",
+          "uid" : "589500ab41406e98",
+          "parentUid" : "7bfcd824cdef377c93a53959c6097b9c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1638444916094,
+            "stop" : 1638444927320,
+            "duration" : 11226
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 1,
+          "retriesStatusChange" : false,
+          "parameters" : [ "electron", "new task", "new task", "new task" ]
+        }, {
+          "name" : "Complete Task ",
+          "uid" : "cd9934862d111302",
+          "parentUid" : "7bfcd824cdef377c93a53959c6097b9c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1638444930646,
+            "stop" : 1638444933882,
+            "duration" : 3236
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 1,
+          "retriesStatusChange" : false,
+          "parameters" : [ "electron", "new task", "new task", "new task" ]
+        }, {
+          "name" : "Delete Task ",
+          "uid" : "ef6a2d7bde11258",
+          "parentUid" : "7bfcd824cdef377c93a53959c6097b9c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1638444936991,
+            "stop" : 1638444950257,
+            "duration" : 13266
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 1,
+          "retriesStatusChange" : false,
+          "parameters" : [ "electron", "new task", "new task", "new task" ]
+        } ],
+        "uid" : "7bfcd824cdef377c93a53959c6097b9c"
+      } ],
+      "uid" : "7cc3a2991a4da44bb7831de54cc680b5"
+    } ],
+    "uid" : "6301634a26b3c8c1a1ba6fec01673fa8"
+  }, {
+    "name" : "SuiteDesktop",
+    "children" : [ {
+      "name" : "CalculatorTest",
+      "children" : [ {
+        "name" : "testcases.CalculatorTestCases",
+        "children" : [ {
+          "name" : "Calculation",
+          "uid" : "ef9105725bfdd177",
+          "parentUid" : "52431d93167204047c235eea32c73e2f",
+          "status" : "passed",
+          "time" : {
+            "start" : 1638444981141,
+            "stop" : 1638444989698,
+            "duration" : 8557
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ "desktop" ]
+        } ],
+        "uid" : "52431d93167204047c235eea32c73e2f"
+      } ],
+      "uid" : "04b38f3b53d9533e35599d6e3f7f75e0"
+    } ],
+    "uid" : "f94508ce641e876bfb1779039011d624"
   } ]
 }

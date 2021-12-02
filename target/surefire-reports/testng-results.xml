@@ -1,68 +1,86 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="SuiteWeb" duration-ms="145271" started-at="2021-12-01T20:34:49 IST" finished-at="2021-12-01T20:37:14 IST">
+  <suite name="SuiteAPI" duration-ms="15610" started-at="2021-12-02T13:37:04 IST" finished-at="2021-12-02T13:37:20 IST">
     <groups>
     </groups>
-    <test name="GrafanaWebTest" duration-ms="145271" started-at="2021-12-01T20:34:49 IST" finished-at="2021-12-01T20:37:14 IST">
-      <class name="testcases.GrafanaWebTestCases">
-        <test-method status="PASS" signature="startSession(java.lang.String)[pri:0, instance:testcases.GrafanaWebTestCases@3e792ce3]" name="startSession" is-config="true" duration-ms="4539" started-at="2021-12-01T20:34:49 IST" finished-at="2021-12-01T20:34:53 IST">
+    <test name="GrafanaApiTest" duration-ms="15610" started-at="2021-12-02T13:37:04 IST" finished-at="2021-12-02T13:37:20 IST">
+      <class name="testcases.GrafanaApiTestCases">
+        <test-method status="PASS" signature="startSession(java.lang.String)[pri:0, instance:testcases.GrafanaApiTestCases@6979efad]" name="startSession" is-config="true" duration-ms="1611" started-at="2021-12-02T13:37:04 IST" finished-at="2021-12-02T13:37:06 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[webDriver]]>
+                <![CDATA[restAssured]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startSession -->
-        <test-method status="PASS" signature="login()[pri:1, instance:testcases.GrafanaWebTestCases@3e792ce3]" name="login" duration-ms="4050" started-at="2021-12-01T20:34:53 IST" description="Login" finished-at="2021-12-01T20:34:57 IST">
+        <test-method status="PASS" signature="test01_post(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.GrafanaApiTestCases@6979efad]" name="test01_post" duration-ms="3925" started-at="2021-12-02T13:37:06 IST" description="Create User" finished-at="2021-12-02T13:37:10 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[useradmin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[useradmin@gmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[useradmin]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login -->
-        <test-method status="PASS" signature="wait_seconds()[pri:0, instance:testcases.GrafanaWebTestCases@3e792ce3]" name="wait_seconds" is-config="true" duration-ms="3003" started-at="2021-12-01T20:34:57 IST" finished-at="2021-12-01T20:35:00 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- wait_seconds -->
-        <test-method status="PASS" signature="createNewDashboard()[pri:2, instance:testcases.GrafanaWebTestCases@3e792ce3]" name="createNewDashboard" duration-ms="99840" started-at="2021-12-01T20:35:00 IST" description="Ensure dashboard was created" depends-on-methods="testcases.GrafanaWebTestCases.login" finished-at="2021-12-01T20:36:40 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createNewDashboard -->
-        <test-method status="PASS" signature="wait_seconds()[pri:0, instance:testcases.GrafanaWebTestCases@3e792ce3]" name="wait_seconds" is-config="true" duration-ms="3015" started-at="2021-12-01T20:36:40 IST" finished-at="2021-12-01T20:36:43 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- wait_seconds -->
-        <test-method status="PASS" signature="searchDashboardNotExist()[pri:3, instance:testcases.GrafanaWebTestCases@3e792ce3]" name="searchDashboardNotExist" duration-ms="274" started-at="2021-12-01T20:36:43 IST" description="Checking the search management" finished-at="2021-12-01T20:36:44 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchDashboardNotExist -->
-        <test-method status="PASS" signature="wait_seconds()[pri:0, instance:testcases.GrafanaWebTestCases@3e792ce3]" name="wait_seconds" is-config="true" duration-ms="3014" started-at="2021-12-01T20:36:44 IST" finished-at="2021-12-01T20:36:47 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- wait_seconds -->
-        <test-method status="PASS" signature="homePageLogo()[pri:4, instance:testcases.GrafanaWebTestCases@3e792ce3]" name="homePageLogo" duration-ms="16783" started-at="2021-12-01T20:36:47 IST" description="Homepage logo" finished-at="2021-12-01T20:37:04 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- homePageLogo -->
-        <test-method status="PASS" signature="wait_seconds()[pri:0, instance:testcases.GrafanaWebTestCases@3e792ce3]" name="wait_seconds" is-config="true" duration-ms="3006" started-at="2021-12-01T20:37:04 IST" finished-at="2021-12-01T20:37:07 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- wait_seconds -->
-        <test-method status="PASS" signature="verifyDashboardName()[pri:5, instance:testcases.GrafanaWebTestCases@3e792ce3]" name="verifyDashboardName" duration-ms="3446" started-at="2021-12-01T20:37:07 IST" description="Verify dashboard name" finished-at="2021-12-01T20:37:10 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyDashboardName -->
-        <test-method status="PASS" signature="wait_seconds()[pri:0, instance:testcases.GrafanaWebTestCases@3e792ce3]" name="wait_seconds" is-config="true" duration-ms="3003" started-at="2021-12-01T20:37:10 IST" finished-at="2021-12-01T20:37:13 IST">
+        </test-method> <!-- test01_post -->
+        <test-method status="PASS" signature="wait_seconds()[pri:0, instance:testcases.GrafanaApiTestCases@6979efad]" name="wait_seconds" is-config="true" duration-ms="3044" started-at="2021-12-02T13:37:10 IST" finished-at="2021-12-02T13:37:13 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- wait_seconds -->
-        <test-method status="PASS" signature="endSession()[pri:0, instance:testcases.GrafanaWebTestCases@3e792ce3]" name="endSession" is-config="true" duration-ms="723" started-at="2021-12-01T20:37:13 IST" finished-at="2021-12-01T20:37:14 IST">
+        <test-method status="PASS" signature="test02_update(java.lang.String)[pri:0, instance:testcases.GrafanaApiTestCases@6979efad]" name="test02_update" duration-ms="63" started-at="2021-12-02T13:37:13 IST" description="Update" finished-at="2021-12-02T13:37:13 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[11111]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test02_update -->
+        <test-method status="PASS" signature="wait_seconds()[pri:0, instance:testcases.GrafanaApiTestCases@6979efad]" name="wait_seconds" is-config="true" duration-ms="3012" started-at="2021-12-02T13:37:13 IST" finished-at="2021-12-02T13:37:16 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wait_seconds -->
+        <test-method status="PASS" signature="test03_delete()[pri:0, instance:testcases.GrafanaApiTestCases@6979efad]" name="test03_delete" duration-ms="193" started-at="2021-12-02T13:37:16 IST" description="Delete" finished-at="2021-12-02T13:37:17 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test03_delete -->
+        <test-method status="PASS" signature="wait_seconds()[pri:0, instance:testcases.GrafanaApiTestCases@6979efad]" name="wait_seconds" is-config="true" duration-ms="3006" started-at="2021-12-02T13:37:17 IST" finished-at="2021-12-02T13:37:20 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wait_seconds -->
+        <test-method status="PASS" signature="endSession()[pri:0, instance:testcases.GrafanaApiTestCases@6979efad]" name="endSession" is-config="true" duration-ms="1" started-at="2021-12-02T13:37:20 IST" finished-at="2021-12-02T13:37:20 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endSession -->
-      </class> <!-- testcases.GrafanaWebTestCases -->
-    </test> <!-- GrafanaWebTest -->
-  </suite> <!-- SuiteWeb -->
+      </class> <!-- testcases.GrafanaApiTestCases -->
+    </test> <!-- GrafanaApiTest -->
+  </suite> <!-- SuiteAPI -->
 </testng-results>

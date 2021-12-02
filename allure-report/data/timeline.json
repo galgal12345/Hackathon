@@ -2,18 +2,18 @@
   "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
   "name" : "timeline",
   "children" : [ {
-    "name" : "Ghawi",
+    "name" : "AYALA-R-5981",
     "children" : [ {
-      "name" : "6724@Ghawi.main(1)",
+      "name" : "18388@AYALA-R-5981.main(1)",
       "children" : [ {
-        "name" : "Ensure dashboard was created",
-        "uid" : "cc421e3d869c0c14",
-        "parentUid" : "68bff77fd375394c6acc656ea31ed272",
+        "name" : "Create User",
+        "uid" : "69ec0b37c83b5f5",
+        "parentUid" : "eb1914882c58ed95b1d03c7b7e4ccd5b",
         "status" : "passed",
         "time" : {
-          "start" : 1638383700993,
-          "stop" : 1638383800946,
-          "duration" : 99953
+          "start" : 1638440370684,
+          "stop" : 1638440373586,
+          "duration" : 2902
         },
         "flaky" : false,
         "newFailed" : false,
@@ -21,78 +21,450 @@
         "newBroken" : false,
         "retriesCount" : 0,
         "retriesStatusChange" : false,
-        "parameters" : [ "webDriver" ]
-      }, {
-        "name" : "Login",
-        "uid" : "c12d04c0b6b82d25",
-        "parentUid" : "68bff77fd375394c6acc656ea31ed272",
-        "status" : "passed",
-        "time" : {
-          "start" : 1638383693877,
-          "stop" : 1638383697872,
-          "duration" : 3995
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "webDriver" ]
-      }, {
-        "name" : "Checking the search management",
-        "uid" : "29843415e8ff5753",
-        "parentUid" : "68bff77fd375394c6acc656ea31ed272",
-        "status" : "passed",
-        "time" : {
-          "start" : 1638383803976,
-          "stop" : 1638383804287,
-          "duration" : 311
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "webDriver" ]
-      }, {
-        "name" : "Homepage logo",
-        "uid" : "76c793d92ce3fcf",
-        "parentUid" : "68bff77fd375394c6acc656ea31ed272",
-        "status" : "passed",
-        "time" : {
-          "start" : 1638383807310,
-          "stop" : 1638383824195,
-          "duration" : 16885
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "webDriver" ]
-      }, {
-        "name" : "Verify dashboard name",
-        "uid" : "53eed19705569a2a",
-        "parentUid" : "68bff77fd375394c6acc656ea31ed272",
-        "status" : "passed",
-        "time" : {
-          "start" : 1638383827211,
-          "stop" : 1638383830700,
-          "duration" : 3489
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "webDriver" ]
+        "parameters" : [ "1", "useradmin@gmail.com", "useradmin", "useradmin", "11111", "123456", "restAssured" ]
       } ],
-      "uid" : "68bff77fd375394c6acc656ea31ed272"
+      "uid" : "eb1914882c58ed95b1d03c7b7e4ccd5b"
+    }, {
+      "name" : "4924@AYALA-R-5981.main(1)",
+      "children" : [ {
+        "name" : "Complete Task ",
+        "uid" : "22475f58fc4f7e7d",
+        "parentUid" : "6651893c64284be6d6e6600a64f29ecc",
+        "status" : "passed",
+        "time" : {
+          "start" : 1638437438124,
+          "stop" : 1638437441356,
+          "duration" : 3232
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "electron", "new task", "new task", "new task" ]
+      }, {
+        "name" : "Create Task ",
+        "uid" : "385435b663cca1a6",
+        "parentUid" : "6651893c64284be6d6e6600a64f29ecc",
+        "status" : "passed",
+        "time" : {
+          "start" : 1638437424290,
+          "stop" : 1638437434828,
+          "duration" : 10538
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "electron", "new task", "new task", "new task" ]
+      }, {
+        "name" : "Delete Task ",
+        "uid" : "c16ac8cf17ce57a2",
+        "parentUid" : "6651893c64284be6d6e6600a64f29ecc",
+        "status" : "passed",
+        "time" : {
+          "start" : 1638437444430,
+          "stop" : 1638437457757,
+          "duration" : 13327
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "electron", "new task", "new task", "new task" ]
+      } ],
+      "uid" : "6651893c64284be6d6e6600a64f29ecc"
+    }, {
+      "name" : "26820@AYALA-R-5981.main(1)",
+      "children" : [ {
+        "name" : "Create User",
+        "uid" : "7e7ef960eb155a3c",
+        "parentUid" : "1c2df0c82d5297d9327ff69ff5837bfd",
+        "status" : "passed",
+        "time" : {
+          "start" : 1638445026359,
+          "stop" : 1638445030193,
+          "duration" : 3834
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 4,
+        "retriesStatusChange" : false,
+        "parameters" : [ "1", "useradmin@gmail.com", "useradmin", "useradmin", "11111", "123456", "restAssured" ]
+      }, {
+        "name" : "Delete",
+        "uid" : "2ecf771e116427e1",
+        "parentUid" : "1c2df0c82d5297d9327ff69ff5837bfd",
+        "status" : "passed",
+        "time" : {
+          "start" : 1638445036947,
+          "stop" : 1638445037138,
+          "duration" : 191
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 4,
+        "retriesStatusChange" : true,
+        "parameters" : [ "1", "useradmin@gmail.com", "useradmin", "useradmin", "11111", "123456", "restAssured" ]
+      }, {
+        "name" : "Update",
+        "uid" : "82f8f16adb590bac",
+        "parentUid" : "1c2df0c82d5297d9327ff69ff5837bfd",
+        "status" : "passed",
+        "time" : {
+          "start" : 1638445033863,
+          "stop" : 1638445033923,
+          "duration" : 60
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 4,
+        "retriesStatusChange" : true,
+        "parameters" : [ "1", "useradmin@gmail.com", "useradmin", "useradmin", "11111", "123456", "restAssured" ]
+      } ],
+      "uid" : "1c2df0c82d5297d9327ff69ff5837bfd"
+    }, {
+      "name" : "28696@AYALA-R-5981.main(1)",
+      "children" : [ {
+        "name" : "Update",
+        "uid" : "2b3ab3f8fac265af",
+        "parentUid" : "62da1fcb28ec50ceac51b6b89996f3e0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1638432482543,
+          "stop" : 1638432482613,
+          "duration" : 70
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "1", "ayala11@gmail.com", "ayala11", "ayala1", "11111", "123456", "restAssured" ]
+      }, {
+        "name" : "Delete",
+        "uid" : "7c202997c9514396",
+        "parentUid" : "62da1fcb28ec50ceac51b6b89996f3e0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1638432485626,
+          "stop" : 1638432485794,
+          "duration" : 168
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "1", "ayala11@gmail.com", "ayala11", "ayala1", "11111", "123456", "restAssured" ]
+      }, {
+        "name" : "Create User",
+        "uid" : "a7676393e66dbcfe",
+        "parentUid" : "62da1fcb28ec50ceac51b6b89996f3e0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1638432475239,
+          "stop" : 1638432479078,
+          "duration" : 3839
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "1", "ayala11@gmail.com", "ayala11", "ayala1", "11111", "123456", "restAssured" ]
+      } ],
+      "uid" : "62da1fcb28ec50ceac51b6b89996f3e0"
+    }, {
+      "name" : "20948@AYALA-R-5981.main(1)",
+      "children" : [ {
+        "name" : "Update",
+        "uid" : "9848743ae0a2a28f",
+        "parentUid" : "ae27e3cd2f56f4826196bd3a0bd21495",
+        "status" : "passed",
+        "time" : {
+          "start" : 1638440699445,
+          "stop" : 1638440699503,
+          "duration" : 58
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "1", "useradmin@gmail.com", "useradmin", "useradmin", "11111", "123456", "restAssured" ]
+      }, {
+        "name" : "Update",
+        "uid" : "34977629791bff58",
+        "parentUid" : "ae27e3cd2f56f4826196bd3a0bd21495",
+        "status" : "passed",
+        "time" : {
+          "start" : 1638440482870,
+          "stop" : 1638440482937,
+          "duration" : 67
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "1", "useradmin@gmail.com", "useradmin", "useradmin", "11111", "123456", "restAssured" ]
+      }, {
+        "name" : "Create User",
+        "uid" : "be90742305a5bbb2",
+        "parentUid" : "ae27e3cd2f56f4826196bd3a0bd21495",
+        "status" : "passed",
+        "time" : {
+          "start" : 1638440476154,
+          "stop" : 1638440479377,
+          "duration" : 3223
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "1", "useradmin@gmail.com", "useradmin", "useradmin", "11111", "123456", "restAssured" ]
+      }, {
+        "name" : "Create User",
+        "uid" : "87fc69ea95a71065",
+        "parentUid" : "ae27e3cd2f56f4826196bd3a0bd21495",
+        "status" : "passed",
+        "time" : {
+          "start" : 1638440692645,
+          "stop" : 1638440696005,
+          "duration" : 3360
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "1", "useradmin@gmail.com", "useradmin", "useradmin", "11111", "123456", "restAssured" ]
+      }, {
+        "name" : "Delete",
+        "uid" : "b88b41583f9989c0",
+        "parentUid" : "ae27e3cd2f56f4826196bd3a0bd21495",
+        "status" : "passed",
+        "time" : {
+          "start" : 1638440485950,
+          "stop" : 1638440486119,
+          "duration" : 169
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "1", "useradmin@gmail.com", "useradmin", "useradmin", "11111", "123456", "restAssured" ]
+      }, {
+        "name" : "Delete",
+        "uid" : "7d0e0f247685ce6c",
+        "parentUid" : "ae27e3cd2f56f4826196bd3a0bd21495",
+        "status" : "passed",
+        "time" : {
+          "start" : 1638440702518,
+          "stop" : 1638440702701,
+          "duration" : 183
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "1", "useradmin@gmail.com", "useradmin", "useradmin", "11111", "123456", "restAssured" ]
+      } ],
+      "uid" : "ae27e3cd2f56f4826196bd3a0bd21495"
+    }, {
+      "name" : "17696@AYALA-R-5981.main(1)",
+      "children" : [ {
+        "name" : "Delete",
+        "uid" : "c93c025de93a90b1",
+        "parentUid" : "76bee068d0175940c8c8feff0242d1de",
+        "status" : "failed",
+        "time" : {
+          "start" : 1638440815298,
+          "stop" : 1638440816100,
+          "duration" : 802
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "1", "useradmin@gmail.com", "useradmin", "useradmin", "11111", "123456", "restAssured" ]
+      }, {
+        "name" : "Update",
+        "uid" : "6186ef8fd4fa0dc6",
+        "parentUid" : "76bee068d0175940c8c8feff0242d1de",
+        "status" : "failed",
+        "time" : {
+          "start" : 1638440809963,
+          "stop" : 1638440812090,
+          "duration" : 2127
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "1", "useradmin@gmail.com", "useradmin", "useradmin", "11111", "123456", "restAssured" ]
+      } ],
+      "uid" : "76bee068d0175940c8c8feff0242d1de"
+    }, {
+      "name" : "1884@AYALA-R-5981.main(1)",
+      "children" : [ {
+        "name" : "Calculation",
+        "uid" : "ef9105725bfdd177",
+        "parentUid" : "7fb1453996a1c4eed27d13622540e583",
+        "status" : "passed",
+        "time" : {
+          "start" : 1638444981141,
+          "stop" : 1638444989698,
+          "duration" : 8557
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "desktop" ]
+      } ],
+      "uid" : "7fb1453996a1c4eed27d13622540e583"
+    }, {
+      "name" : "24736@AYALA-R-5981.main(1)",
+      "children" : [ {
+        "name" : "Delete Task ",
+        "uid" : "ef6a2d7bde11258",
+        "parentUid" : "c5ae0189b4c32bfbef5569d6984f3f7f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1638444936991,
+          "stop" : 1638444950257,
+          "duration" : 13266
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 1,
+        "retriesStatusChange" : false,
+        "parameters" : [ "electron", "new task", "new task", "new task" ]
+      }, {
+        "name" : "Create Task ",
+        "uid" : "589500ab41406e98",
+        "parentUid" : "c5ae0189b4c32bfbef5569d6984f3f7f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1638444916094,
+          "stop" : 1638444927320,
+          "duration" : 11226
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 1,
+        "retriesStatusChange" : false,
+        "parameters" : [ "electron", "new task", "new task", "new task" ]
+      }, {
+        "name" : "Complete Task ",
+        "uid" : "cd9934862d111302",
+        "parentUid" : "c5ae0189b4c32bfbef5569d6984f3f7f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1638444930646,
+          "stop" : 1638444933882,
+          "duration" : 3236
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 1,
+        "retriesStatusChange" : false,
+        "parameters" : [ "electron", "new task", "new task", "new task" ]
+      } ],
+      "uid" : "c5ae0189b4c32bfbef5569d6984f3f7f"
+    }, {
+      "name" : "7788@AYALA-R-5981.main(1)",
+      "children" : [ {
+        "name" : "Update",
+        "uid" : "2acb29e767250da5",
+        "parentUid" : "af151d03f3120aeea8de1a818e99d809",
+        "status" : "passed",
+        "time" : {
+          "start" : 1638440898117,
+          "stop" : 1638440898167,
+          "duration" : 50
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "1", "useradmin@gmail.com", "useradmin", "useradmin", "11111", "123456", "restAssured" ]
+      }, {
+        "name" : "Create User",
+        "uid" : "440a62b8e91de748",
+        "parentUid" : "af151d03f3120aeea8de1a818e99d809",
+        "status" : "passed",
+        "time" : {
+          "start" : 1638440890971,
+          "stop" : 1638440894849,
+          "duration" : 3878
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "1", "useradmin@gmail.com", "useradmin", "useradmin", "11111", "123456", "restAssured" ]
+      }, {
+        "name" : "Delete",
+        "uid" : "d2280d8337f55b5b",
+        "parentUid" : "af151d03f3120aeea8de1a818e99d809",
+        "status" : "passed",
+        "time" : {
+          "start" : 1638440901187,
+          "stop" : 1638440901478,
+          "duration" : 291
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "1", "useradmin@gmail.com", "useradmin", "useradmin", "11111", "123456", "restAssured" ]
+      } ],
+      "uid" : "af151d03f3120aeea8de1a818e99d809"
     } ],
-    "uid" : "f44f9a5ad600cb6395e029c58eb5a576"
+    "uid" : "1acf0c5f677b5b66fb48eb4efbd88089"
   } ]
 }

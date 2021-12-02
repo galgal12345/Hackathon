@@ -1,15 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [SuiteAPI]">
+  <listeners>
+    <listener class-name="utilities.Listeners"/>
+  </listeners>
   <test thread-count="5" verbose="0" name="GrafanaApiTest(failed)">
+    <parameter name="OrgId" value="1"/>
+    <parameter name="password" value="123456"/>
+    <parameter name="name" value="user1"/>
+    <parameter name="newPassword" value="11111"/>
+    <parameter name="login" value="user1"/>
     <parameter name="platform" value="restAssured"/>
+    <parameter name="email" value="user1@gmail.com"/>
     <classes>
       <class name="testcases.GrafanaApiTestCases">
         <methods>
+          <include name="test02_update" invocation-numbers="0"/>
           <include name="startSession"/>
-          <include name="test04_update"/>
           <include name="endSession"/>
-          <include name="test02_post"/>
+          <include name="test01_post" invocation-numbers="0"/>
           <include name="wait_seconds"/>
           <include name="test03_delete"/>
         </methods>

@@ -2,14 +2,14 @@
   "uid" : "b1a8273437954620fa374b796ffaacdd",
   "name" : "behaviors",
   "children" : [ {
-    "name" : "Login",
-    "uid" : "c12d04c0b6b82d25",
+    "name" : "Create User",
+    "uid" : "a7676393e66dbcfe",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1638383693877,
-      "stop" : 1638383697872,
-      "duration" : 3995
+      "start" : 1638432475239,
+      "stop" : 1638432479078,
+      "duration" : 3839
     },
     "flaky" : false,
     "newFailed" : false,
@@ -17,16 +17,16 @@
     "newBroken" : false,
     "retriesCount" : 0,
     "retriesStatusChange" : false,
-    "parameters" : [ "webDriver" ]
+    "parameters" : [ "1", "ayala11@gmail.com", "ayala11", "ayala1", "11111", "123456", "restAssured" ]
   }, {
-    "name" : "Ensure dashboard was created",
-    "uid" : "cc421e3d869c0c14",
+    "name" : "Update",
+    "uid" : "2b3ab3f8fac265af",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1638383700993,
-      "stop" : 1638383800946,
-      "duration" : 99953
+      "start" : 1638432482543,
+      "stop" : 1638432482613,
+      "duration" : 70
     },
     "flaky" : false,
     "newFailed" : false,
@@ -34,16 +34,16 @@
     "newBroken" : false,
     "retriesCount" : 0,
     "retriesStatusChange" : false,
-    "parameters" : [ "webDriver" ]
+    "parameters" : [ "1", "ayala11@gmail.com", "ayala11", "ayala1", "11111", "123456", "restAssured" ]
   }, {
-    "name" : "Checking the search management",
-    "uid" : "29843415e8ff5753",
+    "name" : "Delete",
+    "uid" : "7c202997c9514396",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1638383803976,
-      "stop" : 1638383804287,
-      "duration" : 311
+      "start" : 1638432485626,
+      "stop" : 1638432485794,
+      "duration" : 168
     },
     "flaky" : false,
     "newFailed" : false,
@@ -51,33 +51,67 @@
     "newBroken" : false,
     "retriesCount" : 0,
     "retriesStatusChange" : false,
-    "parameters" : [ "webDriver" ]
+    "parameters" : [ "1", "ayala11@gmail.com", "ayala11", "ayala1", "11111", "123456", "restAssured" ]
   }, {
-    "name" : "Homepage logo",
-    "uid" : "76c793d92ce3fcf",
+    "name" : "Create Task ",
+    "uid" : "589500ab41406e98",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1638383807310,
-      "stop" : 1638383824195,
-      "duration" : 16885
+      "start" : 1638444916094,
+      "stop" : 1638444927320,
+      "duration" : 11226
     },
     "flaky" : false,
     "newFailed" : false,
     "newPassed" : false,
     "newBroken" : false,
-    "retriesCount" : 0,
+    "retriesCount" : 1,
     "retriesStatusChange" : false,
-    "parameters" : [ "webDriver" ]
+    "parameters" : [ "electron", "new task", "new task", "new task" ]
   }, {
-    "name" : "Verify dashboard name",
-    "uid" : "53eed19705569a2a",
+    "name" : "Complete Task ",
+    "uid" : "cd9934862d111302",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1638383827211,
-      "stop" : 1638383830700,
-      "duration" : 3489
+      "start" : 1638444930646,
+      "stop" : 1638444933882,
+      "duration" : 3236
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "newPassed" : false,
+    "newBroken" : false,
+    "retriesCount" : 1,
+    "retriesStatusChange" : false,
+    "parameters" : [ "electron", "new task", "new task", "new task" ]
+  }, {
+    "name" : "Delete Task ",
+    "uid" : "ef6a2d7bde11258",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1638444936991,
+      "stop" : 1638444950257,
+      "duration" : 13266
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "newPassed" : false,
+    "newBroken" : false,
+    "retriesCount" : 1,
+    "retriesStatusChange" : false,
+    "parameters" : [ "electron", "new task", "new task", "new task" ]
+  }, {
+    "name" : "Calculation",
+    "uid" : "ef9105725bfdd177",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1638444981141,
+      "stop" : 1638444989698,
+      "duration" : 8557
     },
     "flaky" : false,
     "newFailed" : false,
@@ -85,6 +119,57 @@
     "newBroken" : false,
     "retriesCount" : 0,
     "retriesStatusChange" : false,
-    "parameters" : [ "webDriver" ]
+    "parameters" : [ "desktop" ]
+  }, {
+    "name" : "Create User",
+    "uid" : "7e7ef960eb155a3c",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1638445026359,
+      "stop" : 1638445030193,
+      "duration" : 3834
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "newPassed" : false,
+    "newBroken" : false,
+    "retriesCount" : 4,
+    "retriesStatusChange" : false,
+    "parameters" : [ "1", "useradmin@gmail.com", "useradmin", "useradmin", "11111", "123456", "restAssured" ]
+  }, {
+    "name" : "Update",
+    "uid" : "82f8f16adb590bac",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1638445033863,
+      "stop" : 1638445033923,
+      "duration" : 60
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "newPassed" : false,
+    "newBroken" : false,
+    "retriesCount" : 4,
+    "retriesStatusChange" : true,
+    "parameters" : [ "1", "useradmin@gmail.com", "useradmin", "useradmin", "11111", "123456", "restAssured" ]
+  }, {
+    "name" : "Delete",
+    "uid" : "2ecf771e116427e1",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1638445036947,
+      "stop" : 1638445037138,
+      "duration" : 191
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "newPassed" : false,
+    "newBroken" : false,
+    "retriesCount" : 4,
+    "retriesStatusChange" : true,
+    "parameters" : [ "1", "useradmin@gmail.com", "useradmin", "useradmin", "11111", "123456", "restAssured" ]
   } ]
 }

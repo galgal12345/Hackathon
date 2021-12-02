@@ -21,7 +21,7 @@ import java.util.concurrent.TimeUnit;
 public class ToDoLIstTestCases extends CommonOps {
     int size = 0;
 
-    @Test( description = "Create Task ")
+    @Test(description = "Create Task ")
     @Description("create task to list")
     @Parameters("taskName")
     public void test01_create(String task) {
@@ -31,23 +31,20 @@ public class ToDoLIstTestCases extends CommonOps {
     }
 
 
-
-
-    @Test( description = "Complete Task ")
+    @Test(description = "Complete Task ")
     @Description("mark a completed task")
     @Parameters("taskNameComplete")
     public void test02_complete(String task) {
-        size = ToDoListWorkFlow.getSizeList();
         String completedString = ToDoListWorkFlow.completedTsk(task);
-            Verifications.verifyEquals(completedString, Utilities.getDataXML("expectedCompleteList"));
-
+        Verifications.verifyEquals(completedString, Utilities.getDataXML("expectedCompleteList"));
     }
-    @Test( description = "Delete Task ")
+
+    @Test(description = "Delete Task ")
     @Description("delete task from a list")
     @Parameters("taskNameDelete")
     public void test03_delete(String task) {
         size = ToDoListWorkFlow.getSizeList();
-        WebElement completedTask = ToDoListWorkFlow.deleteTask(task);
-            Verifications.verifyTrue(sizeList == size - 1);
+        ToDoListWorkFlow.deleteTask(task);
+        Verifications.verifyTrue(sizeList == size - 1);
     }
 }

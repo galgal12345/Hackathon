@@ -24,14 +24,19 @@ public class GrafanaApiWorkFlow extends CommonOps {
         response.prettyPrint();
     }
     @Step("update password")
-    public static void UpdateRequest(String url,int Id,String pasword) {
-        ApiUiActions.Update(url,Id,pasword);
+    public static void UpdateRequest(String url,int Id,String password) {
+        ApiUiActions.Update(url,Id,password);
         response.prettyPrint();
     }
     @Step
     public static int setNumUsers(String url){
         ApiUiActions.Get(url);
       return Integer.parseInt(ApiUiActions.extractJson("users"));
+    }
+    @Step
+    public static int getIdUser(){
+       // ApiUiActions.Get(url);
+        return Integer.parseInt(ApiUiActions.extractJson("id"));
     }
 }
 

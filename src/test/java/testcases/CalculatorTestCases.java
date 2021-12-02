@@ -1,5 +1,6 @@
 package testcases;
 
+import extensions.AllUiActions;
 import extensions.Verifications;
 import io.qameta.allure.Description;
 import org.testng.annotations.Test;
@@ -14,7 +15,7 @@ public class CalculatorTestCases extends CommonOps {
     @Description("Performing a number of operations on a calculator")
     public void test01_calc() {
         CalculatorWorkFlow.Calculation();
-        Verifications.verifyTrueMsg("worng in calac",calcPage.resultNum()==120);
+        Verifications.verifyTrue(calcPage.resultNum()==120);
     }
 
 }

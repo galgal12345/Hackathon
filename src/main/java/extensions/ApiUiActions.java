@@ -33,7 +33,6 @@ public class ApiUiActions extends Base {
         params.put("password", password);
         request.body(params.toJSONString());
         response = request.put(url+"/"+Id+"/password");
-        System.out.println();
         return response;
     }
     @Step("delete api")

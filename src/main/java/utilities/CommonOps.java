@@ -56,6 +56,8 @@ public class CommonOps extends Base {
             case "electron":
                 myElectronStarter();
                 break;
+            default:
+                throw new IllegalArgumentException();
         }
 
     }
@@ -105,7 +107,7 @@ public class CommonOps extends Base {
 
     @Step("init API")
     public void myApiStarter() {
-        restUrl=Utilities.getDataXML("restUrl");
+        restUrl = Utilities.getDataXML("restUrl");
         RestAssured.baseURI = restUrl;
         request = RestAssured.given();
         request.header("Content-Type", "application/json");
@@ -144,10 +146,11 @@ public class CommonOps extends Base {
 
     @AfterClass
     public void endSession() {
-
         if (webDriver != null) webDriver.quit();
         else if (androidDriver != null) androidDriver.quit();
-        else if (deskDriver != null) deskDriver.quit();;
+        else if (deskDriver != null){
+            deskDriver.quit();
+        }
     }
 
 

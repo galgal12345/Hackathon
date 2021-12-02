@@ -13,10 +13,5 @@ public class ElectronActions extends Base {
         action.sendKeys(Keys.RETURN).build().perform();
 
     }
-    @Step
-    public static void SendKeysReturn(){
 
-        action.sendKeys(Keys.RETURN).build().perform();
-
-    }
 }

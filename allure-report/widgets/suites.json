@@ -1,15 +1,37 @@
 {
-  "total" : 1,
+  "total" : 3,
   "items" : [ {
-    "uid" : "4c022a8fccfa17bc6f87e09e2de72686",
-    "name" : "SuiteWeb",
+    "uid" : "ddd310267e45faaac31c950c02e424df",
+    "name" : "SuiteAPI",
     "statistic" : {
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 5,
+      "passed" : 6,
       "unknown" : 0,
-      "total" : 5
+      "total" : 6
+    }
+  }, {
+    "uid" : "6301634a26b3c8c1a1ba6fec01673fa8",
+    "name" : "SuiteElectron",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 3,
+      "unknown" : 0,
+      "total" : 3
+    }
+  }, {
+    "uid" : "f94508ce641e876bfb1779039011d624",
+    "name" : "SuiteDesktop",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
     }
   } ]
 }

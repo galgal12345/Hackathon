@@ -6,9 +6,9 @@
     </listeners>
     <test name="GrafanaApiTest">
         <parameter name="platform" value="restAssured"/>
-        <parameter name="name" value="ayala"/>
-        <parameter name="email" value="ayala105981@gmail.com"/>
-        <parameter name="login" value="ayala"/>
+        <parameter name="name" value="useradmin"/>
+        <parameter name="email" value="useradmin@gmail.com"/>
+        <parameter name="login" value="useradmin"/>
         <parameter name="password" value="123456"/>
         <parameter name="OrgId" value="1"/>
         <parameter name="newPassword" value="11111"/>

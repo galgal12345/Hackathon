@@ -2,13 +2,15 @@ package extensions;
 
 import com.google.common.util.concurrent.Uninterruptibles;
 import io.qameta.allure.Step;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import utilities.Base;
 
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-public abstract class AllUiActions {
+public abstract class AllUiActions extends Base {
 
 
     @Step("get an element text")
@@ -45,6 +47,11 @@ public abstract class AllUiActions {
                 return true;
         }
         return false;
+    }
+    @Step
+    public static void SendKeysReturn(){
+
+        action.sendKeys(Keys.RETURN).build().perform();
 
     }
 }
