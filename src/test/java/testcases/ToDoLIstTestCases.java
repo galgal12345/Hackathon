@@ -40,7 +40,7 @@ public class ToDoLIstTestCases extends CommonOps {
     }
 
     @Test(description = "Delete Task ")
-    @Description("delete task from a list")
+    @Description("Delete task from a list")
     @Parameters("taskNameDelete")
     public void test03_delete(String task) {
         size = ToDoListWorkFlow.getSizeList();
