@@ -1,10 +1,12 @@
 package utilities;
 
+import io.qameta.allure.Step;
+
 import java.sql.*;
 
 public class ManageDb extends Base {
 
-
+    @Step("data base include admin admin for grafana")
     public static void myDB() throws ClassNotFoundException, SQLException {
 
 

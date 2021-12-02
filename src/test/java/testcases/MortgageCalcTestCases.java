@@ -1,5 +1,6 @@
 package testcases;
 
+import extensions.Verifications;
 import io.qameta.allure.Description;
 import org.testng.annotations.Test;
 import utilities.CommonOps;
@@ -13,8 +14,9 @@ public class MortgageCalcTestCases extends CommonOps {
     public void calcFragment(String amount, String term, String rate,String repayment, String interest_only){
 
         MortgageCalcWorkFlow.sendKeysToTextFileds(amount, term, rate);
-        MortgageCalcWorkFlow.checkDataOnCalcFragment(repayment, interest_only);
         MortgageCalcWorkFlow.saveDataOnCalcFragment();
+        MortgageCalcWorkFlow.checkDataOnCalcFragment(repayment, interest_only);
+
     }
 
 
@@ -25,6 +27,7 @@ public class MortgageCalcTestCases extends CommonOps {
 
         MortgageCalcWorkFlow.checkDataOnSavedFragment();
         MortgageCalcWorkFlow.deleteOnSavedFragment();
+        Verifications.assertAll();
     }
 
 

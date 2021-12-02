@@ -6,23 +6,14 @@ import io.appium.java_client.touch.TapOptions;
 import io.appium.java_client.touch.WaitOptions;
 import io.appium.java_client.touch.offset.ElementOption;
 import io.appium.java_client.touch.offset.PointOption;
+import io.qameta.allure.Step;
 import org.openqa.selenium.Dimension;
 import utilities.CommonOps;
 
 import java.time.Duration;
 
 public class MobileUiActions extends CommonOps {
-
-    public static void regularTap(MobileElement elem) {
-
-        TouchAction regularTapAction = new TouchAction(androidDriver);
-
-        regularTapAction.tap(new TapOptions()
-                .withElement(ElementOption.element(elem)))
-                .perform();
-
-    }
-
+    @Step("Swipe Screen")
     public static void swipeScreen() {
 
 

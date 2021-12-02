@@ -2,6 +2,7 @@ package workflow;
 
 import com.google.common.util.concurrent.Uninterruptibles;
 import extensions.MobileUiActions;
+import extensions.Verifications;
 import io.qameta.allure.Step;
 import org.testng.asserts.SoftAssert;
 import utilities.CommonOps;
@@ -23,8 +24,10 @@ public class MortgageCalcWorkFlow extends CommonOps {
 
     @Step("checks if the repayment & interest only  on calculate fragment is equal to the expected result")
     public static void checkDataOnCalcFragment(String expectedRepayment, String expectedInterest_only) {
-        assertEquals(calculateFragmentPage.getRepayment_txt_view().getText(), expectedRepayment);
-        assertEquals(calculateFragmentPage.getInterest_only_txt_view().getText(), expectedInterest_only);
+
+        Verifications.softAssert(calculateFragmentPage.getRepayment_txt_view().getText(), expectedRepayment);
+        Verifications.softAssert(calculateFragmentPage.getInterest_only_txt_view().getText(), expectedInterest_only);
+
     }
 
     @Step("saves all the data from calculate fragment by clicking on save button")
@@ -37,13 +40,12 @@ public class MortgageCalcWorkFlow extends CommonOps {
 
         MobileUiActions.swipeScreen();
 
-        SoftAssert softDataOnSavedFragment = new SoftAssert();
-        softDataOnSavedFragment.assertEquals(savedFragmentPage.getAmt_txt_view().getText(), myExpectedArray[0]);
-        softDataOnSavedFragment.assertEquals(savedFragmentPage.getTerm_txt_view().getText(), myExpectedArray[1]);
-        softDataOnSavedFragment.assertEquals(savedFragmentPage.getRate_txt_view().getText(), myExpectedArray[2]);
-        softDataOnSavedFragment.assertEquals(savedFragmentPage.getRepayment_txt_view().getText(), myExpectedArray[3]);
-        softDataOnSavedFragment.assertEquals(savedFragmentPage.getInterestOnly_txt_view().getText(), myExpectedArray[4]);
-        softDataOnSavedFragment.assertAll();
+        Verifications.softAssert(savedFragmentPage.getAmt_txt_view().getText(), myExpectedArray[0]);
+        Verifications.softAssert(savedFragmentPage.getTerm_txt_view().getText(), myExpectedArray[1]);
+        Verifications.softAssert(savedFragmentPage.getRate_txt_view().getText(), myExpectedArray[2]);
+        Verifications.softAssert(savedFragmentPage.getRepayment_txt_view().getText(), myExpectedArray[3]);
+        Verifications.softAssert(savedFragmentPage.getInterestOnly_txt_view().getText(), myExpectedArray[4]);
+
 
     }
 

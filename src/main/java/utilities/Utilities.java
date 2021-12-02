@@ -18,12 +18,14 @@ public class Utilities{
 
     private static Object[][] data = null;
 
+    @Step("bring data from csv with data-provider ")
     @DataProvider(name = "data-provider")
     public static Object[][] createData() {
         getFromCsvData("C:\\Users\\GIL\\IdeaProjects\\Hackathon\\csv-files\\data.csv");
         return data;
     }
 
+    @Step("getFromCsvData")
     private static void getFromCsvData(String fileName) {
 
         try {
@@ -49,6 +51,8 @@ public class Utilities{
             fileNotFoundException.printStackTrace();
         }
     }
+
+    @Step("getDataXML")
     public static String getDataXML(String nodeName) {
         DocumentBuilder dBuilder;
         Document doc = null;
