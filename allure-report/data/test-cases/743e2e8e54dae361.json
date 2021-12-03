@@ -1,0 +1,1556 @@
+{
+  "uid" : "743e2e8e54dae361",
+  "name" : "Ensure dashboard was created",
+  "fullName" : "testcases.GrafanaWebTestCases.createNewDashboard",
+  "historyId" : "76d16a82c737537a0f777193bba361e1",
+  "time" : {
+    "start" : 1638431771532,
+    "stop" : 1638431873940,
+    "duration" : 102408
+  },
+  "description" : "Create new dashboards and verify that we can see them shown in homepage, with soft assert for each dashboard",
+  "descriptionHtml" : "<p>Create new dashboards and verify that we can see them shown in homepage, with soft assert for each dashboard</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "startSession",
+    "time" : {
+      "start" : 1638431757644,
+      "stop" : 1638431763278,
+      "duration" : 5634
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "init WEB",
+      "time" : {
+        "start" : 1638431757669,
+        "stop" : 1638431763277,
+        "duration" : 5608
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "description" : "Create new dashboards and verify that we can see them shown in homepage, with soft assert for each dashboard",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Create new dashboard",
+      "time" : {
+        "start" : 1638431771547,
+        "stop" : 1638431793758,
+        "duration" : 22211
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "waiting n seconds",
+        "time" : {
+          "start" : 1638431771547,
+          "stop" : 1638431774551,
+          "duration" : 3004
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "seconds",
+          "value" : "3"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "clicking on an element",
+        "time" : {
+          "start" : 1638431774625,
+          "stop" : 1638431775115,
+          "duration" : 490
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "element",
+          "value" : "[[ChromeDriver: chrome on WINDOWS (f395d2dfe7d91f359c3d85120c43bbe2)] -> xpath: /html/body/div/div/nav/div[2]/div[2]/a]"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "waiting n seconds",
+        "time" : {
+          "start" : 1638431775116,
+          "stop" : 1638431778130,
+          "duration" : 3014
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "seconds",
+          "value" : "3"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "clicking on an element",
+        "time" : {
+          "start" : 1638431778270,
+          "stop" : 1638431779192,
+          "duration" : 922
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "element",
+          "value" : "[[ChromeDriver: chrome on WINDOWS (f395d2dfe7d91f359c3d85120c43bbe2)] -> xpath: //div[2]/div[1]/div[1]]"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "waiting n seconds",
+        "time" : {
+          "start" : 1638431779192,
+          "stop" : 1638431782204,
+          "duration" : 3012
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "seconds",
+          "value" : "3"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "clicking on an element",
+        "time" : {
+          "start" : 1638431782230,
+          "stop" : 1638431782406,
+          "duration" : 176
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "element",
+          "value" : "[[ChromeDriver: chrome on WINDOWS (f395d2dfe7d91f359c3d85120c43bbe2)] -> xpath: //div[2]/div[1]/div[5]/button/div]"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "waiting n seconds",
+        "time" : {
+          "start" : 1638431782407,
+          "stop" : 1638431785409,
+          "duration" : 3002
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "seconds",
+          "value" : "3"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "clear input text ",
+        "time" : {
+          "start" : 1638431785438,
+          "stop" : 1638431785502,
+          "duration" : 64
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "element",
+          "value" : "[[ChromeDriver: chrome on WINDOWS (f395d2dfe7d91f359c3d85120c43bbe2)] -> xpath: //form/div[1]/div[2]/div/div/input]"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "waiting n seconds",
+        "time" : {
+          "start" : 1638431785502,
+          "stop" : 1638431788511,
+          "duration" : 3009
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "seconds",
+          "value" : "3"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "send value to an input element",
+        "time" : {
+          "start" : 1638431788534,
+          "stop" : 1638431788643,
+          "duration" : 109
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "element",
+          "value" : "[[ChromeDriver: chrome on WINDOWS (f395d2dfe7d91f359c3d85120c43bbe2)] -> xpath: //form/div[1]/div[2]/div/div/input]"
+        }, {
+          "name" : "value",
+          "value" : "Dashboard1"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "waiting n seconds",
+        "time" : {
+          "start" : 1638431788644,
+          "stop" : 1638431790645,
+          "duration" : 2001
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "seconds",
+          "value" : "2"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "clicking on an element",
+        "time" : {
+          "start" : 1638431790677,
+          "stop" : 1638431790744,
+          "duration" : 67
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "element",
+          "value" : "[[ChromeDriver: chrome on WINDOWS (f395d2dfe7d91f359c3d85120c43bbe2)] -> class name: css-aja5tg-button]"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "waiting n seconds",
+        "time" : {
+          "start" : 1638431790744,
+          "stop" : 1638431793758,
+          "duration" : 3014
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "seconds",
+          "value" : "3"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "dashboardName",
+        "value" : "Dashboard1"
+      } ],
+      "stepsCount" : 13,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "clicking on an element",
+      "time" : {
+        "start" : 1638431793790,
+        "stop" : 1638431793944,
+        "duration" : 154
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "element",
+        "value" : "[[ChromeDriver: chrome on WINDOWS (f395d2dfe7d91f359c3d85120c43bbe2)] -> xpath: /html/body/div/div/nav/div[2]/div[3]/a]"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "waiting n seconds",
+      "time" : {
+        "start" : 1638431793945,
+        "stop" : 1638431795947,
+        "duration" : 2002
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "seconds",
+        "value" : "2"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "get an element text",
+      "time" : {
+        "start" : 1638431795978,
+        "stop" : 1638431796019,
+        "duration" : 41
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "element",
+        "value" : "[[ChromeDriver: chrome on WINDOWS (f395d2dfe7d91f359c3d85120c43bbe2)] -> xpath: //section/div[2]/div/div[1]/div[2]/ul]"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "verify true softAssert",
+      "time" : {
+        "start" : 1638431796020,
+        "stop" : 1638431796063,
+        "duration" : 43
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "condition",
+        "value" : "true"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "waiting n seconds",
+      "time" : {
+        "start" : 1638431796063,
+        "stop" : 1638431798073,
+        "duration" : 2010
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "seconds",
+        "value" : "2"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Create new dashboard",
+      "time" : {
+        "start" : 1638431798074,
+        "stop" : 1638431819316,
+        "duration" : 21242
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "waiting n seconds",
+        "time" : {
+          "start" : 1638431798074,
+          "stop" : 1638431801087,
+          "duration" : 3013
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "seconds",
+          "value" : "3"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "clicking on an element",
+        "time" : {
+          "start" : 1638431801119,
+          "stop" : 1638431801292,
+          "duration" : 173
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "element",
+          "value" : "[[ChromeDriver: chrome on WINDOWS (f395d2dfe7d91f359c3d85120c43bbe2)] -> xpath: /html/body/div/div/nav/div[2]/div[2]/a]"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "waiting n seconds",
+        "time" : {
+          "start" : 1638431801292,
+          "stop" : 1638431804296,
+          "duration" : 3004
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "seconds",
+          "value" : "3"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "clicking on an element",
+        "time" : {
+          "start" : 1638431804330,
+          "stop" : 1638431804699,
+          "duration" : 369
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "element",
+          "value" : "[[ChromeDriver: chrome on WINDOWS (f395d2dfe7d91f359c3d85120c43bbe2)] -> xpath: //div[2]/div[1]/div[1]]"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "waiting n seconds",
+        "time" : {
+          "start" : 1638431804699,
+          "stop" : 1638431807703,
+          "duration" : 3004
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "seconds",
+          "value" : "3"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "clicking on an element",
+        "time" : {
+          "start" : 1638431807730,
+          "stop" : 1638431807857,
+          "duration" : 127
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "element",
+          "value" : "[[ChromeDriver: chrome on WINDOWS (f395d2dfe7d91f359c3d85120c43bbe2)] -> xpath: //div[2]/div[1]/div[5]/button/div]"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "waiting n seconds",
+        "time" : {
+          "start" : 1638431807857,
+          "stop" : 1638431810870,
+          "duration" : 3013
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "seconds",
+          "value" : "3"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "clear input text ",
+        "time" : {
+          "start" : 1638431810901,
+          "stop" : 1638431810980,
+          "duration" : 79
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "element",
+          "value" : "[[ChromeDriver: chrome on WINDOWS (f395d2dfe7d91f359c3d85120c43bbe2)] -> xpath: //form/div[1]/div[2]/div/div/input]"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "waiting n seconds",
+        "time" : {
+          "start" : 1638431810980,
+          "stop" : 1638431813987,
+          "duration" : 3007
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "seconds",
+          "value" : "3"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "send value to an input element",
+        "time" : {
+          "start" : 1638431814009,
+          "stop" : 1638431814186,
+          "duration" : 177
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "element",
+          "value" : "[[ChromeDriver: chrome on WINDOWS (f395d2dfe7d91f359c3d85120c43bbe2)] -> xpath: //form/div[1]/div[2]/div/div/input]"
+        }, {
+          "name" : "value",
+          "value" : "AyalaDashboard"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "waiting n seconds",
+        "time" : {
+          "start" : 1638431814186,
+          "stop" : 1638431816190,
+          "duration" : 2004
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "seconds",
+          "value" : "2"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "clicking on an element",
+        "time" : {
+          "start" : 1638431816214,
+          "stop" : 1638431816311,
+          "duration" : 97
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "element",
+          "value" : "[[ChromeDriver: chrome on WINDOWS (f395d2dfe7d91f359c3d85120c43bbe2)] -> class name: css-aja5tg-button]"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "waiting n seconds",
+        "time" : {
+          "start" : 1638431816311,
+          "stop" : 1638431819316,
+          "duration" : 3005
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "seconds",
+          "value" : "3"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "dashboardName",
+        "value" : "AyalaDashboard"
+      } ],
+      "stepsCount" : 13,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "clicking on an element",
+      "time" : {
+        "start" : 1638431819344,
+        "stop" : 1638431819431,
+        "duration" : 87
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "element",
+        "value" : "[[ChromeDriver: chrome on WINDOWS (f395d2dfe7d91f359c3d85120c43bbe2)] -> xpath: /html/body/div/div/nav/div[2]/div[3]/a]"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "waiting n seconds",
+      "time" : {
+        "start" : 1638431819431,
+        "stop" : 1638431821441,
+        "duration" : 2010
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "seconds",
+        "value" : "2"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "get an element text",
+      "time" : {
+        "start" : 1638431821469,
+        "stop" : 1638431821500,
+        "duration" : 31
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "element",
+        "value" : "[[ChromeDriver: chrome on WINDOWS (f395d2dfe7d91f359c3d85120c43bbe2)] -> xpath: //section/div[2]/div/div[1]/div[2]/ul]"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "verify true softAssert",
+      "time" : {
+        "start" : 1638431821500,
+        "stop" : 1638431821500,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "condition",
+        "value" : "true"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "waiting n seconds",
+      "time" : {
+        "start" : 1638431821500,
+        "stop" : 1638431823508,
+        "duration" : 2008
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "seconds",
+        "value" : "2"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Create new dashboard",
+      "time" : {
+        "start" : 1638431823508,
+        "stop" : 1638431844564,
+        "duration" : 21056
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "waiting n seconds",
+        "time" : {
+          "start" : 1638431823509,
+          "stop" : 1638431826663,
+          "duration" : 3154
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "seconds",
+          "value" : "3"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "clicking on an element",
+        "time" : {
+          "start" : 1638431826680,
+          "stop" : 1638431826784,
+          "duration" : 104
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "element",
+          "value" : "[[ChromeDriver: chrome on WINDOWS (f395d2dfe7d91f359c3d85120c43bbe2)] -> xpath: /html/body/div/div/nav/div[2]/div[2]/a]"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "waiting n seconds",
+        "time" : {
+          "start" : 1638431826785,
+          "stop" : 1638431829800,
+          "duration" : 3015
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "seconds",
+          "value" : "3"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "clicking on an element",
+        "time" : {
+          "start" : 1638431829832,
+          "stop" : 1638431830068,
+          "duration" : 236
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "element",
+          "value" : "[[ChromeDriver: chrome on WINDOWS (f395d2dfe7d91f359c3d85120c43bbe2)] -> xpath: //div[2]/div[1]/div[1]]"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "waiting n seconds",
+        "time" : {
+          "start" : 1638431830070,
+          "stop" : 1638431833077,
+          "duration" : 3007
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "seconds",
+          "value" : "3"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "clicking on an element",
+        "time" : {
+          "start" : 1638431833099,
+          "stop" : 1638431833197,
+          "duration" : 98
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "element",
+          "value" : "[[ChromeDriver: chrome on WINDOWS (f395d2dfe7d91f359c3d85120c43bbe2)] -> xpath: //div[2]/div[1]/div[5]/button/div]"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "waiting n seconds",
+        "time" : {
+          "start" : 1638431833200,
+          "stop" : 1638431836205,
+          "duration" : 3005
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "seconds",
+          "value" : "3"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "clear input text ",
+        "time" : {
+          "start" : 1638431836228,
+          "stop" : 1638431836285,
+          "duration" : 57
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "element",
+          "value" : "[[ChromeDriver: chrome on WINDOWS (f395d2dfe7d91f359c3d85120c43bbe2)] -> xpath: //form/div[1]/div[2]/div/div/input]"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "waiting n seconds",
+        "time" : {
+          "start" : 1638431836285,
+          "stop" : 1638431839297,
+          "duration" : 3012
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "seconds",
+          "value" : "3"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "send value to an input element",
+        "time" : {
+          "start" : 1638431839322,
+          "stop" : 1638431839449,
+          "duration" : 127
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "element",
+          "value" : "[[ChromeDriver: chrome on WINDOWS (f395d2dfe7d91f359c3d85120c43bbe2)] -> xpath: //form/div[1]/div[2]/div/div/input]"
+        }, {
+          "name" : "value",
+          "value" : "RamiDashboard"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "waiting n seconds",
+        "time" : {
+          "start" : 1638431839450,
+          "stop" : 1638431841454,
+          "duration" : 2004
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "seconds",
+          "value" : "2"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "clicking on an element",
+        "time" : {
+          "start" : 1638431841481,
+          "stop" : 1638431841550,
+          "duration" : 69
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "element",
+          "value" : "[[ChromeDriver: chrome on WINDOWS (f395d2dfe7d91f359c3d85120c43bbe2)] -> class name: css-aja5tg-button]"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "waiting n seconds",
+        "time" : {
+          "start" : 1638431841550,
+          "stop" : 1638431844564,
+          "duration" : 3014
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "seconds",
+          "value" : "3"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "dashboardName",
+        "value" : "RamiDashboard"
+      } ],
+      "stepsCount" : 13,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "clicking on an element",
+      "time" : {
+        "start" : 1638431844587,
+        "stop" : 1638431844673,
+        "duration" : 86
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "element",
+        "value" : "[[ChromeDriver: chrome on WINDOWS (f395d2dfe7d91f359c3d85120c43bbe2)] -> xpath: /html/body/div/div/nav/div[2]/div[3]/a]"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "waiting n seconds",
+      "time" : {
+        "start" : 1638431844673,
+        "stop" : 1638431846683,
+        "duration" : 2010
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "seconds",
+        "value" : "2"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "get an element text",
+      "time" : {
+        "start" : 1638431846708,
+        "stop" : 1638431846748,
+        "duration" : 40
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "element",
+        "value" : "[[ChromeDriver: chrome on WINDOWS (f395d2dfe7d91f359c3d85120c43bbe2)] -> xpath: //section/div[2]/div/div[1]/div[2]/ul]"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "verify true softAssert",
+      "time" : {
+        "start" : 1638431846748,
+        "stop" : 1638431846748,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "condition",
+        "value" : "true"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "waiting n seconds",
+      "time" : {
+        "start" : 1638431846748,
+        "stop" : 1638431848751,
+        "duration" : 2003
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "seconds",
+        "value" : "2"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Create new dashboard",
+      "time" : {
+        "start" : 1638431848751,
+        "stop" : 1638431869669,
+        "duration" : 20918
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "waiting n seconds",
+        "time" : {
+          "start" : 1638431848751,
+          "stop" : 1638431851765,
+          "duration" : 3014
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "seconds",
+          "value" : "3"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "clicking on an element",
+        "time" : {
+          "start" : 1638431851788,
+          "stop" : 1638431851908,
+          "duration" : 120
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "element",
+          "value" : "[[ChromeDriver: chrome on WINDOWS (f395d2dfe7d91f359c3d85120c43bbe2)] -> xpath: /html/body/div/div/nav/div[2]/div[2]/a]"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "waiting n seconds",
+        "time" : {
+          "start" : 1638431851908,
+          "stop" : 1638431854919,
+          "duration" : 3011
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "seconds",
+          "value" : "3"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "clicking on an element",
+        "time" : {
+          "start" : 1638431854952,
+          "stop" : 1638431855161,
+          "duration" : 209
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "element",
+          "value" : "[[ChromeDriver: chrome on WINDOWS (f395d2dfe7d91f359c3d85120c43bbe2)] -> xpath: //div[2]/div[1]/div[1]]"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "waiting n seconds",
+        "time" : {
+          "start" : 1638431855161,
+          "stop" : 1638431858170,
+          "duration" : 3009
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "seconds",
+          "value" : "3"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "clicking on an element",
+        "time" : {
+          "start" : 1638431858203,
+          "stop" : 1638431858328,
+          "duration" : 125
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "element",
+          "value" : "[[ChromeDriver: chrome on WINDOWS (f395d2dfe7d91f359c3d85120c43bbe2)] -> xpath: //div[2]/div[1]/div[5]/button/div]"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "waiting n seconds",
+        "time" : {
+          "start" : 1638431858328,
+          "stop" : 1638431861338,
+          "duration" : 3010
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "seconds",
+          "value" : "3"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "clear input text ",
+        "time" : {
+          "start" : 1638431861364,
+          "stop" : 1638431861412,
+          "duration" : 48
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "element",
+          "value" : "[[ChromeDriver: chrome on WINDOWS (f395d2dfe7d91f359c3d85120c43bbe2)] -> xpath: //form/div[1]/div[2]/div/div/input]"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "waiting n seconds",
+        "time" : {
+          "start" : 1638431861413,
+          "stop" : 1638431864427,
+          "duration" : 3014
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "seconds",
+          "value" : "3"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "send value to an input element",
+        "time" : {
+          "start" : 1638431864450,
+          "stop" : 1638431864570,
+          "duration" : 120
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "element",
+          "value" : "[[ChromeDriver: chrome on WINDOWS (f395d2dfe7d91f359c3d85120c43bbe2)] -> xpath: //form/div[1]/div[2]/div/div/input]"
+        }, {
+          "name" : "value",
+          "value" : "GilDashboard"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "waiting n seconds",
+        "time" : {
+          "start" : 1638431864570,
+          "stop" : 1638431866575,
+          "duration" : 2005
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "seconds",
+          "value" : "2"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "clicking on an element",
+        "time" : {
+          "start" : 1638431866602,
+          "stop" : 1638431866664,
+          "duration" : 62
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "element",
+          "value" : "[[ChromeDriver: chrome on WINDOWS (f395d2dfe7d91f359c3d85120c43bbe2)] -> class name: css-aja5tg-button]"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "waiting n seconds",
+        "time" : {
+          "start" : 1638431866665,
+          "stop" : 1638431869669,
+          "duration" : 3004
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "seconds",
+          "value" : "3"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "dashboardName",
+        "value" : "GilDashboard"
+      } ],
+      "stepsCount" : 13,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "clicking on an element",
+      "time" : {
+        "start" : 1638431869714,
+        "stop" : 1638431869836,
+        "duration" : 122
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "element",
+        "value" : "[[ChromeDriver: chrome on WINDOWS (f395d2dfe7d91f359c3d85120c43bbe2)] -> xpath: /html/body/div/div/nav/div[2]/div[3]/a]"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "waiting n seconds",
+      "time" : {
+        "start" : 1638431869836,
+        "stop" : 1638431871846,
+        "duration" : 2010
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "seconds",
+        "value" : "2"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "get an element text",
+      "time" : {
+        "start" : 1638431871873,
+        "stop" : 1638431871935,
+        "duration" : 62
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "element",
+        "value" : "[[ChromeDriver: chrome on WINDOWS (f395d2dfe7d91f359c3d85120c43bbe2)] -> xpath: //section/div[2]/div/div[1]/div[2]/ul]"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "verify true softAssert",
+      "time" : {
+        "start" : 1638431871935,
+        "stop" : 1638431871935,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "condition",
+        "value" : "true"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "waiting n seconds",
+      "time" : {
+        "start" : 1638431871935,
+        "stop" : 1638431873939,
+        "duration" : 2004
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "seconds",
+        "value" : "2"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "verify assertAll",
+      "time" : {
+        "start" : 1638431873939,
+        "stop" : 1638431873940,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 77,
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "wait_seconds",
+    "time" : {
+      "start" : 1638431874149,
+      "stop" : 1638431877160,
+      "duration" : 3011
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "waiting n seconds",
+      "time" : {
+        "start" : 1638431874150,
+        "stop" : 1638431877160,
+        "duration" : 3010
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "seconds",
+        "value" : "3"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "endSession",
+    "time" : {
+      "start" : 1638431914587,
+      "stop" : 1638431915342,
+      "duration" : 755
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "testcases.GrafanaWebTestCases"
+  }, {
+    "name" : "testClass",
+    "value" : "testcases.GrafanaWebTestCases"
+  }, {
+    "name" : "testMethod",
+    "value" : "createNewDashboard"
+  }, {
+    "name" : "parentSuite",
+    "value" : "SuiteWeb"
+  }, {
+    "name" : "suite",
+    "value" : "GrafanaWebTest"
+  }, {
+    "name" : "subSuite",
+    "value" : "testcases.GrafanaWebTestCases"
+  }, {
+    "name" : "host",
+    "value" : "Ghawi"
+  }, {
+    "name" : "thread",
+    "value" : "2872@Ghawi.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "platform",
+    "value" : "webDriver"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "743e2e8e54dae361.json",
+  "parameterValues" : [ "webDriver" ]
+}

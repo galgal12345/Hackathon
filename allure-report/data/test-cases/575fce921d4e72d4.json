@@ -1,0 +1,308 @@
+{
+  "uid" : "575fce921d4e72d4",
+  "name" : "Verify dashboard name",
+  "fullName" : "testcases.GrafanaWebTestCases.verifyDashboardName",
+  "historyId" : "a1794ccf60908525744cecdfc9c49001",
+  "time" : {
+    "start" : 1638431907963,
+    "stop" : 1638431911489,
+    "duration" : 3526
+  },
+  "description" : "choose a random dashboard from dashboards, clicking on it, verify the name in the title is the same",
+  "descriptionHtml" : "<p>choose a random dashboard from dashboards, clicking on it, verify the name in the title is the same</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "startSession",
+    "time" : {
+      "start" : 1638431757644,
+      "stop" : 1638431763278,
+      "duration" : 5634
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "init WEB",
+      "time" : {
+        "start" : 1638431757669,
+        "stop" : 1638431763277,
+        "duration" : 5608
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "description" : "choose a random dashboard from dashboards, clicking on it, verify the name in the title is the same",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "clicking on an element",
+      "time" : {
+        "start" : 1638431907996,
+        "stop" : 1638431908054,
+        "duration" : 58
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "element",
+        "value" : "[[ChromeDriver: chrome on WINDOWS (f395d2dfe7d91f359c3d85120c43bbe2)] -> xpath: /html/body/div/div/nav/div[2]/div[3]/a]"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "clicking on an element",
+      "time" : {
+        "start" : 1638431908089,
+        "stop" : 1638431908170,
+        "duration" : 81
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "element",
+        "value" : "[[ChromeDriver: chrome on WINDOWS (f395d2dfe7d91f359c3d85120c43bbe2)] -> xpath: /html/body/div/div/nav/div[2]/div[3]/ul/li[4]]"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "waiting n seconds",
+      "time" : {
+        "start" : 1638431908170,
+        "stop" : 1638431911176,
+        "duration" : 3006
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "seconds",
+        "value" : "3"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "return a random dashboard element from list of dashboards",
+      "time" : {
+        "start" : 1638431911228,
+        "stop" : 1638431911261,
+        "duration" : 33
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "list",
+        "value" : "[[[ChromeDriver: chrome on WINDOWS (f395d2dfe7d91f359c3d85120c43bbe2)] -> xpath: //*/div/a/div[2]/div/div[1]/h2], [[ChromeDriver: chrome on WINDOWS (f395d2dfe7d91f359c3d85120c43bbe2)] -> xpath: //*/div/a/div[2]/div/div[1]/h2], [[ChromeDriver: chrome on WINDOWS (f395d2dfe7d91f359c3d85120c43bbe2)] -> xpath: //*/div/a/div[2]/div/div[1]/h2], [[ChromeDriver: chrome on WINDOWS (f395d2dfe7d91f359c3d85120c43bbe2)] -> xpath: //*/div/a/div[2]/div/div[1]/h2]]"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "get an element text",
+      "time" : {
+        "start" : 1638431911261,
+        "stop" : 1638431911274,
+        "duration" : 13
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "element",
+        "value" : "[[ChromeDriver: chrome on WINDOWS (f395d2dfe7d91f359c3d85120c43bbe2)] -> xpath: //*/div/a/div[2]/div/div[1]/h2]"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "clicking on an element",
+      "time" : {
+        "start" : 1638431911275,
+        "stop" : 1638431911396,
+        "duration" : 121
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "element",
+        "value" : "[[ChromeDriver: chrome on WINDOWS (f395d2dfe7d91f359c3d85120c43bbe2)] -> xpath: //*/div/a/div[2]/div/div[1]/h2]"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "get an element text",
+      "time" : {
+        "start" : 1638431911456,
+        "stop" : 1638431911489,
+        "duration" : 33
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "element",
+        "value" : "[[ChromeDriver: chrome on WINDOWS (f395d2dfe7d91f359c3d85120c43bbe2)] -> xpath: //header/div/nav/h1/a]"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "verify string",
+      "time" : {
+        "start" : 1638431911489,
+        "stop" : 1638431911489,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "Dashboard1"
+      }, {
+        "name" : "expected",
+        "value" : "Dashboard1"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 8,
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "wait_seconds",
+    "time" : {
+      "start" : 1638431911583,
+      "stop" : 1638431914585,
+      "duration" : 3002
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "waiting n seconds",
+      "time" : {
+        "start" : 1638431911583,
+        "stop" : 1638431914585,
+        "duration" : 3002
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "seconds",
+        "value" : "3"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "endSession",
+    "time" : {
+      "start" : 1638431914587,
+      "stop" : 1638431915342,
+      "duration" : 755
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "testcases.GrafanaWebTestCases"
+  }, {
+    "name" : "testClass",
+    "value" : "testcases.GrafanaWebTestCases"
+  }, {
+    "name" : "testMethod",
+    "value" : "verifyDashboardName"
+  }, {
+    "name" : "parentSuite",
+    "value" : "SuiteWeb"
+  }, {
+    "name" : "suite",
+    "value" : "GrafanaWebTest"
+  }, {
+    "name" : "subSuite",
+    "value" : "testcases.GrafanaWebTestCases"
+  }, {
+    "name" : "host",
+    "value" : "Ghawi"
+  }, {
+    "name" : "thread",
+    "value" : "2872@Ghawi.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "platform",
+    "value" : "webDriver"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "575fce921d4e72d4.json",
+  "parameterValues" : [ "webDriver" ]
+}

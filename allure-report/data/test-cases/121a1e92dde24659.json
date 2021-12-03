@@ -1,0 +1,533 @@
+{
+  "uid" : "121a1e92dde24659",
+  "name" : "Homepage logo",
+  "fullName" : "testcases.GrafanaWebTestCases.homePageLogo",
+  "historyId" : "d6fa0b5d3a0bb49872b8b24fba2d5f03",
+  "time" : {
+    "start" : 1638436550720,
+    "stop" : 1638436567252,
+    "duration" : 16532
+  },
+  "description" : "Verify that home page logo navigate to the home page using sikuli",
+  "descriptionHtml" : "<p>Verify that home page logo navigate to the home page using sikuli</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 2,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "startSession",
+    "time" : {
+      "start" : 1638436429870,
+      "stop" : 1638436435582,
+      "duration" : 5712
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "init WEB",
+      "time" : {
+        "start" : 1638436429908,
+        "stop" : 1638436435580,
+        "duration" : 5672
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "description" : "Verify that home page logo navigate to the home page using sikuli",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Hover on image, by getting the image path",
+      "time" : {
+        "start" : 1638436550726,
+        "stop" : 1638436552266,
+        "duration" : 1540
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "path",
+        "value" : "C:\\\\Automation\\\\Hackathon\\\\Sikuli\\\\Images"
+      }, {
+        "name" : "imageName",
+        "value" : "menu.png"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "waiting n seconds",
+      "time" : {
+        "start" : 1638436552266,
+        "stop" : 1638436554268,
+        "duration" : 2002
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "seconds",
+        "value" : "2"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Hover on image, by getting the image path",
+      "time" : {
+        "start" : 1638436554268,
+        "stop" : 1638436555111,
+        "duration" : 843
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "path",
+        "value" : "C:\\\\Automation\\\\Hackathon\\\\Sikuli\\\\Images"
+      }, {
+        "name" : "imageName",
+        "value" : "dashboards.png"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Click on image, by getting the image path",
+      "time" : {
+        "start" : 1638436555112,
+        "stop" : 1638436556048,
+        "duration" : 936
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "path",
+        "value" : "C:\\\\Automation\\\\Hackathon\\\\Sikuli\\\\Images"
+      }, {
+        "name" : "imageName",
+        "value" : "manage.png"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "waiting n seconds",
+      "time" : {
+        "start" : 1638436556048,
+        "stop" : 1638436558055,
+        "duration" : 2007
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "seconds",
+        "value" : "2"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Click on image, by getting the image path",
+      "time" : {
+        "start" : 1638436558055,
+        "stop" : 1638436558929,
+        "duration" : 874
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "path",
+        "value" : "C:\\\\Automation\\\\Hackathon\\\\Sikuli\\\\Images"
+      }, {
+        "name" : "imageName",
+        "value" : "logo.png"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "waiting n seconds",
+      "time" : {
+        "start" : 1638436558929,
+        "stop" : 1638436560930,
+        "duration" : 2001
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "seconds",
+        "value" : "2"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "verify true",
+      "time" : {
+        "start" : 1638436567252,
+        "stop" : 1638436567252,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "condition",
+        "value" : "true"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 8,
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "wait_seconds",
+    "time" : {
+      "start" : 1638436567368,
+      "stop" : 1638436570378,
+      "duration" : 3010
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "waiting n seconds",
+      "time" : {
+        "start" : 1638436567368,
+        "stop" : 1638436570378,
+        "duration" : 3010
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "seconds",
+        "value" : "3"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "endSession",
+    "time" : {
+      "start" : 1638436577034,
+      "stop" : 1638436577747,
+      "duration" : 713
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "testcases.GrafanaWebTestCases"
+  }, {
+    "name" : "testClass",
+    "value" : "testcases.GrafanaWebTestCases"
+  }, {
+    "name" : "testMethod",
+    "value" : "homePageLogo"
+  }, {
+    "name" : "parentSuite",
+    "value" : "SuiteWeb"
+  }, {
+    "name" : "suite",
+    "value" : "GrafanaWebTest"
+  }, {
+    "name" : "subSuite",
+    "value" : "testcases.GrafanaWebTestCases"
+  }, {
+    "name" : "host",
+    "value" : "Ghawi"
+  }, {
+    "name" : "thread",
+    "value" : "16324@Ghawi.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "platform",
+    "value" : "webDriver"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "b6eb75ce3ed13d0e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638432697950,
+        "stop" : 1638432717595,
+        "duration" : 19645
+      }
+    }, {
+      "uid" : "1b95f2b1b764a61",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638431880642,
+        "stop" : 1638431904793,
+        "duration" : 24151
+      }
+    } ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 10,
+        "skipped" : 0,
+        "passed" : 15,
+        "unknown" : 0,
+        "total" : 25
+      },
+      "items" : [ {
+        "uid" : "386fe107f827d9ae",
+        "reportUrl" : "http://localhost:8080/job/Grafana%20Web%20Test/34/allure/#testresult/386fe107f827d9ae",
+        "status" : "passed",
+        "time" : {
+          "start" : 1638432697950,
+          "stop" : 1638432717595,
+          "duration" : 19645
+        }
+      }, {
+        "uid" : "218fff88ec6ac0ad",
+        "reportUrl" : "http://localhost:8080/job/Grafana%20Web%20Test/33/allure/#testresult/218fff88ec6ac0ad",
+        "status" : "passed",
+        "time" : {
+          "start" : 1638432697950,
+          "stop" : 1638432717595,
+          "duration" : 19645
+        }
+      }, {
+        "uid" : "9cb22222978dec4f",
+        "reportUrl" : "http://localhost:8080/job/Grafana%20Web%20Test/32/allure/#testresult/9cb22222978dec4f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1638431880642,
+          "stop" : 1638431904793,
+          "duration" : 24151
+        }
+      }, {
+        "uid" : "21d07b233a5ac2b5",
+        "reportUrl" : "http://localhost:8080/job/Grafana%20Web%20Test/28/allure/#testresult/21d07b233a5ac2b5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1638428441408,
+          "stop" : 1638428456503,
+          "duration" : 15095
+        }
+      }, {
+        "uid" : "61ea3a03d38898bd",
+        "reportUrl" : "http://localhost:8080/job/Grafana%20Web%20Test/27/allure/#testresult/61ea3a03d38898bd",
+        "status" : "passed",
+        "time" : {
+          "start" : 1638403007784,
+          "stop" : 1638403024307,
+          "duration" : 16523
+        }
+      }, {
+        "uid" : "c95f07071c55562f",
+        "reportUrl" : "http://localhost:8080/job/Grafana%20Web%20Test/26/allure/#testresult/c95f07071c55562f",
+        "status" : "broken",
+        "statusDetails" : "C:\\\\Automation\\\\Hackathon\\\\Sikuli\\\\Images/manage.png: (116x40) in R[0,0 1920x1080]@S(0)",
+        "time" : {
+          "start" : 1638401637837,
+          "stop" : 1638401644920,
+          "duration" : 7083
+        }
+      }, {
+        "uid" : "4a1c43cf6ca22856",
+        "reportUrl" : "http://localhost:8080/job/Grafana%20Web%20Test/25/allure/#testresult/4a1c43cf6ca22856",
+        "status" : "passed",
+        "time" : {
+          "start" : 1638383807310,
+          "stop" : 1638383824195,
+          "duration" : 16885
+        }
+      }, {
+        "uid" : "852dec31d1184f37",
+        "reportUrl" : "http://localhost:8080/job/Grafana%20Web%20Test/21/allure/#testresult/852dec31d1184f37",
+        "status" : "passed",
+        "time" : {
+          "start" : 1638382279215,
+          "stop" : 1638382292977,
+          "duration" : 13762
+        }
+      }, {
+        "uid" : "26b311d3a9fd8856",
+        "reportUrl" : "http://localhost:8080/job/Grafana%20Web%20Test/20/allure/#testresult/26b311d3a9fd8856",
+        "status" : "passed",
+        "time" : {
+          "start" : 1638382279215,
+          "stop" : 1638382292977,
+          "duration" : 13762
+        }
+      }, {
+        "uid" : "25041e7536c4c753",
+        "reportUrl" : "http://localhost:8080/job/Grafana%20Web%20Test/19/allure/#testresult/25041e7536c4c753",
+        "status" : "passed",
+        "time" : {
+          "start" : 1638382279215,
+          "stop" : 1638382292977,
+          "duration" : 13762
+        }
+      }, {
+        "uid" : "3663686c6dbea20e",
+        "reportUrl" : "http://localhost:8080/job/Grafana%20Web%20Test/18/allure/#testresult/3663686c6dbea20e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1638382279215,
+          "stop" : 1638382292977,
+          "duration" : 13762
+        }
+      }, {
+        "uid" : "d91585a8aabd39fe",
+        "reportUrl" : "http://localhost:8080/job/Grafana%20Web%20Test/17/allure/#testresult/d91585a8aabd39fe",
+        "status" : "passed",
+        "time" : {
+          "start" : 1638382279215,
+          "stop" : 1638382292977,
+          "duration" : 13762
+        }
+      }, {
+        "uid" : "75db9bb73fb5e364",
+        "reportUrl" : "http://localhost:8080/job/Grafana%20Web%20Test/16/allure/#testresult/75db9bb73fb5e364",
+        "status" : "passed",
+        "time" : {
+          "start" : 1638382279215,
+          "stop" : 1638382292977,
+          "duration" : 13762
+        }
+      }, {
+        "uid" : "ab7a416f79a2c6f2",
+        "reportUrl" : "http://localhost:8080/job/Grafana%20Web%20Test/15/allure/#testresult/ab7a416f79a2c6f2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1638382279215,
+          "stop" : 1638382292977,
+          "duration" : 13762
+        }
+      }, {
+        "uid" : "6744e06761d11b89",
+        "reportUrl" : "http://localhost:8080/job/Grafana%20Web%20Test/14/allure/#testresult/6744e06761d11b89",
+        "status" : "broken",
+        "statusDetails" : "C:\\Automation\\Hackathon\\Sikuli\\Images/menu.png: (49x42) in R[0,0 1920x1080]@S(0)",
+        "time" : {
+          "start" : 1638382088515,
+          "stop" : 1638382092133,
+          "duration" : 3618
+        }
+      }, {
+        "uid" : "b6ba9bcb1aef5ccd",
+        "reportUrl" : "http://localhost:8080/job/Grafana%20Web%20Test/13/allure/#testresult/b6ba9bcb1aef5ccd",
+        "status" : "broken",
+        "statusDetails" : "C:\\Automation\\Hackathon\\Sikuli\\Images/manage.png: (116x40) in R[0,0 1920x1080]@S(0)",
+        "time" : {
+          "start" : 1638377569179,
+          "stop" : 1638377574991,
+          "duration" : 5812
+        }
+      }, {
+        "uid" : "1ac2f2511556c7a0",
+        "reportUrl" : "http://localhost:8080/job/Grafana%20Web%20Test/12/allure/#testresult/1ac2f2511556c7a0",
+        "status" : "broken",
+        "statusDetails" : "C:\\Automation\\Hackathon\\Sikuli\\Images/manage.png: (116x40) in R[0,0 1920x1080]@S(0)",
+        "time" : {
+          "start" : 1638377569179,
+          "stop" : 1638377574991,
+          "duration" : 5812
+        }
+      }, {
+        "uid" : "6b67b15d3878313e",
+        "reportUrl" : "http://localhost:8080/job/Grafana%20Web%20Test/11/allure/#testresult/6b67b15d3878313e",
+        "status" : "broken",
+        "statusDetails" : "C:\\Automation\\Hackathon\\Sikuli\\Images/manage.png: (116x40) in R[0,0 1920x1080]@S(0)",
+        "time" : {
+          "start" : 1638370913091,
+          "stop" : 1638370919412,
+          "duration" : 6321
+        }
+      }, {
+        "uid" : "29e59fdb2dfa4edd",
+        "reportUrl" : "http://localhost:8080/job/Grafana%20Web%20Test/10/allure/#testresult/29e59fdb2dfa4edd",
+        "status" : "broken",
+        "statusDetails" : "C:\\Automation\\Hackathon\\Sikuli\\Images/manage.png: (116x40) in R[0,0 1920x1080]@S(0)",
+        "time" : {
+          "start" : 1638370913091,
+          "stop" : 1638370919412,
+          "duration" : 6321
+        }
+      }, {
+        "uid" : "da01682fecb984e",
+        "reportUrl" : "http://localhost:8080/job/Grafana%20Web%20Test/9/allure/#testresult/da01682fecb984e",
+        "status" : "broken",
+        "statusDetails" : "C:\\Automation\\Hackathon\\Sikuli\\Images/manage.png: (116x40) in R[0,0 1920x1080]@S(0)",
+        "time" : {
+          "start" : 1638370913091,
+          "stop" : 1638370919412,
+          "duration" : 6321
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "121a1e92dde24659.json",
+  "parameterValues" : [ "webDriver" ]
+}

@@ -1,0 +1,317 @@
+{
+  "uid" : "1b95f2b1b764a61",
+  "name" : "Homepage logo",
+  "fullName" : "testcases.GrafanaWebTestCases.homePageLogo",
+  "historyId" : "d6fa0b5d3a0bb49872b8b24fba2d5f03",
+  "time" : {
+    "start" : 1638431880642,
+    "stop" : 1638431904793,
+    "duration" : 24151
+  },
+  "description" : "Verify that home page logo navigate to the home page using sikuli",
+  "descriptionHtml" : "<p>Verify that home page logo navigate to the home page using sikuli</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "startSession",
+    "time" : {
+      "start" : 1638431757644,
+      "stop" : 1638431763278,
+      "duration" : 5634
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "init WEB",
+      "time" : {
+        "start" : 1638431757669,
+        "stop" : 1638431763277,
+        "duration" : 5608
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "description" : "Verify that home page logo navigate to the home page using sikuli",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Hover on image, by getting the image path",
+      "time" : {
+        "start" : 1638431880652,
+        "stop" : 1638431882807,
+        "duration" : 2155
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "path",
+        "value" : "C:\\\\Automation\\\\Hackathon\\\\Sikuli\\\\Images"
+      }, {
+        "name" : "imageName",
+        "value" : "menu.png"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "waiting n seconds",
+      "time" : {
+        "start" : 1638431882808,
+        "stop" : 1638431884822,
+        "duration" : 2014
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "seconds",
+        "value" : "2"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Hover on image, by getting the image path",
+      "time" : {
+        "start" : 1638431884822,
+        "stop" : 1638431885821,
+        "duration" : 999
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "path",
+        "value" : "C:\\\\Automation\\\\Hackathon\\\\Sikuli\\\\Images"
+      }, {
+        "name" : "imageName",
+        "value" : "dashboards.png"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Click on image, by getting the image path",
+      "time" : {
+        "start" : 1638431885821,
+        "stop" : 1638431886899,
+        "duration" : 1078
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "path",
+        "value" : "C:\\\\Automation\\\\Hackathon\\\\Sikuli\\\\Images"
+      }, {
+        "name" : "imageName",
+        "value" : "manage.png"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "waiting n seconds",
+      "time" : {
+        "start" : 1638431886900,
+        "stop" : 1638431888908,
+        "duration" : 2008
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "seconds",
+        "value" : "2"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Click on image, by getting the image path",
+      "time" : {
+        "start" : 1638431888909,
+        "stop" : 1638431890010,
+        "duration" : 1101
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "path",
+        "value" : "C:\\\\Automation\\\\Hackathon\\\\Sikuli\\\\Images"
+      }, {
+        "name" : "imageName",
+        "value" : "logo.png"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "waiting n seconds",
+      "time" : {
+        "start" : 1638431890010,
+        "stop" : 1638431892016,
+        "duration" : 2006
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "seconds",
+        "value" : "2"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "verify true",
+      "time" : {
+        "start" : 1638431904793,
+        "stop" : 1638431904793,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "condition",
+        "value" : "true"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 8,
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "wait_seconds",
+    "time" : {
+      "start" : 1638431904944,
+      "stop" : 1638431907957,
+      "duration" : 3013
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "waiting n seconds",
+      "time" : {
+        "start" : 1638431904944,
+        "stop" : 1638431907957,
+        "duration" : 3013
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "seconds",
+        "value" : "3"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "endSession",
+    "time" : {
+      "start" : 1638431914587,
+      "stop" : 1638431915342,
+      "duration" : 755
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "testcases.GrafanaWebTestCases"
+  }, {
+    "name" : "testClass",
+    "value" : "testcases.GrafanaWebTestCases"
+  }, {
+    "name" : "testMethod",
+    "value" : "homePageLogo"
+  }, {
+    "name" : "parentSuite",
+    "value" : "SuiteWeb"
+  }, {
+    "name" : "suite",
+    "value" : "GrafanaWebTest"
+  }, {
+    "name" : "subSuite",
+    "value" : "testcases.GrafanaWebTestCases"
+  }, {
+    "name" : "host",
+    "value" : "Ghawi"
+  }, {
+    "name" : "thread",
+    "value" : "2872@Ghawi.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "platform",
+    "value" : "webDriver"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "1b95f2b1b764a61.json",
+  "parameterValues" : [ "webDriver" ]
+}
