@@ -2,7 +2,9 @@ package testcases;
 
 import extensions.AllUiActions;
 import extensions.Verifications;
+import extensions.WebUiActions;
 import io.qameta.allure.Description;
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -23,42 +25,38 @@ public class GrafanaWebTestCases extends CommonOps {
         GrafanaWebWorkFlow.loginWithAdmin();
         GrafanaWebWorkFlow.skipPage();
         Verifications.verifyEquals(AllUiActions.getText(grafanaPage.getHomePageTitle()), expectedHomePageTitle);
-           }
+    }
 
 
-    @Test(priority = 2, dependsOnMethods = "login",description = "Ensure dashboard was created")
+    @Test(priority = 2, dependsOnMethods = "login", description = "Ensure dashboard was created")
     @Description("Create new dashboards and verify that we can see them shown in homepage, with soft assert for each dashboard")
     public void createNewDashboard() {
 
         GrafanaWebWorkFlow.createNewDashboard(dashboardName1);
-        AllUiActions.clickOn(grafanaPage.getDashboardsTitle());
-        AllUiActions.wait(2);
-        Verifications.softAssertTrue(AllUiActions.getText(grafanaPage.getDashboardsItems()).contains(dashboardName1));
+        GrafanaWebWorkFlow.navigateToDashboardTitle();
+        Verifications.softAssertTrue(GrafanaWebWorkFlow.ifElementContainsValue(grafanaPage.getDashboardsItems(), dashboardName1));
         AllUiActions.wait(2);
 
         GrafanaWebWorkFlow.createNewDashboard(dashboardNameAyala);
-        AllUiActions.clickOn(grafanaPage.getDashboardsTitle());
-        AllUiActions.wait(2);
-        Verifications.softAssertTrue(AllUiActions.getText(grafanaPage.getDashboardsItems()).contains(dashboardNameAyala));
+        GrafanaWebWorkFlow.navigateToDashboardTitle();
+        Verifications.softAssertTrue(GrafanaWebWorkFlow.ifElementContainsValue(grafanaPage.getDashboardsItems(), dashboardNameAyala));
         AllUiActions.wait(2);
 
         GrafanaWebWorkFlow.createNewDashboard(dashboardNameRami);
-        AllUiActions.clickOn(grafanaPage.getDashboardsTitle());
-        AllUiActions.wait(2);
-        Verifications.softAssertTrue(AllUiActions.getText(grafanaPage.getDashboardsItems()).contains(dashboardNameRami));
+        GrafanaWebWorkFlow.navigateToDashboardTitle();
+        Verifications.softAssertTrue(GrafanaWebWorkFlow.ifElementContainsValue(grafanaPage.getDashboardsItems(), dashboardNameRami));
         AllUiActions.wait(2);
 
         GrafanaWebWorkFlow.createNewDashboard(dashboardNameGil);
-        AllUiActions.clickOn(grafanaPage.getDashboardsTitle());
-        AllUiActions.wait(2);
-        Verifications.softAssertTrue(AllUiActions.getText(grafanaPage.getDashboardsItems()).contains(dashboardNameGil));
+        GrafanaWebWorkFlow.navigateToDashboardTitle();
+        Verifications.softAssertTrue(GrafanaWebWorkFlow.ifElementContainsValue(grafanaPage.getDashboardsItems(), dashboardNameGil));
         AllUiActions.wait(2);
 
         Verifications.assertAll();
 
     }
 
-    @Test(priority = 3,description = "Checking the search management")
+    @Test(priority = 3, dependsOnMethods = "login", description = "Checking the search management")
     @Description("insert a name of dashboard does not exist, and verify there is message means that this dashboard not found")
     public void searchDashboardNotExist() {
         GrafanaWebWorkFlow.researchDashboardByName(dashboardNotExist);
@@ -67,7 +65,7 @@ public class GrafanaWebTestCases extends CommonOps {
     }
 
 
-    @Test(priority = 4,description = "Homepage logo")
+    @Test(priority = 4, dependsOnMethods = "login", description = "Homepage logo")
     @Description("Verify that home page logo navigate to the home page using sikuli")
     public void homePageLogo() throws FindFailed {
         GrafanaWebWorkFlow.hoverOnImage(imagesPath, menuFileName);
@@ -83,13 +81,11 @@ public class GrafanaWebTestCases extends CommonOps {
 
     }
 
-    @Test(priority = 5,description = "Verify dashboard name")
+    @Test(priority = 5, dependsOnMethods = "login", description = "Verify dashboard name")
     @Description("choose a random dashboard from dashboards, clicking on it, verify the name in the title is the same")
     public void verifyDashboardName() {
 
-        AllUiActions.clickOn(grafanaPage.getDashboardsTitle());
-        AllUiActions.clickOn(grafanaPage.getManageBtn());
-        AllUiActions.wait(3);
+        GrafanaWebWorkFlow.manageDashboards();
         WebElement randomElement = GrafanaWebWorkFlow.getRandomDashboard(grafanaPage.getDashboardItems());
         String expected = AllUiActions.getText(randomElement);////we need it for the assertion, so we have to save it cause later will disappear
         AllUiActions.clickOn(randomElement);

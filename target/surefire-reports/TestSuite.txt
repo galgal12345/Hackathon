@@ -1,4 +1,7 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 15.443 s - in TestSuite
+Tests run: 8, Failures: 1, Errors: 0, Skipped: 7, Time elapsed: 6.897 s <<< FAILURE! - in TestSuite
+startSession(testcases.GrafanaWebTestCases)  Time elapsed: 6.113 s  <<< FAILURE!
+java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '"select * from login"' at line 1
+

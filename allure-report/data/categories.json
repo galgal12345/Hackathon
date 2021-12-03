@@ -4,47 +4,26 @@
   "children" : [ {
     "name" : "Test defects",
     "children" : [ {
-      "name" : "Connection refused: connect\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'DESKTOP-H12PSKE', ip: '10.100.102.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_312'\nDriver info: driver.version: AndroidDriver",
+      "name" : "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '\"select * from login\"' at line 1",
       "children" : [ {
         "name" : "startSession",
-        "uid" : "a78fbc07e1024946",
-        "parentUid" : "ad91113592292f0fd60274105ec98f28",
+        "uid" : "ecff1fd51931d02f",
+        "parentUid" : "402438cbeb1ecbd080adc083edc2e504",
         "status" : "broken",
         "time" : {
-          "start" : 1638458421904,
-          "stop" : 1638458421908,
-          "duration" : 4
+          "start" : 1638536626773,
+          "stop" : 1638536626774,
+          "duration" : 1
         },
         "flaky" : false,
         "newFailed" : false,
         "newPassed" : false,
         "newBroken" : false,
-        "retriesCount" : 1,
+        "retriesCount" : 3,
         "retriesStatusChange" : false,
-        "parameters" : [ "androidDriver" ]
+        "parameters" : [ "webDriver" ]
       } ],
-      "uid" : "ad91113592292f0fd60274105ec98f28"
-    }, {
-      "name" : "Connection refused: connect\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'AYALA-R-5981', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'\nDriver info: driver.version: WindowsDriver",
-      "children" : [ {
-        "name" : "startSession",
-        "uid" : "626d59c71bd77f41",
-        "parentUid" : "3734d59656567f26db8f322f3dae4cd5",
-        "status" : "broken",
-        "time" : {
-          "start" : 1638489605005,
-          "stop" : 1638489605005,
-          "duration" : 0
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 2,
-        "retriesStatusChange" : false,
-        "parameters" : [ "desktop" ]
-      } ],
-      "uid" : "3734d59656567f26db8f322f3dae4cd5"
+      "uid" : "402438cbeb1ecbd080adc083edc2e504"
     } ],
     "uid" : "bdbf199525818fae7a8651db9eafe741"
   } ]

@@ -5,6 +5,7 @@ import extensions.AllUiActions;
 import extensions.WebUiActions;
 import io.qameta.allure.Step;
 import org.openqa.selenium.WebElement;
+import org.python.antlr.ast.Str;
 import org.sikuli.script.FindFailed;
 import utilities.CommonOps;
 
@@ -19,7 +20,7 @@ public class GrafanaWebWorkFlow extends CommonOps {
         WebUiActions.sendUserName();
          WebUiActions.sendPassword();
         AllUiActions.clickOn(grafanaPage.getLogin_btn());
-        Uninterruptibles.sleepUninterruptibly(3, TimeUnit.SECONDS);
+        AllUiActions.wait(3);
     }
 
     @Step("Skip reset password")
@@ -46,9 +47,22 @@ public class GrafanaWebWorkFlow extends CommonOps {
 
            }
 
+    @Step("Navigate to DashboardTitle")
+    public static void navigateToDashboardTitle(){
+        AllUiActions.clickOn(grafanaPage.getDashboardsTitle());
+        AllUiActions.wait(2);
+    }
+
+    @Step("check if an element contains a value")
+    public static boolean ifElementContainsValue(WebElement element, String value){
+        if (AllUiActions.getText(element).contains(value)) return true;
+        else return false;
+    }
+
     @Step("Navigate to manage page")
     public static void manageDashboards(){
         WebUiActions.mouseHover(grafanaPage.getDashboardsTitle(),grafanaPage.getManageBtn());
+        AllUiActions.wait(3);
 
     }
 
@@ -76,6 +90,8 @@ public class GrafanaWebWorkFlow extends CommonOps {
 
         return list.get(i);
     }
+
+
 
 
 }

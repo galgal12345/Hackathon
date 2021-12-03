@@ -1,78 +1,141 @@
 [ {
+  "buildOrder" : 38,
+  "reportUrl" : "http://localhost:8080/job/Grafana%20Web%20Test/38/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "duration" : 468
+  }
+}, {
+  "buildOrder" : 37,
+  "reportUrl" : "http://localhost:8080/job/Grafana%20Web%20Test/37/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "duration" : 675
+  }
+}, {
+  "buildOrder" : 35,
+  "reportUrl" : "http://localhost:8080/job/Grafana%20Web%20Test/35/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "duration" : 138237
+  }
+}, {
+  "buildOrder" : 34,
+  "reportUrl" : "http://localhost:8080/job/Grafana%20Web%20Test/34/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "duration" : 143124
+  }
+}, {
+  "buildOrder" : 33,
+  "reportUrl" : "http://localhost:8080/job/Grafana%20Web%20Test/33/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "duration" : 143124
+  }
+}, {
+  "buildOrder" : 32,
+  "reportUrl" : "http://localhost:8080/job/Grafana%20Web%20Test/32/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "duration" : 148150
+  }
+}, {
+  "buildOrder" : 28,
+  "reportUrl" : "http://localhost:8080/job/Grafana%20Web%20Test/28/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "duration" : 134960
+  }
+}, {
+  "buildOrder" : 27,
+  "reportUrl" : "http://localhost:8080/job/Grafana%20Web%20Test/27/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "duration" : 136944
+  }
+}, {
+  "buildOrder" : 26,
+  "reportUrl" : "http://localhost:8080/job/Grafana%20Web%20Test/26/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "duration" : 27313
+  }
+}, {
+  "buildOrder" : 25,
+  "reportUrl" : "http://localhost:8080/job/Grafana%20Web%20Test/25/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "duration" : 136823
+  }
+}, {
+  "buildOrder" : 21,
+  "reportUrl" : "http://localhost:8080/job/Grafana%20Web%20Test/21/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "duration" : 289315538
+  }
+}, {
+  "buildOrder" : 20,
+  "reportUrl" : "http://localhost:8080/job/Grafana%20Web%20Test/20/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "duration" : 289315538
+  }
+}, {
+  "buildOrder" : 19,
+  "reportUrl" : "http://localhost:8080/job/Grafana%20Web%20Test/19/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "duration" : 289315538
+  }
+}, {
+  "buildOrder" : 18,
+  "reportUrl" : "http://localhost:8080/job/Grafana%20Web%20Test/18/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "duration" : 289315538
+  }
+}, {
+  "buildOrder" : 17,
+  "reportUrl" : "http://localhost:8080/job/Grafana%20Web%20Test/17/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "duration" : 289315538
+  }
+}, {
+  "buildOrder" : 16,
+  "reportUrl" : "http://localhost:8080/job/Grafana%20Web%20Test/16/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "duration" : 289315538
+  }
+}, {
+  "buildOrder" : 15,
+  "reportUrl" : "http://localhost:8080/job/Grafana%20Web%20Test/15/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "duration" : 289315538
+  }
+}, {
+  "buildOrder" : 14,
+  "reportUrl" : "http://localhost:8080/job/Grafana%20Web%20Test/14/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "duration" : 289113534
+  }
+}, {
+  "buildOrder" : 13,
+  "reportUrl" : "http://localhost:8080/job/Grafana%20Web%20Test/13/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "duration" : 284598643
+  }
+}, {
   "buildOrder" : 12,
-  "reportUrl" : "http://localhost:9090/job/Grafana%20Api%20Test/12/allure",
+  "reportUrl" : "http://localhost:8080/job/Grafana%20Web%20Test/12/allure",
   "reportName" : "AllureReport",
   "data" : {
-    "duration" : 57520831
-  }
-}, {
-  "buildOrder" : 11,
-  "reportUrl" : "http://localhost:9090/job/Grafana%20Api%20Test/11/allure",
-  "reportName" : "AllureReport",
-  "data" : {
-    "duration" : 12561899
-  }
-}, {
-  "buildOrder" : 10,
-  "reportUrl" : "http://localhost:9090/job/Grafana%20Api%20Test/10/allure",
-  "reportName" : "AllureReport",
-  "data" : {
-    "duration" : 8227462
-  }
-}, {
-  "buildOrder" : 9,
-  "reportUrl" : "http://localhost:9090/job/Grafana%20Api%20Test/9/allure",
-  "reportName" : "AllureReport",
-  "data" : {
-    "duration" : 8010880
-  }
-}, {
-  "buildOrder" : 8,
-  "reportUrl" : "http://localhost:9090/job/Grafana%20Api%20Test/8/allure",
-  "reportName" : "AllureReport",
-  "data" : {
-    "duration" : 10555
-  }
-}, {
-  "buildOrder" : 7,
-  "reportUrl" : "http://localhost:9090/job/Grafana%20Api%20Test/7/allure",
-  "reportName" : "AllureReport",
-  "data" : {
-    "duration" : 1027318
-  }
-}, {
-  "buildOrder" : 6,
-  "reportUrl" : "http://localhost:9090/job/Grafana%20Api%20Test/6/allure",
-  "reportName" : "AllureReport",
-  "data" : {
-    "duration" : 26301325
-  }
-}, {
-  "buildOrder" : 5,
-  "reportUrl" : "http://localhost:9090/job/Grafana%20Api%20Test/5/allure",
-  "reportName" : "AllureReport",
-  "data" : {
-    "duration" : 19607196
-  }
-}, {
-  "buildOrder" : 4,
-  "reportUrl" : "http://localhost:9090/job/Grafana%20Api%20Test/4/allure",
-  "reportName" : "AllureReport",
-  "data" : {
-    "duration" : 19007462
-  }
-}, {
-  "buildOrder" : 3,
-  "reportUrl" : "http://localhost:9090/job/Grafana%20Api%20Test/3/allure",
-  "reportName" : "AllureReport",
-  "data" : {
-    "duration" : 278477113
-  }
-}, {
-  "buildOrder" : 2,
-  "reportUrl" : "http://localhost:9090/job/Grafana%20Api%20Test/2/allure",
-  "reportName" : "AllureReport",
-  "data" : {
-    "duration" : 272099893
+    "duration" : 284598643
   }
 } ]

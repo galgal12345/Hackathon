@@ -9,10 +9,14 @@
     <classes>
       <class name="testcases.GrafanaWebTestCases">
         <methods>
+          <include name="verifyDashboardName"/>
           <include name="startSession"/>
           <include name="homePageLogo"/>
+          <include name="searchDashboardNotExist"/>
           <include name="endSession"/>
+          <include name="login"/>
           <include name="wait_seconds"/>
+          <include name="createNewDashboard"/>
         </methods>
       </class> <!-- testcases.GrafanaWebTestCases -->
     </classes>

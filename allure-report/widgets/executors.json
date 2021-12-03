@@ -1,10 +1,10 @@
 [ {
   "name" : "Jenkins",
   "type" : "jenkins",
-  "url" : "http://localhost:9090/",
-  "buildOrder" : 12,
-  "buildName" : "grafana api test #12",
-  "buildUrl" : "http://localhost:9090/job/Grafana%20Api%20Test/12/",
+  "url" : "http://localhost:8080/",
+  "buildOrder" : 38,
+  "buildName" : "Grafana Web Test #38",
+  "buildUrl" : "http://localhost:8080/job/Grafana%20Web%20Test/38/",
   "reportName" : "AllureReport",
-  "reportUrl" : "http://localhost:9090/job/Grafana%20Api%20Test/12/allure"
+  "reportUrl" : "http://localhost:8080/job/Grafana%20Web%20Test/38/allure"
 } ]

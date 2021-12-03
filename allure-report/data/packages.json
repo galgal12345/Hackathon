@@ -2,432 +2,110 @@
   "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
   "name" : "packages",
   "children" : [ {
-    "name" : "testcases",
+    "name" : "testcases.GrafanaWebTestCases",
     "children" : [ {
-      "name" : "GrafanaApiTestCases",
-      "children" : [ {
-        "name" : "test01_post",
-        "uid" : "7b7cb292ec6b669f",
-        "parentUid" : "670ed54f458fcef13566b8d3637a18f2",
-        "status" : "passed",
-        "time" : {
-          "start" : 1638432475239,
-          "stop" : 1638432479078,
-          "duration" : 3839
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "1", "ayala11@gmail.com", "ayala11", "ayala1", "11111", "123456", "restAssured" ]
-      }, {
-        "name" : "test02_update",
-        "uid" : "3ee1220aa8635c0c",
-        "parentUid" : "670ed54f458fcef13566b8d3637a18f2",
-        "status" : "passed",
-        "time" : {
-          "start" : 1638432482543,
-          "stop" : 1638432482613,
-          "duration" : 70
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "1", "ayala11@gmail.com", "ayala11", "ayala1", "11111", "123456", "restAssured" ]
-      }, {
-        "name" : "test03_delete",
-        "uid" : "a7927c468269a988",
-        "parentUid" : "670ed54f458fcef13566b8d3637a18f2",
-        "status" : "passed",
-        "time" : {
-          "start" : 1638432485626,
-          "stop" : 1638432485794,
-          "duration" : 168
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "1", "ayala11@gmail.com", "ayala11", "ayala1", "11111", "123456", "restAssured" ]
-      }, {
-        "name" : "test01_post",
-        "uid" : "8afa5754b3946ebe",
-        "parentUid" : "670ed54f458fcef13566b8d3637a18f2",
-        "status" : "passed",
-        "time" : {
-          "start" : 1638489986838,
-          "stop" : 1638489989416,
-          "duration" : 2578
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 5,
-        "retriesStatusChange" : false,
-        "parameters" : [ "1", "useradmin@gmail.com", "useradmin", "useradmin", "11111", "123456", "restAssured" ]
-      }, {
-        "name" : "test02_update",
-        "uid" : "58165cff4d63dffe",
-        "parentUid" : "670ed54f458fcef13566b8d3637a18f2",
-        "status" : "passed",
-        "time" : {
-          "start" : 1638489992817,
-          "stop" : 1638489992886,
-          "duration" : 69
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 5,
-        "retriesStatusChange" : true,
-        "parameters" : [ "1", "useradmin@gmail.com", "useradmin", "useradmin", "11111", "123456", "restAssured" ]
-      }, {
-        "name" : "test03_delete",
-        "uid" : "b139ee67c099da31",
-        "parentUid" : "670ed54f458fcef13566b8d3637a18f2",
-        "status" : "passed",
-        "time" : {
-          "start" : 1638489995908,
-          "stop" : 1638489996070,
-          "duration" : 162
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 5,
-        "retriesStatusChange" : true,
-        "parameters" : [ "1", "useradmin@gmail.com", "useradmin", "useradmin", "11111", "123456", "restAssured" ]
-      } ],
-      "uid" : "670ed54f458fcef13566b8d3637a18f2"
+      "name" : "startSession",
+      "uid" : "ecff1fd51931d02f",
+      "parentUid" : "73c222f9850bddb19aa372207d5508d5",
+      "status" : "broken",
+      "time" : {
+        "start" : 1638536626773,
+        "stop" : 1638536626774,
+        "duration" : 1
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 3,
+      "retriesStatusChange" : false,
+      "parameters" : [ "webDriver" ]
     }, {
-      "name" : "MortgageCalcTestCases",
-      "children" : [ {
-        "name" : "startSession",
-        "uid" : "a78fbc07e1024946",
-        "parentUid" : "8a5142151625122be1b76d97b8f19753",
-        "status" : "broken",
-        "time" : {
-          "start" : 1638458421904,
-          "stop" : 1638458421908,
-          "duration" : 4
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 1,
-        "retriesStatusChange" : false,
-        "parameters" : [ "androidDriver" ]
-      }, {
-        "name" : "calcFragment",
-        "uid" : "cc0f56176a05b2e5",
-        "parentUid" : "8a5142151625122be1b76d97b8f19753",
-        "status" : "skipped",
-        "time" : {
-          "start" : 1638458422302,
-          "stop" : 1638458422345,
-          "duration" : 43
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 9,
-        "retriesStatusChange" : false,
-        "parameters" : [ "androidDriver" ]
-      }, {
-        "name" : "calcFragment",
-        "uid" : "9dd21c9cc31f2ea8",
-        "parentUid" : "8a5142151625122be1b76d97b8f19753",
-        "status" : "passed",
-        "time" : {
-          "start" : 1638458496552,
-          "stop" : 1638458502538,
-          "duration" : 5986
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "1300000", "30", "10", "£11491.92", "£10833.33", "androidDriver" ]
-      }, {
-        "name" : "calcFragment",
-        "uid" : "5dbdfe8c8a1ae47c",
-        "parentUid" : "8a5142151625122be1b76d97b8f19753",
-        "status" : "passed",
-        "time" : {
-          "start" : 1638458505828,
-          "stop" : 1638458511048,
-          "duration" : 5220
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "1418400", "36", "5", "£7143.35", "£5910.00", "androidDriver" ]
-      }, {
-        "name" : "calcFragment",
-        "uid" : "fa3e431220c809b0",
-        "parentUid" : "8a5142151625122be1b76d97b8f19753",
-        "status" : "passed",
-        "time" : {
-          "start" : 1638458514096,
-          "stop" : 1638458519597,
-          "duration" : 5501
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "3204000", "24", "7", "£23279.47", "£18690.00", "androidDriver" ]
-      }, {
-        "name" : "calcFragment",
-        "uid" : "fc8ca7220dbf712a",
-        "parentUid" : "8a5142151625122be1b76d97b8f19753",
-        "status" : "passed",
-        "time" : {
-          "start" : 1638458522626,
-          "stop" : 1638458527838,
-          "duration" : 5212
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "2004000", "12", "3", "£16777.17", "£5010.00", "androidDriver" ]
-      }, {
-        "name" : "calcFragment",
-        "uid" : "e25a7dc99cf08332",
-        "parentUid" : "8a5142151625122be1b76d97b8f19753",
-        "status" : "passed",
-        "time" : {
-          "start" : 1638458530877,
-          "stop" : 1638458535863,
-          "duration" : 4986
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "530400", "52", "15", "£6634.63", "£6630.00", "androidDriver" ]
-      }, {
-        "name" : "savedFragment",
-        "uid" : "b580c6d053d64c95",
-        "parentUid" : "8a5142151625122be1b76d97b8f19753",
-        "status" : "passed",
-        "time" : {
-          "start" : 1638458538905,
-          "stop" : 1638458545022,
-          "duration" : 6117
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 2,
-        "retriesStatusChange" : true,
-        "parameters" : [ "androidDriver" ]
-      }, {
-        "name" : "calcFragment",
-        "uid" : "56c1141c0e53fa6d",
-        "parentUid" : "8a5142151625122be1b76d97b8f19753",
-        "status" : "passed",
-        "time" : {
-          "start" : 1638458612110,
-          "stop" : 1638458618461,
-          "duration" : 6351
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "1300000", "30", "10", "Â£11491.92", "Â£10833.33", "androidDriver" ]
-      }, {
-        "name" : "calcFragment",
-        "uid" : "c3a35c0d8162e6ea",
-        "parentUid" : "8a5142151625122be1b76d97b8f19753",
-        "status" : "passed",
-        "time" : {
-          "start" : 1638458621820,
-          "stop" : 1638458626789,
-          "duration" : 4969
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "1418400", "36", "5", "Â£7143.35", "Â£5910.00", "androidDriver" ]
-      }, {
-        "name" : "calcFragment",
-        "uid" : "3136d3b5d98f98cc",
-        "parentUid" : "8a5142151625122be1b76d97b8f19753",
-        "status" : "passed",
-        "time" : {
-          "start" : 1638458629810,
-          "stop" : 1638458635221,
-          "duration" : 5411
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "3204000", "24", "7", "Â£23279.47", "Â£18690.00", "androidDriver" ]
-      }, {
-        "name" : "calcFragment",
-        "uid" : "d0d15f2d06d195c4",
-        "parentUid" : "8a5142151625122be1b76d97b8f19753",
-        "status" : "passed",
-        "time" : {
-          "start" : 1638458638273,
-          "stop" : 1638458644066,
-          "duration" : 5793
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "2004000", "12", "3", "Â£16777.17", "Â£5010.00", "androidDriver" ]
-      }, {
-        "name" : "calcFragment",
-        "uid" : "21a18693c6fc6158",
-        "parentUid" : "8a5142151625122be1b76d97b8f19753",
-        "status" : "passed",
-        "time" : {
-          "start" : 1638458647095,
-          "stop" : 1638458652516,
-          "duration" : 5421
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "530400", "52", "15", "Â£6634.63", "Â£6630.00", "androidDriver" ]
-      } ],
-      "uid" : "8a5142151625122be1b76d97b8f19753"
+      "name" : "login",
+      "uid" : "29a3843be38cdc72",
+      "parentUid" : "73c222f9850bddb19aa372207d5508d5",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1638536627021,
+        "stop" : 1638536627023,
+        "duration" : 2
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 3,
+      "retriesStatusChange" : false,
+      "parameters" : [ "webDriver" ]
     }, {
-      "name" : "ToDoLIstTestCases",
-      "children" : [ {
-        "name" : "test01_create",
-        "uid" : "783982c19f352043",
-        "parentUid" : "a1cacb272bf5d3c2047836ff2cc60661",
-        "status" : "passed",
-        "time" : {
-          "start" : 1638489193695,
-          "stop" : 1638489204080,
-          "duration" : 10385
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 4,
-        "retriesStatusChange" : false,
-        "parameters" : [ "electron", "new task", "new task", "new task" ]
-      }, {
-        "name" : "test02_complete",
-        "uid" : "fffe4bdde57fab26",
-        "parentUid" : "a1cacb272bf5d3c2047836ff2cc60661",
-        "status" : "passed",
-        "time" : {
-          "start" : 1638489207306,
-          "stop" : 1638489207613,
-          "duration" : 307
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 4,
-        "retriesStatusChange" : false,
-        "parameters" : [ "electron", "new task", "new task", "new task" ]
-      }, {
-        "name" : "test03_delete",
-        "uid" : "ef9776907330f718",
-        "parentUid" : "a1cacb272bf5d3c2047836ff2cc60661",
-        "status" : "passed",
-        "time" : {
-          "start" : 1638489210655,
-          "stop" : 1638489221067,
-          "duration" : 10412
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 4,
-        "retriesStatusChange" : false,
-        "parameters" : [ "electron", "new task", "new task", "new task" ]
-      } ],
-      "uid" : "a1cacb272bf5d3c2047836ff2cc60661"
+      "name" : "createNewDashboard",
+      "uid" : "e4da68ca6a9de17b",
+      "parentUid" : "73c222f9850bddb19aa372207d5508d5",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1638536627071,
+        "stop" : 1638536627072,
+        "duration" : 1
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 3,
+      "retriesStatusChange" : false,
+      "parameters" : [ "webDriver" ]
     }, {
-      "name" : "CalculatorTestCases",
-      "children" : [ {
-        "name" : "startSession",
-        "uid" : "626d59c71bd77f41",
-        "parentUid" : "091493abf78331a3d3f319aa1cffe672",
-        "status" : "broken",
-        "time" : {
-          "start" : 1638489605005,
-          "stop" : 1638489605005,
-          "duration" : 0
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 2,
-        "retriesStatusChange" : false,
-        "parameters" : [ "desktop" ]
-      }, {
-        "name" : "test01_calc",
-        "uid" : "251280a324fc8ed0",
-        "parentUid" : "091493abf78331a3d3f319aa1cffe672",
-        "status" : "passed",
-        "time" : {
-          "start" : 1638489735010,
-          "stop" : 1638489739239,
-          "duration" : 4229
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 4,
-        "retriesStatusChange" : true,
-        "parameters" : [ "desktop" ]
-      } ],
-      "uid" : "091493abf78331a3d3f319aa1cffe672"
+      "name" : "searchDashboardNotExist",
+      "uid" : "ae335164a5ec4c64",
+      "parentUid" : "73c222f9850bddb19aa372207d5508d5",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1638536627089,
+        "stop" : 1638536627090,
+        "duration" : 1
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 3,
+      "retriesStatusChange" : false,
+      "parameters" : [ "webDriver" ]
+    }, {
+      "name" : "homePageLogo",
+      "uid" : "80db984c9b5461da",
+      "parentUid" : "73c222f9850bddb19aa372207d5508d5",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1638536627206,
+        "stop" : 1638536627206,
+        "duration" : 0
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 3,
+      "retriesStatusChange" : false,
+      "parameters" : [ "webDriver" ]
+    }, {
+      "name" : "verifyDashboardName",
+      "uid" : "f7fa41df63ed89f",
+      "parentUid" : "73c222f9850bddb19aa372207d5508d5",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1638536627241,
+        "stop" : 1638536627241,
+        "duration" : 0
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 3,
+      "retriesStatusChange" : false,
+      "parameters" : [ "webDriver" ]
     } ],
-    "uid" : "141fa05f02bf329144b0086cf92149a8"
+    "uid" : "testcases.GrafanaWebTestCases"
   } ]
 }

@@ -1,75 +1,137 @@
 [ {
-  "buildOrder" : 12,
-  "reportUrl" : "http://localhost:9090/job/Grafana%20Api%20Test/12/allure",
-  "reportName" : "AllureReport",
-  "data" : {
-    "Test defects" : 2
-  }
-}, {
-  "buildOrder" : 11,
-  "reportUrl" : "http://localhost:9090/job/Grafana%20Api%20Test/11/allure",
-  "reportName" : "AllureReport",
-  "data" : { }
-}, {
-  "buildOrder" : 10,
-  "reportUrl" : "http://localhost:9090/job/Grafana%20Api%20Test/10/allure",
-  "reportName" : "AllureReport",
-  "data" : { }
-}, {
-  "buildOrder" : 9,
-  "reportUrl" : "http://localhost:9090/job/Grafana%20Api%20Test/9/allure",
-  "reportName" : "AllureReport",
-  "data" : { }
-}, {
-  "buildOrder" : 8,
-  "reportUrl" : "http://localhost:9090/job/Grafana%20Api%20Test/8/allure",
-  "reportName" : "AllureReport",
-  "data" : { }
-}, {
-  "buildOrder" : 7,
-  "reportUrl" : "http://localhost:9090/job/Grafana%20Api%20Test/7/allure",
+  "buildOrder" : 38,
+  "reportUrl" : "http://localhost:8080/job/Grafana%20Web%20Test/38/allure",
   "reportName" : "AllureReport",
   "data" : {
     "Test defects" : 1
   }
 }, {
-  "buildOrder" : 6,
-  "reportUrl" : "http://localhost:9090/job/Grafana%20Api%20Test/6/allure",
+  "buildOrder" : 37,
+  "reportUrl" : "http://localhost:8080/job/Grafana%20Web%20Test/37/allure",
   "reportName" : "AllureReport",
   "data" : {
-    "Product defects" : 8,
-    "Test defects" : 5
+    "Test defects" : 1
   }
 }, {
-  "buildOrder" : 5,
-  "reportUrl" : "http://localhost:9090/job/Grafana%20Api%20Test/5/allure",
+  "buildOrder" : 35,
+  "reportUrl" : "http://localhost:8080/job/Grafana%20Web%20Test/35/allure",
+  "reportName" : "AllureReport",
+  "data" : { }
+}, {
+  "buildOrder" : 34,
+  "reportUrl" : "http://localhost:8080/job/Grafana%20Web%20Test/34/allure",
+  "reportName" : "AllureReport",
+  "data" : { }
+}, {
+  "buildOrder" : 33,
+  "reportUrl" : "http://localhost:8080/job/Grafana%20Web%20Test/33/allure",
+  "reportName" : "AllureReport",
+  "data" : { }
+}, {
+  "buildOrder" : 32,
+  "reportUrl" : "http://localhost:8080/job/Grafana%20Web%20Test/32/allure",
+  "reportName" : "AllureReport",
+  "data" : { }
+}, {
+  "buildOrder" : 28,
+  "reportUrl" : "http://localhost:8080/job/Grafana%20Web%20Test/28/allure",
+  "reportName" : "AllureReport",
+  "data" : { }
+}, {
+  "buildOrder" : 27,
+  "reportUrl" : "http://localhost:8080/job/Grafana%20Web%20Test/27/allure",
+  "reportName" : "AllureReport",
+  "data" : { }
+}, {
+  "buildOrder" : 26,
+  "reportUrl" : "http://localhost:8080/job/Grafana%20Web%20Test/26/allure",
   "reportName" : "AllureReport",
   "data" : {
-    "Product defects" : 3,
-    "Test defects" : 2
+    "Test defects" : 4
   }
 }, {
-  "buildOrder" : 4,
-  "reportUrl" : "http://localhost:9090/job/Grafana%20Api%20Test/4/allure",
+  "buildOrder" : 25,
+  "reportUrl" : "http://localhost:8080/job/Grafana%20Web%20Test/25/allure",
+  "reportName" : "AllureReport",
+  "data" : { }
+}, {
+  "buildOrder" : 21,
+  "reportUrl" : "http://localhost:8080/job/Grafana%20Web%20Test/21/allure",
   "reportName" : "AllureReport",
   "data" : {
-    "Product defects" : 2,
-    "Test defects" : 2
+    "Product defects" : 17,
+    "Test defects" : 21
   }
 }, {
-  "buildOrder" : 3,
-  "reportUrl" : "http://localhost:9090/job/Grafana%20Api%20Test/3/allure",
+  "buildOrder" : 20,
+  "reportUrl" : "http://localhost:8080/job/Grafana%20Web%20Test/20/allure",
   "reportName" : "AllureReport",
   "data" : {
-    "Product defects" : 14,
+    "Product defects" : 17,
+    "Test defects" : 21
+  }
+}, {
+  "buildOrder" : 19,
+  "reportUrl" : "http://localhost:8080/job/Grafana%20Web%20Test/19/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "Product defects" : 17,
+    "Test defects" : 21
+  }
+}, {
+  "buildOrder" : 18,
+  "reportUrl" : "http://localhost:8080/job/Grafana%20Web%20Test/18/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "Product defects" : 17,
+    "Test defects" : 21
+  }
+}, {
+  "buildOrder" : 17,
+  "reportUrl" : "http://localhost:8080/job/Grafana%20Web%20Test/17/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "Product defects" : 17,
+    "Test defects" : 21
+  }
+}, {
+  "buildOrder" : 16,
+  "reportUrl" : "http://localhost:8080/job/Grafana%20Web%20Test/16/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "Product defects" : 17,
+    "Test defects" : 21
+  }
+}, {
+  "buildOrder" : 15,
+  "reportUrl" : "http://localhost:8080/job/Grafana%20Web%20Test/15/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "Product defects" : 17,
+    "Test defects" : 21
+  }
+}, {
+  "buildOrder" : 14,
+  "reportUrl" : "http://localhost:8080/job/Grafana%20Web%20Test/14/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "Product defects" : 17,
     "Test defects" : 25
   }
 }, {
-  "buildOrder" : 2,
-  "reportUrl" : "http://localhost:9090/job/Grafana%20Api%20Test/2/allure",
+  "buildOrder" : 13,
+  "reportUrl" : "http://localhost:8080/job/Grafana%20Web%20Test/13/allure",
   "reportName" : "AllureReport",
   "data" : {
-    "Product defects" : 13,
-    "Test defects" : 18
+    "Product defects" : 17,
+    "Test defects" : 22
+  }
+}, {
+  "buildOrder" : 12,
+  "reportUrl" : "http://localhost:8080/job/Grafana%20Web%20Test/12/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "Product defects" : 17,
+    "Test defects" : 22
   }
 } ]

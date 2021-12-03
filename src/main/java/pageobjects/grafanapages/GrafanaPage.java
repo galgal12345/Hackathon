@@ -23,7 +23,7 @@ public class GrafanaPage {
     @FindBy(how = How.XPATH, using = "//section/div[2]/div/h1")
     private WebElement homePageTitle;
 
-    @FindBy(how = How.XPATH,using = "/html/body/div/div/nav/div[2]/div[2]/a")
+    @FindBy(how = How.XPATH,using = "//div[2]/div[2]/a")
     private WebElement addDashboard;
 
     @FindBy(how = How.XPATH,using = "//div[2]/div[1]/div[1]")
@@ -40,19 +40,19 @@ public class GrafanaPage {
     @FindBy(how = How.XPATH,using = "//section/div[2]/div/div[1]/div[2]/ul")
     private WebElement dashboardsItems;
 
-    @FindBy(how = How.XPATH,using = "/html/body/div/div/nav/div[2]/div[3]/a")
+    @FindBy(how = How.XPATH,using = "//div[3]/a")
     private WebElement dashboardsTitle;
 
-    @FindBy(how = How.XPATH,using = "/html/body/div/div/nav/div[2]/div[1]/button")
+    @FindBy(how = How.XPATH,using = "//button")
     private WebElement search;
 
-    @FindBy(how = How.XPATH,using = "/html/body/div/div/main/div[3]/div/div[1]/div[1]/input")
+    @FindBy(how = How.XPATH,using = "//input")
     private WebElement searchInput;
 
-    @FindBy(how = How.XPATH,using = "/html/body/div/div/main/div[3]/div/div[2]/div[2]/div[1]/div")
+    @FindBy(how = How.XPATH,using = "//div[3]/div/div[2]/div[2]/div[1]/div")
     private WebElement noFoundMessage;
 
-    @FindBy(how = How.XPATH,using = "/html/body/div/div/nav/div[2]/div[3]/ul/li[4]")
+    @FindBy(how = How.XPATH,using = "//div[3]/ul/li[4]")
     private WebElement manageBtn;
 
     @FindBy(how = How.XPATH,using = "//*/div/a/div[2]/div/div[1]/h2")

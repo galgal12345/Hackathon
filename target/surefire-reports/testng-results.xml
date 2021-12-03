@@ -1,86 +1,272 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="5" failed="0" ignored="0" total="5" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="SuiteAPI" duration-ms="13664" started-at="2021-12-03T02:06:25 IST" finished-at="2021-12-03T02:06:39 IST">
+  <suite name="SuiteWeb" duration-ms="5298" started-at="2021-12-03T15:03:41 IST" finished-at="2021-12-03T15:03:47 IST">
     <groups>
     </groups>
-    <test name="GrafanaApiTest" duration-ms="13664" started-at="2021-12-03T02:06:25 IST" finished-at="2021-12-03T02:06:39 IST">
-      <class name="testcases.GrafanaApiTestCases">
-        <test-method status="PASS" signature="startSession(java.lang.String)[pri:0, instance:testcases.GrafanaApiTestCases@213deac2]" name="startSession" is-config="true" duration-ms="1316" started-at="2021-12-03T02:06:25 IST" finished-at="2021-12-03T02:06:26 IST">
+    <test name="GrafanaWebTest" duration-ms="5298" started-at="2021-12-03T15:03:41 IST" finished-at="2021-12-03T15:03:47 IST">
+      <class name="testcases.GrafanaWebTestCases">
+        <test-method status="FAIL" signature="startSession(java.lang.String)[pri:0, instance:testcases.GrafanaWebTestCases@213deac2]" name="startSession" is-config="true" duration-ms="4733" started-at="2021-12-03T15:03:41 IST" finished-at="2021-12-03T15:03:46 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[restAssured]]>
+                <![CDATA[webDriver]]>
               </value>
             </param>
           </params>
+          <exception class="java.sql.SQLSyntaxErrorException">
+            <message>
+              <![CDATA[You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '"select * from login"' at line 1]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '"select * from login"' at line 1
+at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1218)
+at utilities.ManageDb.myDB(ManageDb.java:16)
+at utilities.CommonOps.myWebStarter(CommonOps.java:82)
+at utilities.CommonOps.startSession(CommonOps.java:45)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:340)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:294)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.sql.SQLSyntaxErrorException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startSession -->
-        <test-method status="PASS" signature="test01_post(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.GrafanaApiTestCases@213deac2]" name="test01_post" duration-ms="2632" started-at="2021-12-03T02:06:26 IST" description="Create User" finished-at="2021-12-03T02:06:29 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[useradmin]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[useradmin@gmail.com]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[useradmin]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[123456]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[1]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="SKIP" signature="login()[pri:1, instance:testcases.GrafanaWebTestCases@213deac2]" name="login" duration-ms="0" started-at="2021-12-03T15:03:46 IST" description="Login" finished-at="2021-12-03T15:03:46 IST">
+          <exception class="java.sql.SQLSyntaxErrorException">
+            <message>
+              <![CDATA[You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '"select * from login"' at line 1]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '"select * from login"' at line 1
+at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1218)
+at utilities.ManageDb.myDB(ManageDb.java:16)
+at utilities.CommonOps.myWebStarter(CommonOps.java:82)
+at utilities.CommonOps.startSession(CommonOps.java:45)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:340)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:294)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.sql.SQLSyntaxErrorException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test01_post -->
-        <test-method status="PASS" signature="wait_seconds()[pri:0, instance:testcases.GrafanaApiTestCases@213deac2]" name="wait_seconds" is-config="true" duration-ms="3020" started-at="2021-12-03T02:06:29 IST" finished-at="2021-12-03T02:06:32 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- wait_seconds -->
-        <test-method status="PASS" signature="test02_update(java.lang.String)[pri:0, instance:testcases.GrafanaApiTestCases@213deac2]" name="test02_update" duration-ms="81" started-at="2021-12-03T02:06:32 IST" description="Update" finished-at="2021-12-03T02:06:32 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[11111]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test02_update -->
-        <test-method status="PASS" signature="wait_seconds()[pri:0, instance:testcases.GrafanaApiTestCases@213deac2]" name="wait_seconds" is-config="true" duration-ms="3006" started-at="2021-12-03T02:06:32 IST" finished-at="2021-12-03T02:06:35 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- wait_seconds -->
-        <test-method status="PASS" signature="test03_delete()[pri:0, instance:testcases.GrafanaApiTestCases@213deac2]" name="test03_delete" duration-ms="164" started-at="2021-12-03T02:06:35 IST" description="Delete" finished-at="2021-12-03T02:06:36 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test03_delete -->
-        <test-method status="PASS" signature="wait_seconds()[pri:0, instance:testcases.GrafanaApiTestCases@213deac2]" name="wait_seconds" is-config="true" duration-ms="3006" started-at="2021-12-03T02:06:36 IST" finished-at="2021-12-03T02:06:39 IST">
+        </test-method> <!-- login -->
+        <test-method status="SKIP" signature="wait_seconds()[pri:0, instance:testcases.GrafanaWebTestCases@213deac2]" name="wait_seconds" is-config="true" duration-ms="-1638536627025" started-at="2021-12-03T15:03:47 IST" finished-at="1970-01-01T02:00:00 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- wait_seconds -->
-        <test-method status="PASS" signature="endSession()[pri:0, instance:testcases.GrafanaApiTestCases@213deac2]" name="endSession" is-config="true" duration-ms="0" started-at="2021-12-03T02:06:39 IST" finished-at="2021-12-03T02:06:39 IST">
+        <test-method status="SKIP" signature="createNewDashboard()[pri:2, instance:testcases.GrafanaWebTestCases@213deac2]" name="createNewDashboard" duration-ms="0" started-at="2021-12-03T15:03:47 IST" description="Ensure dashboard was created" depends-on-methods="testcases.GrafanaWebTestCases.login" finished-at="2021-12-03T15:03:47 IST">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method GrafanaWebTestCases.createNewDashboard()[pri:2, instance:testcases.GrafanaWebTestCases@213deac2] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method GrafanaWebTestCases.createNewDashboard()[pri:2, instance:testcases.GrafanaWebTestCases@213deac2] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:99)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createNewDashboard -->
+        <test-method status="SKIP" signature="searchDashboardNotExist()[pri:3, instance:testcases.GrafanaWebTestCases@213deac2]" name="searchDashboardNotExist" duration-ms="0" started-at="2021-12-03T15:03:47 IST" description="Checking the search management" depends-on-methods="testcases.GrafanaWebTestCases.login" finished-at="2021-12-03T15:03:47 IST">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method GrafanaWebTestCases.searchDashboardNotExist()[pri:3, instance:testcases.GrafanaWebTestCases@213deac2] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method GrafanaWebTestCases.searchDashboardNotExist()[pri:3, instance:testcases.GrafanaWebTestCases@213deac2] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:99)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchDashboardNotExist -->
+        <test-method status="SKIP" signature="homePageLogo()[pri:4, instance:testcases.GrafanaWebTestCases@213deac2]" name="homePageLogo" duration-ms="0" started-at="2021-12-03T15:03:47 IST" description="Homepage logo" depends-on-methods="testcases.GrafanaWebTestCases.login" finished-at="2021-12-03T15:03:47 IST">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method GrafanaWebTestCases.homePageLogo()[pri:4, instance:testcases.GrafanaWebTestCases@213deac2] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method GrafanaWebTestCases.homePageLogo()[pri:4, instance:testcases.GrafanaWebTestCases@213deac2] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:99)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homePageLogo -->
+        <test-method status="SKIP" signature="verifyDashboardName()[pri:5, instance:testcases.GrafanaWebTestCases@213deac2]" name="verifyDashboardName" duration-ms="0" started-at="2021-12-03T15:03:47 IST" description="Verify dashboard name" depends-on-methods="testcases.GrafanaWebTestCases.login" finished-at="2021-12-03T15:03:47 IST">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method GrafanaWebTestCases.verifyDashboardName()[pri:5, instance:testcases.GrafanaWebTestCases@213deac2] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method GrafanaWebTestCases.verifyDashboardName()[pri:5, instance:testcases.GrafanaWebTestCases@213deac2] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:99)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDashboardName -->
+        <test-method status="SKIP" signature="endSession()[pri:0, instance:testcases.GrafanaWebTestCases@213deac2]" name="endSession" is-config="true" duration-ms="-1638536627243" started-at="2021-12-03T15:03:47 IST" finished-at="1970-01-01T02:00:00 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endSession -->
-      </class> <!-- testcases.GrafanaApiTestCases -->
-    </test> <!-- GrafanaApiTest -->
-  </suite> <!-- SuiteAPI -->
+      </class> <!-- testcases.GrafanaWebTestCases -->
+    </test> <!-- GrafanaWebTest -->
+  </suite> <!-- SuiteWeb -->
 </testng-results>
