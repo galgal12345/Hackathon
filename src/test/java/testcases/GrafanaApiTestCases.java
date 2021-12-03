@@ -23,7 +23,7 @@ public class GrafanaApiTestCases extends CommonOps {
         GrafanaApiWorkFlow.PostRequest(name, email, login, password, Integer.parseInt(OrgId), "/users");
         Base.userId=GrafanaApiWorkFlow.getIdUser();
         after = GrafanaApiWorkFlow.setNumUsers("/stats");
-        Verifications.verifyTrue(after - before == 1);
+        Verifications.verifyEquals(after-before,1);
     }
 
     @Test(description = "Update")
@@ -31,7 +31,7 @@ public class GrafanaApiTestCases extends CommonOps {
     @Parameters({"newPassword"})
     public void test02_update(String password) {
         GrafanaApiWorkFlow.UpdateRequest("/users", Base.userId, password);
-        Verifications.verifyTrue(response.statusCode() == 200);
+        Verifications.verifyEquals(response.statusCode(),200);
     }
 
     @Test(description = "Delete")
@@ -41,7 +41,7 @@ public class GrafanaApiTestCases extends CommonOps {
         before = numOfUsers;
         GrafanaApiWorkFlow.DeleteRequest("/users", Base.userId);
         after = GrafanaApiWorkFlow.setNumUsers("/stats");
-        Verifications.verifyTrue(after - before == -1);
+        Verifications.verifyEquals(after-before,-1);
     }
 
 }

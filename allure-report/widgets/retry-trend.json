@@ -1,4 +1,12 @@
 [ {
+  "buildOrder" : 12,
+  "reportUrl" : "http://localhost:9090/job/Grafana%20Api%20Test/12/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "run" : 24,
+    "retry" : 45
+  }
+}, {
   "buildOrder" : 11,
   "reportUrl" : "http://localhost:9090/job/Grafana%20Api%20Test/11/allure",
   "reportName" : "AllureReport",

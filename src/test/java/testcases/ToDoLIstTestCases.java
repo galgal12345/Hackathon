@@ -27,7 +27,7 @@ public class ToDoLIstTestCases extends CommonOps {
     public void test01_create(String task) {
         size = ToDoListWorkFlow.getSizeList();
         ToDoListWorkFlow.createTask(task);
-        Verifications.verifyTrue(sizeList == size + 1);
+        Verifications.verifyEquals(sizeList,size+1);
     }
 
 
@@ -45,6 +45,6 @@ public class ToDoLIstTestCases extends CommonOps {
     public void test03_delete(String task) {
         size = ToDoListWorkFlow.getSizeList();
         ToDoListWorkFlow.deleteTask(task);
-        Verifications.verifyTrue(sizeList == size - 1);
+        Verifications.verifyEquals(sizeList,size-1);
     }
 }

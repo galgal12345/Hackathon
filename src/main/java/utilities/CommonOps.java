@@ -118,7 +118,7 @@ public class CommonOps extends Base {
         capabilities = new DesiredCapabilities();
         capabilities.setCapability("app", calcApp);
         try {
-            deskDriver = new WindowsDriver(new URL("http://127.0.0.1:4722"), capabilities);
+            deskDriver = new WindowsDriver(new URL("http://127.0.0.1:4723"), capabilities);
         } catch (MalformedURLException e) {
             System.out.println("Windows driver issue");
             e.printStackTrace();

@@ -9,7 +9,7 @@
         "name" : "testcases.GrafanaApiTestCases",
         "children" : [ {
           "name" : "Create User",
-          "uid" : "a7676393e66dbcfe",
+          "uid" : "7b7cb292ec6b669f",
           "parentUid" : "8a060f21f2baad0e0db5822be023d7e2",
           "status" : "passed",
           "time" : {
@@ -26,7 +26,7 @@
           "parameters" : [ "1", "ayala11@gmail.com", "ayala11", "ayala1", "11111", "123456", "restAssured" ]
         }, {
           "name" : "Update",
-          "uid" : "2b3ab3f8fac265af",
+          "uid" : "3ee1220aa8635c0c",
           "parentUid" : "8a060f21f2baad0e0db5822be023d7e2",
           "status" : "passed",
           "time" : {
@@ -43,7 +43,7 @@
           "parameters" : [ "1", "ayala11@gmail.com", "ayala11", "ayala1", "11111", "123456", "restAssured" ]
         }, {
           "name" : "Delete",
-          "uid" : "7c202997c9514396",
+          "uid" : "a7927c468269a988",
           "parentUid" : "8a060f21f2baad0e0db5822be023d7e2",
           "status" : "passed",
           "time" : {
@@ -60,53 +60,53 @@
           "parameters" : [ "1", "ayala11@gmail.com", "ayala11", "ayala1", "11111", "123456", "restAssured" ]
         }, {
           "name" : "Create User",
-          "uid" : "7e7ef960eb155a3c",
+          "uid" : "8afa5754b3946ebe",
           "parentUid" : "8a060f21f2baad0e0db5822be023d7e2",
           "status" : "passed",
           "time" : {
-            "start" : 1638445026359,
-            "stop" : 1638445030193,
-            "duration" : 3834
+            "start" : 1638489986838,
+            "stop" : 1638489989416,
+            "duration" : 2578
           },
           "flaky" : false,
           "newFailed" : false,
           "newPassed" : false,
           "newBroken" : false,
-          "retriesCount" : 4,
+          "retriesCount" : 5,
           "retriesStatusChange" : false,
           "parameters" : [ "1", "useradmin@gmail.com", "useradmin", "useradmin", "11111", "123456", "restAssured" ]
         }, {
           "name" : "Update",
-          "uid" : "82f8f16adb590bac",
+          "uid" : "58165cff4d63dffe",
           "parentUid" : "8a060f21f2baad0e0db5822be023d7e2",
           "status" : "passed",
           "time" : {
-            "start" : 1638445033863,
-            "stop" : 1638445033923,
-            "duration" : 60
+            "start" : 1638489992817,
+            "stop" : 1638489992886,
+            "duration" : 69
           },
           "flaky" : false,
           "newFailed" : false,
           "newPassed" : false,
           "newBroken" : false,
-          "retriesCount" : 4,
+          "retriesCount" : 5,
           "retriesStatusChange" : true,
           "parameters" : [ "1", "useradmin@gmail.com", "useradmin", "useradmin", "11111", "123456", "restAssured" ]
         }, {
           "name" : "Delete",
-          "uid" : "2ecf771e116427e1",
+          "uid" : "b139ee67c099da31",
           "parentUid" : "8a060f21f2baad0e0db5822be023d7e2",
           "status" : "passed",
           "time" : {
-            "start" : 1638445036947,
-            "stop" : 1638445037138,
-            "duration" : 191
+            "start" : 1638489995908,
+            "stop" : 1638489996070,
+            "duration" : 162
           },
           "flaky" : false,
           "newFailed" : false,
           "newPassed" : false,
           "newBroken" : false,
-          "retriesCount" : 4,
+          "retriesCount" : 5,
           "retriesStatusChange" : true,
           "parameters" : [ "1", "useradmin@gmail.com", "useradmin", "useradmin", "11111", "123456", "restAssured" ]
         } ],
@@ -116,6 +116,239 @@
     } ],
     "uid" : "ddd310267e45faaac31c950c02e424df"
   }, {
+    "name" : "SuiteAppium",
+    "children" : [ {
+      "name" : "MortgageCalcTest",
+      "children" : [ {
+        "name" : "testcases.MortgageCalcTestCases",
+        "children" : [ {
+          "name" : "startSession",
+          "uid" : "a78fbc07e1024946",
+          "parentUid" : "15b160c6b5ba89cfeb9b88fdb0ab7586",
+          "status" : "broken",
+          "time" : {
+            "start" : 1638458421904,
+            "stop" : 1638458421908,
+            "duration" : 4
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 1,
+          "retriesStatusChange" : false,
+          "parameters" : [ "androidDriver" ]
+        }, {
+          "name" : "Sends Keys To Calc Text Fileds",
+          "uid" : "cc0f56176a05b2e5",
+          "parentUid" : "15b160c6b5ba89cfeb9b88fdb0ab7586",
+          "status" : "skipped",
+          "time" : {
+            "start" : 1638458422302,
+            "stop" : 1638458422345,
+            "duration" : 43
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 9,
+          "retriesStatusChange" : false,
+          "parameters" : [ "androidDriver" ]
+        }, {
+          "name" : "Sends Keys To Calc Text Fileds",
+          "uid" : "9dd21c9cc31f2ea8",
+          "parentUid" : "15b160c6b5ba89cfeb9b88fdb0ab7586",
+          "status" : "passed",
+          "time" : {
+            "start" : 1638458496552,
+            "stop" : 1638458502538,
+            "duration" : 5986
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ "1300000", "30", "10", "£11491.92", "£10833.33", "androidDriver" ]
+        }, {
+          "name" : "Sends Keys To Calc Text Fileds",
+          "uid" : "5dbdfe8c8a1ae47c",
+          "parentUid" : "15b160c6b5ba89cfeb9b88fdb0ab7586",
+          "status" : "passed",
+          "time" : {
+            "start" : 1638458505828,
+            "stop" : 1638458511048,
+            "duration" : 5220
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ "1418400", "36", "5", "£7143.35", "£5910.00", "androidDriver" ]
+        }, {
+          "name" : "Sends Keys To Calc Text Fileds",
+          "uid" : "fa3e431220c809b0",
+          "parentUid" : "15b160c6b5ba89cfeb9b88fdb0ab7586",
+          "status" : "passed",
+          "time" : {
+            "start" : 1638458514096,
+            "stop" : 1638458519597,
+            "duration" : 5501
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ "3204000", "24", "7", "£23279.47", "£18690.00", "androidDriver" ]
+        }, {
+          "name" : "Sends Keys To Calc Text Fileds",
+          "uid" : "fc8ca7220dbf712a",
+          "parentUid" : "15b160c6b5ba89cfeb9b88fdb0ab7586",
+          "status" : "passed",
+          "time" : {
+            "start" : 1638458522626,
+            "stop" : 1638458527838,
+            "duration" : 5212
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ "2004000", "12", "3", "£16777.17", "£5010.00", "androidDriver" ]
+        }, {
+          "name" : "Sends Keys To Calc Text Fileds",
+          "uid" : "e25a7dc99cf08332",
+          "parentUid" : "15b160c6b5ba89cfeb9b88fdb0ab7586",
+          "status" : "passed",
+          "time" : {
+            "start" : 1638458530877,
+            "stop" : 1638458535863,
+            "duration" : 4986
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ "530400", "52", "15", "£6634.63", "£6630.00", "androidDriver" ]
+        }, {
+          "name" : "Check Data In Saved Fragment & Delete",
+          "uid" : "b580c6d053d64c95",
+          "parentUid" : "15b160c6b5ba89cfeb9b88fdb0ab7586",
+          "status" : "passed",
+          "time" : {
+            "start" : 1638458538905,
+            "stop" : 1638458545022,
+            "duration" : 6117
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 2,
+          "retriesStatusChange" : true,
+          "parameters" : [ "androidDriver" ]
+        }, {
+          "name" : "Sends Keys To Calc Text Fileds",
+          "uid" : "56c1141c0e53fa6d",
+          "parentUid" : "15b160c6b5ba89cfeb9b88fdb0ab7586",
+          "status" : "passed",
+          "time" : {
+            "start" : 1638458612110,
+            "stop" : 1638458618461,
+            "duration" : 6351
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ "1300000", "30", "10", "Â£11491.92", "Â£10833.33", "androidDriver" ]
+        }, {
+          "name" : "Sends Keys To Calc Text Fileds",
+          "uid" : "c3a35c0d8162e6ea",
+          "parentUid" : "15b160c6b5ba89cfeb9b88fdb0ab7586",
+          "status" : "passed",
+          "time" : {
+            "start" : 1638458621820,
+            "stop" : 1638458626789,
+            "duration" : 4969
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ "1418400", "36", "5", "Â£7143.35", "Â£5910.00", "androidDriver" ]
+        }, {
+          "name" : "Sends Keys To Calc Text Fileds",
+          "uid" : "3136d3b5d98f98cc",
+          "parentUid" : "15b160c6b5ba89cfeb9b88fdb0ab7586",
+          "status" : "passed",
+          "time" : {
+            "start" : 1638458629810,
+            "stop" : 1638458635221,
+            "duration" : 5411
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ "3204000", "24", "7", "Â£23279.47", "Â£18690.00", "androidDriver" ]
+        }, {
+          "name" : "Sends Keys To Calc Text Fileds",
+          "uid" : "d0d15f2d06d195c4",
+          "parentUid" : "15b160c6b5ba89cfeb9b88fdb0ab7586",
+          "status" : "passed",
+          "time" : {
+            "start" : 1638458638273,
+            "stop" : 1638458644066,
+            "duration" : 5793
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ "2004000", "12", "3", "Â£16777.17", "Â£5010.00", "androidDriver" ]
+        }, {
+          "name" : "Sends Keys To Calc Text Fileds",
+          "uid" : "21a18693c6fc6158",
+          "parentUid" : "15b160c6b5ba89cfeb9b88fdb0ab7586",
+          "status" : "passed",
+          "time" : {
+            "start" : 1638458647095,
+            "stop" : 1638458652516,
+            "duration" : 5421
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ "530400", "52", "15", "Â£6634.63", "Â£6630.00", "androidDriver" ]
+        } ],
+        "uid" : "15b160c6b5ba89cfeb9b88fdb0ab7586"
+      } ],
+      "uid" : "4056c7ca984b45431d47aed4aa036ca1"
+    } ],
+    "uid" : "cd775c9014de820e5cc871f393e8a2b6"
+  }, {
     "name" : "SuiteElectron",
     "children" : [ {
       "name" : "ToDoLIstTest",
@@ -123,53 +356,53 @@
         "name" : "testcases.ToDoLIstTestCases",
         "children" : [ {
           "name" : "Create Task ",
-          "uid" : "589500ab41406e98",
+          "uid" : "783982c19f352043",
           "parentUid" : "7bfcd824cdef377c93a53959c6097b9c",
           "status" : "passed",
           "time" : {
-            "start" : 1638444916094,
-            "stop" : 1638444927320,
-            "duration" : 11226
+            "start" : 1638489193695,
+            "stop" : 1638489204080,
+            "duration" : 10385
           },
           "flaky" : false,
           "newFailed" : false,
           "newPassed" : false,
           "newBroken" : false,
-          "retriesCount" : 1,
+          "retriesCount" : 4,
           "retriesStatusChange" : false,
           "parameters" : [ "electron", "new task", "new task", "new task" ]
         }, {
           "name" : "Complete Task ",
-          "uid" : "cd9934862d111302",
+          "uid" : "fffe4bdde57fab26",
           "parentUid" : "7bfcd824cdef377c93a53959c6097b9c",
           "status" : "passed",
           "time" : {
-            "start" : 1638444930646,
-            "stop" : 1638444933882,
-            "duration" : 3236
+            "start" : 1638489207306,
+            "stop" : 1638489207613,
+            "duration" : 307
           },
           "flaky" : false,
           "newFailed" : false,
           "newPassed" : false,
           "newBroken" : false,
-          "retriesCount" : 1,
+          "retriesCount" : 4,
           "retriesStatusChange" : false,
           "parameters" : [ "electron", "new task", "new task", "new task" ]
         }, {
           "name" : "Delete Task ",
-          "uid" : "ef6a2d7bde11258",
+          "uid" : "ef9776907330f718",
           "parentUid" : "7bfcd824cdef377c93a53959c6097b9c",
           "status" : "passed",
           "time" : {
-            "start" : 1638444936991,
-            "stop" : 1638444950257,
-            "duration" : 13266
+            "start" : 1638489210655,
+            "stop" : 1638489221067,
+            "duration" : 10412
           },
           "flaky" : false,
           "newFailed" : false,
           "newPassed" : false,
           "newBroken" : false,
-          "retriesCount" : 1,
+          "retriesCount" : 4,
           "retriesStatusChange" : false,
           "parameters" : [ "electron", "new task", "new task", "new task" ]
         } ],
@@ -185,21 +418,38 @@
       "children" : [ {
         "name" : "testcases.CalculatorTestCases",
         "children" : [ {
-          "name" : "Calculation",
-          "uid" : "ef9105725bfdd177",
+          "name" : "startSession",
+          "uid" : "626d59c71bd77f41",
           "parentUid" : "52431d93167204047c235eea32c73e2f",
-          "status" : "passed",
+          "status" : "broken",
           "time" : {
-            "start" : 1638444981141,
-            "stop" : 1638444989698,
-            "duration" : 8557
+            "start" : 1638489605005,
+            "stop" : 1638489605005,
+            "duration" : 0
           },
           "flaky" : false,
           "newFailed" : false,
           "newPassed" : false,
           "newBroken" : false,
-          "retriesCount" : 0,
+          "retriesCount" : 2,
           "retriesStatusChange" : false,
+          "parameters" : [ "desktop" ]
+        }, {
+          "name" : "Calculation",
+          "uid" : "251280a324fc8ed0",
+          "parentUid" : "52431d93167204047c235eea32c73e2f",
+          "status" : "passed",
+          "time" : {
+            "start" : 1638489735010,
+            "stop" : 1638489739239,
+            "duration" : 4229
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 4,
+          "retriesStatusChange" : true,
           "parameters" : [ "desktop" ]
         } ],
         "uid" : "52431d93167204047c235eea32c73e2f"

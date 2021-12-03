@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [SuiteWeb]">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [SuiteDesktop]">
   <listeners>
     <listener class-name="utilities.Listeners"/>
   </listeners>
-  <test thread-count="5" verbose="0" name="GrafanaWebTest(failed)">
-    <parameter name="platform" value="webDriver"/>
+  <test thread-count="5" verbose="0" name="CalculatorTest(failed)">
+    <parameter name="platform" value="desktop"/>
     <classes>
-      <class name="testcases.GrafanaWebTestCases">
+      <class name="testcases.CalculatorTestCases">
         <methods>
           <include name="startSession"/>
-          <include name="homePageLogo"/>
           <include name="endSession"/>
+          <include name="test01_calc"/>
           <include name="wait_seconds"/>
         </methods>
-      </class> <!-- testcases.GrafanaWebTestCases -->
+      </class> <!-- testcases.CalculatorTestCases -->
     </classes>
-  </test> <!-- GrafanaWebTest(failed) -->
-</suite> <!-- Failed suite [SuiteWeb] -->
+  </test> <!-- CalculatorTest(failed) -->
+</suite> <!-- Failed suite [SuiteDesktop] -->

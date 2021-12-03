@@ -30,12 +30,11 @@ public class GrafanaApiWorkFlow extends CommonOps {
     }
     @Step
     public static int setNumUsers(String url){
-        ApiUiActions.Get(url);
+        GetRequest(url);
       return Integer.parseInt(ApiUiActions.extractJson("users"));
     }
     @Step
     public static int getIdUser(){
-       // ApiUiActions.Get(url);
         return Integer.parseInt(ApiUiActions.extractJson("id"));
     }
 }

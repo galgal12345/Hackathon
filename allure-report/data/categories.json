@@ -1,5 +1,51 @@
 {
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
   "name" : "categories",
-  "children" : [ ]
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "Connection refused: connect\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'DESKTOP-H12PSKE', ip: '10.100.102.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_312'\nDriver info: driver.version: AndroidDriver",
+      "children" : [ {
+        "name" : "startSession",
+        "uid" : "a78fbc07e1024946",
+        "parentUid" : "ad91113592292f0fd60274105ec98f28",
+        "status" : "broken",
+        "time" : {
+          "start" : 1638458421904,
+          "stop" : 1638458421908,
+          "duration" : 4
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 1,
+        "retriesStatusChange" : false,
+        "parameters" : [ "androidDriver" ]
+      } ],
+      "uid" : "ad91113592292f0fd60274105ec98f28"
+    }, {
+      "name" : "Connection refused: connect\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'AYALA-R-5981', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'\nDriver info: driver.version: WindowsDriver",
+      "children" : [ {
+        "name" : "startSession",
+        "uid" : "626d59c71bd77f41",
+        "parentUid" : "3734d59656567f26db8f322f3dae4cd5",
+        "status" : "broken",
+        "time" : {
+          "start" : 1638489605005,
+          "stop" : 1638489605005,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 2,
+        "retriesStatusChange" : false,
+        "parameters" : [ "desktop" ]
+      } ],
+      "uid" : "3734d59656567f26db8f322f3dae4cd5"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ]
 }

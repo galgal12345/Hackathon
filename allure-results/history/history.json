@@ -172,11 +172,20 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 3,
+      "passed" : 4,
       "unknown" : 0,
-      "total" : 3
+      "total" : 4
     },
     "items" : [ {
+      "uid" : "2b3ab3f8fac265af",
+      "reportUrl" : "http://localhost:9090/job/Grafana%20Api%20Test/11/allure/#testresult/2b3ab3f8fac265af",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638432482543,
+        "stop" : 1638432482613,
+        "duration" : 70
+      }
+    }, {
       "uid" : "42817295ebd02a43",
       "reportUrl" : "http://localhost:9090/job/Grafana%20Api%20Test/10/allure/#testresult/42817295ebd02a43",
       "status" : "passed",
@@ -431,11 +440,20 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 2,
+      "passed" : 3,
       "unknown" : 0,
-      "total" : 2
+      "total" : 3
     },
     "items" : [ {
+      "uid" : "7e7ef960eb155a3c",
+      "reportUrl" : "http://localhost:9090/job/Grafana%20Api%20Test/11/allure/#testresult/7e7ef960eb155a3c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638445026359,
+        "stop" : 1638445030193,
+        "duration" : 3834
+      }
+    }, {
       "uid" : "aed3fc76f4287582",
       "reportUrl" : "http://localhost:9090/job/Grafana%20Api%20Test/10/allure/#testresult/aed3fc76f4287582",
       "status" : "passed",
@@ -559,11 +577,20 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 3,
+      "passed" : 4,
       "unknown" : 0,
-      "total" : 3
+      "total" : 4
     },
     "items" : [ {
+      "uid" : "7c202997c9514396",
+      "reportUrl" : "http://localhost:9090/job/Grafana%20Api%20Test/11/allure/#testresult/7c202997c9514396",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638432485626,
+        "stop" : 1638432485794,
+        "duration" : 168
+      }
+    }, {
       "uid" : "ea00ae96645ae87a",
       "reportUrl" : "http://localhost:9090/job/Grafana%20Api%20Test/10/allure/#testresult/ea00ae96645ae87a",
       "status" : "passed",
@@ -617,11 +644,20 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 5,
+      "passed" : 6,
       "unknown" : 0,
-      "total" : 5
+      "total" : 6
     },
     "items" : [ {
+      "uid" : "589500ab41406e98",
+      "reportUrl" : "http://localhost:9090/job/Grafana%20Api%20Test/11/allure/#testresult/589500ab41406e98",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638444916094,
+        "stop" : 1638444927320,
+        "duration" : 11226
+      }
+    }, {
       "uid" : "954a39e03fc68a11",
       "reportUrl" : "http://localhost:9090/job/Grafana%20Api%20Test/10/allure/#testresult/954a39e03fc68a11",
       "status" : "passed",
@@ -813,11 +849,20 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 5,
+      "passed" : 6,
       "unknown" : 0,
-      "total" : 5
+      "total" : 6
     },
     "items" : [ {
+      "uid" : "cd9934862d111302",
+      "reportUrl" : "http://localhost:9090/job/Grafana%20Api%20Test/11/allure/#testresult/cd9934862d111302",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638444930646,
+        "stop" : 1638444933882,
+        "duration" : 3236
+      }
+    }, {
       "uid" : "7709ab58e9f0366d",
       "reportUrl" : "http://localhost:9090/job/Grafana%20Api%20Test/10/allure/#testresult/7709ab58e9f0366d",
       "status" : "passed",
@@ -1121,11 +1166,20 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 2,
+      "passed" : 3,
       "unknown" : 0,
-      "total" : 2
+      "total" : 3
     },
     "items" : [ {
+      "uid" : "2ecf771e116427e1",
+      "reportUrl" : "http://localhost:9090/job/Grafana%20Api%20Test/11/allure/#testresult/2ecf771e116427e1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638445036947,
+        "stop" : 1638445037138,
+        "duration" : 191
+      }
+    }, {
       "uid" : "f0583b3ce88a3bee",
       "reportUrl" : "http://localhost:9090/job/Grafana%20Api%20Test/10/allure/#testresult/f0583b3ce88a3bee",
       "status" : "passed",
@@ -1291,11 +1345,20 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 2,
+      "passed" : 3,
       "unknown" : 0,
-      "total" : 2
+      "total" : 3
     },
     "items" : [ {
+      "uid" : "82f8f16adb590bac",
+      "reportUrl" : "http://localhost:9090/job/Grafana%20Api%20Test/11/allure/#testresult/82f8f16adb590bac",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638445033863,
+        "stop" : 1638445033923,
+        "duration" : 60
+      }
+    }, {
       "uid" : "17a161cb44f70212",
       "reportUrl" : "http://localhost:9090/job/Grafana%20Api%20Test/10/allure/#testresult/17a161cb44f70212",
       "status" : "passed",
@@ -2101,11 +2164,20 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 4,
+      "passed" : 5,
       "unknown" : 0,
-      "total" : 4
+      "total" : 5
     },
     "items" : [ {
+      "uid" : "ef9105725bfdd177",
+      "reportUrl" : "http://localhost:9090/job/Grafana%20Api%20Test/11/allure/#testresult/ef9105725bfdd177",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638444981141,
+        "stop" : 1638444989698,
+        "duration" : 8557
+      }
+    }, {
       "uid" : "5c1fb50270df2178",
       "reportUrl" : "http://localhost:9090/job/Grafana%20Api%20Test/7/allure/#testresult/5c1fb50270df2178",
       "status" : "passed",
@@ -2230,11 +2302,20 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 5,
+      "passed" : 6,
       "unknown" : 0,
-      "total" : 5
+      "total" : 6
     },
     "items" : [ {
+      "uid" : "ef6a2d7bde11258",
+      "reportUrl" : "http://localhost:9090/job/Grafana%20Api%20Test/11/allure/#testresult/ef6a2d7bde11258",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638444936991,
+        "stop" : 1638444950257,
+        "duration" : 13266
+      }
+    }, {
       "uid" : "3fc3936492534af1",
       "reportUrl" : "http://localhost:9090/job/Grafana%20Api%20Test/10/allure/#testresult/3fc3936492534af1",
       "status" : "passed",
@@ -3178,11 +3259,20 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 3,
+      "passed" : 4,
       "unknown" : 0,
-      "total" : 3
+      "total" : 4
     },
     "items" : [ {
+      "uid" : "a7676393e66dbcfe",
+      "reportUrl" : "http://localhost:9090/job/Grafana%20Api%20Test/11/allure/#testresult/a7676393e66dbcfe",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638432475239,
+        "stop" : 1638432479078,
+        "duration" : 3839
+      }
+    }, {
       "uid" : "c253570e3f36aac2",
       "reportUrl" : "http://localhost:9090/job/Grafana%20Api%20Test/10/allure/#testresult/c253570e3f36aac2",
       "status" : "passed",
