@@ -64,7 +64,7 @@ public class CommonOps extends Base {
 
     @AfterMethod
     public void wait_seconds() {
-        AllUiActions.wait(3);
+        AllUiActions.wait(1);
     }
 
 

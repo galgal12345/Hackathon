@@ -30,5 +30,5 @@
     <dbUrl>jdbc:mysql://sql4.freemysqlhosting.net:3306/sql4455326</dbUrl>
     <user>sql4455326</user>
     <pass>KqUKNu5jPZ</pass>
-    <query>"select * from login"</query>
+    <query>select * from login</query>
 </env>
